@@ -5,4 +5,53 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
+    <package name="teacher" namespace="/teacher" extends="struts-default">
+        <action name="toTeacherIndex" class="com.postgraduate.action.TeacherAction" method="getIndex">
+            <result name="success">/teacher/teacher_index.jsp</result>
+            <result name="error">/teacher/error.jsp</result>
+        </action>
+
+        <action name="editTeacherInf" class="com.postgraduate.action.TeacherAction" method="editInf">
+            <result name="success">/teacher/teacher_inf.jsp</result>
+        </action>
+
+        <action name="updateTeacherInf" class="com.postgraduate.action.TeacherAction" method="updateInf">
+            <result name="success">/teacher/teacher_inf.jsp</result>
+        </action>
+
+        <action name="searchStudent" class="com.postgraduate.action.TeacherAction" method="searchStudent">
+            <result name="success">/teacher/search_result.jsp</result>
+        </action>
+
+        <action name="viewTeacherMsg" class="com.postgraduate.action.TeacherAction" method="viewMsg" >
+            <result name="success" >/teacher/msg.jsp</result>
+        </action>
+
+        <action name="sendPreReq" class="com.postgraduate.action.TeacherAction" method="sendPreReq">
+            <result name="success">/teacher/search_result.jsp</result>
+        </action>
+
+        <action name="sendFinalReq" class="com.postgraduate.action.TeacherAction" method="sendFinalReq" >
+            <result name="success">/teacher/pre_success_list.jsp</result>
+        </action>
+
+        <action name="viewPreSucList" class="com.postgraduate.action.TeacherAction" method="viewPreSucList">
+            <result name="success">/teacher/pre_success_list.jsp</result>
+        </action>
+
+        <action name="sendMsg" class="com.postgraduate.action.TeacherAction" method="sendMsg">
+            <result name="success">/teacher/search_result.jsp</result>
+        </action>
+    </package>
+
+    <package name="student" namespace="/student" extends="struts-default">
+
+
+    </package>
+
+    <package name="visitor" namespace="/" extends="struts-default">
+
+
+    </package>
+
 </struts>
