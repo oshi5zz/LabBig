@@ -7,8 +7,8 @@
 <struts>
     <package name="teacher" namespace="/teacher" extends="struts-default">
         <action name="toTeacherIndex" class="com.postgraduate.action.TeacherAction" method="getIndex">
-            <result name="success">/index.jsp</result>
-            <result name="error">/error.jsp</result>
+            <result name="success">/teacher/teacher_index.jsp</result>
+            <result name="error">/teacher/error.jsp</result>
         </action>
 
         <action name="editTeacherInf" class="com.postgraduate.action.TeacherAction" method="editInf">
@@ -19,12 +19,16 @@
             <result name="success">/teacher/teacher_inf.jsp</result>
         </action>
 
-        <action name="searchStudent" class="com.postgraduate.action.TeacherAction" method="searchStudent">
+        <action name="toSearch" class="com.postgraduate.action.TeacherAction" method="toSearch">
+            <result name="success">/teacher/teacher_search.jsp</result>
+        </action>
+
+        <action name="viewSearchResult" class="com.postgraduate.action.TeacherAction" method="viewSearchResult">
             <result name="success">/teacher/search_result.jsp</result>
         </action>
 
         <action name="viewTeacherMsg" class="com.postgraduate.action.TeacherAction" method="viewMsg" >
-            <result name="success" >/teacher/msg.jsp</result>
+            <result name="success" >/teacher/viewmsg.jsp</result>
         </action>
 
         <action name="sendPreReq" class="com.postgraduate.action.TeacherAction" method="sendPreReq">
@@ -44,7 +48,7 @@
         </action>
     </package>
 
-    <package name="student" namespace="/" extends="struts-default">
+    <package name="student" namespace="/student" extends="struts-default">
 
 
     </package>
@@ -53,5 +57,6 @@
 
 
     </package>
+
 
 </struts>
