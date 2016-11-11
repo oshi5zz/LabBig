@@ -1,17 +1,22 @@
 package com.postgraduate.dao;
 
-import com.postgraduate.bean.Teacher;
-import com.postgraduate.entity.TeacherEntity;
+import com.postgraduate.entity.Student;
+import com.postgraduate.entity.Teacher;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 /**
  * Created by zhao on 2016/11/8.
  */
 public class Main {
     public static void main(String[] args) throws SQLException {
-        TeacherDAO teacherDAO = new TeacherDAO();
-        TeacherEntity teacher = teacherDAO.getTeacherInf(1);
-        System.out.println(teacher.getAge());
+        DBConnection dbc = new DBConnection();
+        ResultSet rs = dbc.select("select * from Student");
+        while (rs.next()) {
+            System.out.println(rs.getString("name"));
+        }
+
     }
 }

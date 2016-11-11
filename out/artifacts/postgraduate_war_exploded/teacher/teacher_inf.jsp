@@ -11,7 +11,6 @@
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 <%@ taglib prefix="s" uri="/struts-tags"%>
-<%@ page import="com.postgraduate.bean.*" %>
 
 <!DOCTYPE html>
 <html lang="zh-CN"><!--<![endif]-->
@@ -53,7 +52,7 @@
                 <br />
 
                 <span>职称：</span>
-                <input name="teacher.professional_title" value="<s:property value="teacher.professional_title" /> " />
+                <input name="teacher.professionalTitle" value="<s:property value="teacher.professionalTitle" /> " />
                 <br />
 
                 <span>省份：</span>
@@ -69,7 +68,7 @@
                 <br />
 
                 <span>研究方向：</span>
-                <input name="teacher.reseach_area" value="<s:property value="teacher.reseach_area" /> " />
+                <input name="teacher.researchArea" value="<s:property value="teacher.researchArea" /> " />
                 <br />
 
                 <span>个人介绍：</span>
@@ -81,7 +80,7 @@
                 <br />
 
                 <span>研究方向：</span>
-                <input name="teacher.reseach_area" value="<s:property value="teacher.reseach_area" /> " />
+                <input name="teacher.researchArea" value="<s:property value="teacher.researchArea" /> " />
                 <br />
 
                 <input type="button" value="保存修改" />

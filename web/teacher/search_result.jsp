@@ -11,7 +11,6 @@
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 <%@ taglib prefix="s" uri="/struts-tags"%>
-<%@ page import="com.postgraduate.bean.*" %>
 
 <!DOCTYPE html>
 <html lang="zh-CN"><!--<![endif]-->

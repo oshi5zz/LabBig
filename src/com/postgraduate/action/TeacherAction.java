@@ -1,8 +1,13 @@
 package com.postgraduate.action;
 
 import com.opensymphony.xwork2.ActionSupport;
-import com.postgraduate.bean.*;
+import com.postgraduate.dao.HibernateSessionFactory;
 import com.postgraduate.dao.TeacherDAO;
+import com.postgraduate.entity.Msg;
+import com.postgraduate.entity.Request;
+import com.postgraduate.entity.Student;
+import com.postgraduate.entity.Teacher;
+import org.hibernate.Session;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,26 +25,8 @@ public class TeacherAction extends ActionSupport {
     //
     private List<Student> students = new ArrayList<>();
     private List<Msg> msgs = new ArrayList<>();
-    private List<Req> reqs = new ArrayList<>();
+    private List<Request> reqs = new ArrayList<>();
 
-    private List<NewMsg> newMsgs = new ArrayList<>();
-    private List<OldMsg> oldMsgs = new ArrayList<>();
-
-    public List<NewMsg> getNewMsgs() {
-        return newMsgs;
-    }
-
-    public void setNewMsgs(List<NewMsg> newMsgs) {
-        this.newMsgs = newMsgs;
-    }
-
-    public List<OldMsg> getOldMsgs() {
-        return oldMsgs;
-    }
-
-    public void setOldMsgs(List<OldMsg> oldMsgs) {
-        this.oldMsgs = oldMsgs;
-    }
 
     public void setMsgs(List<Msg> msgs) {
         this.msgs = msgs;
@@ -53,11 +40,11 @@ public class TeacherAction extends ActionSupport {
         this.student = student;
     }
 
-    public List<Req> getReqs() {
+    public List<Request> getReqs() {
         return reqs;
     }
 
-    public void setReqs(List<Req> reqs) {
+    public void setReqs(List<Request> reqs) {
         this.reqs = reqs;
     }
 
@@ -75,15 +62,14 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String editInf() {
-//        teacher = teacherDAO.getTeacherInf(Integer.parseInt(teacher.getId()));
-//        teacher = teacherDAO.getTeacherInf(1);
-
+        teacherDAO = new TeacherDAO();
+        teacher = teacherDAO.getTeacherInf(1);
+        System.out.println(teacher.getAge());
         if (teacher != null) {
             return SUCCESS;
         } else {
             return ERROR;
         }
-
     }
 
 
@@ -92,6 +78,8 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String viewSearchResult() {
+        teacherDAO = new TeacherDAO();
+        students = teacherDAO.searchStudents(student);
         return SUCCESS;
     }
 
