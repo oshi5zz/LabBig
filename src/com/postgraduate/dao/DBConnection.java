@@ -1,11 +1,7 @@
 package com.postgraduate.dao; /**
  * Created by zhao on 2016/11/8.
  */
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class DBConnection {
     private static String dbName = "postgraduate";
@@ -13,9 +9,10 @@ public class DBConnection {
     private static String password = "994599";
     private static String parameter = "?characterEncoding=utf8";
     private static String dburl = "jdbc:mysql://localhost:3306/";
-    private static String url  = dburl + dbName ;
+    private static String url  = dburl + dbName +parameter;
     private static Statement stmt = null;
     private static Connection con = null;
+    private static PreparedStatement ps = null;
 
     public DBConnection() {
         try {
@@ -30,6 +27,16 @@ public class DBConnection {
     }
 
     public Connection getConnection() {
+        if (con == null) {
+            try {
+                Class.forName("com.mysql.jdbc.Driver");
+                con = DriverManager.getConnection(url, user, password);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
         return con;
     }
 

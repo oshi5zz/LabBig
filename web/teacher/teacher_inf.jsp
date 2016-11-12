@@ -38,7 +38,7 @@
     <div id="main" class="bit_main_content">
         <hr />
         <div class="teacher-inf">
-            <form class="teacher-inf-form" action="updateTeacherInf.action">
+            <form class="teacher-inf-form" method="post" action="/teacher/updateTeacherInf.action">
                 <span>姓名：</span>
                 <input name="teacher.name" value="<s:property value="teacher.name" /> " />
                 <br />
@@ -68,22 +68,33 @@
                 <br />
 
                 <span>研究方向：</span>
-                <input name="teacher.researchArea" value="<s:property value="teacher.researchArea" /> " />
+                <input type="text" name="teacher.researchArea" value="<s:property value="teacher.researchArea" /> " />
                 <br />
 
-                <span>个人介绍：</span>
-                <input name="teacher.inf" value="<s:property value="teacher.inf" /> " />
+                <span>预招生人数：</span>
+                <input type="text" name="teacher.preNum" value="<s:property value="teacher.preNum" /> " />
                 <br />
+
+                <span>最终招生人数：</span>
+                <input type="text" name="teacher.finalNum" value="<s:property value="teacher.finalNum" /> " />
+                <br />
+
+
+
 
                 <span>邮箱：</span>
                 <input name="teacher.mail" value="<s:property value="teacher.mail" /> " />
                 <br />
 
-                <span>研究方向：</span>
-                <input name="teacher.researchArea" value="<s:property value="teacher.researchArea" /> " />
+                <span>个人介绍：</span>
+                <textarea type="text" name="teacher.inf" value=" " > <s:property value="teacher.inf" /></textarea>
                 <br />
 
-                <input type="button" value="保存修改" />
+                <span>招生需求：</span>
+                <textarea type="text" name="teacher.requirement" value=" " > <s:property value="teacher.requirement" /></textarea>
+                <br />
+
+                <input type="submit" value="保存修改" />
                 <input type="button" value="取消" />
             </form>
 

@@ -1,14 +1,11 @@
 package com.postgraduate.action;
 
 import com.opensymphony.xwork2.ActionSupport;
-import com.postgraduate.dao.HibernateSessionFactory;
 import com.postgraduate.dao.TeacherDAO;
 import com.postgraduate.entity.Msg;
 import com.postgraduate.entity.Request;
 import com.postgraduate.entity.Student;
 import com.postgraduate.entity.Teacher;
-import org.hibernate.Session;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,14 +54,14 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String updateInf() {
-
-        return SUCCESS;
+        if(teacherDAO.updateTeachInf(teacher))
+            return SUCCESS;
+        else
+            return ERROR;
     }
 
     public String editInf() {
-        teacherDAO = new TeacherDAO();
         teacher = teacherDAO.getTeacherInf(1);
-        System.out.println(teacher.getAge());
         if (teacher != null) {
             return SUCCESS;
         } else {
@@ -78,9 +75,11 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String viewSearchResult() {
-        teacherDAO = new TeacherDAO();
         students = teacherDAO.searchStudents(student);
-        return SUCCESS;
+        if (students != null)
+            return SUCCESS;
+        else
+            return ERROR;
     }
 
     public String login() {

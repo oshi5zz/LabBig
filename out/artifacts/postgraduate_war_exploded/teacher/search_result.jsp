@@ -39,7 +39,7 @@
         <s:iterator value="students">
             <tr>
                 <td>
-                    <span><s:property value="name" > </s:property></span>
+                    <span><s:property value="name" /></span>
                 </td>
                 <td>
                     <span>(<s:property value="school" />)</span>
@@ -55,7 +55,7 @@
                 </td>
             </tr>
         </s:iterator>
-
+<s:debug></s:debug>
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>

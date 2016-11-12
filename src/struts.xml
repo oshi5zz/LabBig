@@ -17,14 +17,18 @@
 
         <action name="updateTeacherInf" class="com.postgraduate.action.TeacherAction" method="updateInf">
             <result name="success">/teacher/teacher_inf.jsp</result>
+            <result name="error">/teacher/error.jsp</result>
+            <result name="input">/teacher/teacher_inf.jsp</result>
         </action>
 
         <action name="toSearch" class="com.postgraduate.action.TeacherAction" method="toSearch">
             <result name="success">/teacher/teacher_search.jsp</result>
+            <result name="error">/teacher/error.jsp</result>
         </action>
 
         <action name="viewSearchResult" class="com.postgraduate.action.TeacherAction" method="viewSearchResult">
             <result name="success">/teacher/search_result.jsp</result>
+            <result name="error">/teacher/error.jsp</result>
         </action>
 
         <action name="viewTeacherMsg" class="com.postgraduate.action.TeacherAction" method="viewMsg" >
