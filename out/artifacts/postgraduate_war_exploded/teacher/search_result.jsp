@@ -44,18 +44,22 @@
                 <td>
                     <span>(<s:property value="school" />)</span>
                 </td>
+
                 <td>
-                    <span><a href="#">查看详情</a></span>
+                    <span><a href="/teacher/viewStudentDetail.action?stuid=<s:property value="stuId" />">查看详情</a></span>
                 </td>
+
                 <td>
-                    <span><a href="#">发送预请求</a></span>
+                    <span><a href="/teacher/writeMsg.action?stuid=<s:property value="stuId" />">发送消息</a></span>
                 </td>
+
                 <td>
-                    <span><a href="#">发送消息</a></span>
+                    <span><a href="/teacher/sendPreReq.action?stuid=<s:property value="stuId" />">发送预请求</a></span>
                 </td>
             </tr>
+            <br />
         </s:iterator>
-<s:debug></s:debug>
+<%--<s:debug></s:debug>--%>
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>

@@ -11,6 +11,7 @@
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 <%@ taglib prefix="s" uri="/struts-tags"%>
+<%@ page import="com.postgraduate.entity.*" %>
 
 <!DOCTYPE html>
 <html lang="zh-CN"><!--<![endif]-->
@@ -20,7 +21,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>搜索学生列表</title>
+    <title>考研师生互选系统</title>
     <link rel="stylesheet" href="../res/frame_a.css" type="text/css" media="all">
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
@@ -37,29 +38,29 @@
 
     <div id="main" class="bit_main_content">
         <s:iterator value="students">
-            <tr>
-                <td>
-                    <span><s:property value="name" /></span>
-                </td>
-                <td>
-                    <span>(<s:property value="school" />)</span>
-                </td>
+            <td>
+                <tr>
+                    <span><s:property value="name"/>(<s:property value="school" />) </span>
+                </tr>
 
-                <td>
-                    <span><a href="/teacher/viewStudentDetail.action?stuid=<s:property value="stuId" />">查看详情</a></span>
-                </td>
+                <tr>
+                    <span>
+                        <a href="/teacher/viewStudentDetail.action?stuid=<s:property value="stuId" />">详细信息</a>
+                    </span>
+                </tr>
 
-                <td>
-                    <span><a href="/teacher/writeMsg.action?stuid=<s:property value="stuId" />">发送消息</a></span>
-                </td>
-
-                <td>
-                    <span><a href="/teacher/sendPreReq.action?stuid=<s:property value="stuId" />">发送预请求</a></span>
-                </td>
-            </tr>
-            <br />
+                <tr>
+                    <span>
+                        <a href="/teacher/agreePreReq.action?stuid=<s:property value="stuId" />">同意</a>
+                    </span>
+                </tr>
+                <tr>
+                    <span>
+                        <a href="/teacher/refusePreReq.action?stuid=<s:property value="stuId" />">拒绝</a>
+                    </span>
+                </tr>
+            </td>
         </s:iterator>
-<%--<s:debug></s:debug>--%>
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>

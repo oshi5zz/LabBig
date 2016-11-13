@@ -12,7 +12,7 @@ public class Request {
     private Integer firstMsgId;
     private int status;
     private int flag;
-    private Timestamp lastDate;
+    private String lastDate;
     private Student studentByStuId;
     private Teacher teacherByTeaId;
 
@@ -64,11 +64,11 @@ public class Request {
         this.flag = flag;
     }
 
-    public Timestamp getLastDate() {
+    public String getLastDate() {
         return lastDate;
     }
 
-    public void setLastDate(Timestamp lastDate) {
+    public void setLastDate(String lastDate) {
         this.lastDate = lastDate;
     }
 

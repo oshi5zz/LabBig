@@ -16,6 +16,7 @@ public class StudentConverter {
     public static Student getStudent(ResultSet rs) {
         Student student = new Student();
         try {
+            student.setStuId(rs.getInt("stu_id"));
             student.setName(rs.getString("name"));
             student.setAge(rs.getInt("age"));
             student.setInf(rs.getString("inf"));

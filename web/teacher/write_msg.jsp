@@ -20,7 +20,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>搜索学生列表</title>
+    <title>查找学生</title>
     <link rel="stylesheet" href="../res/frame_a.css" type="text/css" media="all">
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
@@ -36,30 +36,11 @@
     <%@include file="teacher_header.jsp" %>
 
     <div id="main" class="bit_main_content">
-        <s:iterator value="students">
-            <tr>
-                <td>
-                    <span><s:property value="name" /></span>
-                </td>
-                <td>
-                    <span>(<s:property value="school" />)</span>
-                </td>
-
-                <td>
-                    <span><a href="/teacher/viewStudentDetail.action?stuid=<s:property value="stuId" />">查看详情</a></span>
-                </td>
-
-                <td>
-                    <span><a href="/teacher/writeMsg.action?stuid=<s:property value="stuId" />">发送消息</a></span>
-                </td>
-
-                <td>
-                    <span><a href="/teacher/sendPreReq.action?stuid=<s:property value="stuId" />">发送预请求</a></span>
-                </td>
-            </tr>
-            <br />
-        </s:iterator>
-<%--<s:debug></s:debug>--%>
+        <form action="/teacher/sendMsg.action " method="post">
+            <input type="hidden" name="msg.stuId" value="">
+            <textarea name="msg.main"></textarea>
+            <input type="submit" value="发送">
+        </form>
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>
