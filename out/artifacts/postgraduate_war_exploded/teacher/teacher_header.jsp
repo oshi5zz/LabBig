@@ -26,13 +26,12 @@
                         <div class="textwidget ckeditorInLine bitWidgetFrame" bitrlt="text" bitkey="text"
                              wid="text-18">
                             <div>
-                                    <span style="font-size: 14px;"><a href="toTeacherIndex.action"
-                                                                      url-flag="1" url-flagtarget=""><span
-                                            style="color: rgb(255, 255, 255);">登录&nbsp;</span></a><span
-                                            style="color: rgb(255, 255, 255);"> | </span><a rel="" target="_blank"><span
-                                            style="color: rgb(255, 255, 255);"></span></a><a href="#"
-                                                                                             url-flag="1" url-flagtarget=""><span
-                                            style="color: rgb(255, 255, 255);">注册</span></a></span></div>
+                                    <span style="font-size: 14px;">
+                                        <span style="color: rgb(255, 255, 255);">
+                                            您好！<s:property value="teacher.name"></s:property>老师！
+                                        </span>
+                                    </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -44,7 +43,7 @@
     <div class="navigation-holder">
         <div>
             <!-- !- Navigation -->
-            <nav style="0" id="navigation" class="wf-wrap" bitdataaction="site_menu_container"
+            <nav id="navigation" class="wf-wrap" bitdataaction="site_menu_container"
                  bitdatalocation="primary">
                 <ul id="main-nav" data-st="0" data-sp="0" data-fh="" data-mw="" data-lh=""
                     class="mainmenu fancy-rollovers wf-mobile-hidden bit-menu-default"

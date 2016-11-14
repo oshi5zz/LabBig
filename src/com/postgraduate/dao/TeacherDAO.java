@@ -69,9 +69,9 @@ public class TeacherDAO {
         return students;
     }
 
-    public List<Msg> getMsgs() {
+    public List<Msg> getMsgs(int id) {
         List<Msg> msgs = new ArrayList<>();
-        
+
         return msgs;
     }
 

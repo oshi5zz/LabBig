@@ -40,55 +40,55 @@
         <div class="teacher-inf">
             <form class="teacher-inf-form" method="post" action="/teacher/updateTeacherInf.action">
                 <span>姓名：</span>
-                <input name="teacher.name" value="<s:property value="teacher.name" /> " />
+                <input name="teacher.name" value="<s:property value="teacher.name" />" />
                 <br />
 
                 <span>性别：</span>
-                <input name="teacher.sex" value="<s:property value="teacher.sex" /> " />
+                <input name="teacher.sex" value="<s:property value="teacher.sex" />" />
                 <br />
 
                 <span>年龄：</span>
-                <input name="teacher.age" value="<s:property value="teacher.age" /> " />
+                <input name="teacher.age" value="<s:property value="teacher.age" />" />
                 <br />
 
                 <span>职称：</span>
-                <input name="teacher.professionalTitle" value="<s:property value="teacher.professionalTitle" /> " />
+                <input name="teacher.professionalTitle" value="<s:property value="teacher.professionalTitle" />" />
                 <br />
 
                 <span>省份：</span>
-                <input name="teacher.province" value="<s:property value="teacher.province" /> " />
+                <input name="teacher.province" value="<s:property value="teacher.province" />" />
                 <br />
 
                 <span>学校：</span>
-                <input name="teacher.school" value="<s:property value="teacher.school" /> " />
+                <input name="teacher.school" value="<s:property value="teacher.school" />" />
                 <br />
 
                 <span>专业：</span>
-                <input name="teacher.major" value="<s:property value="teacher.major" /> " />
+                <input name="teacher.major" value="<s:property value="teacher.major" />" />
                 <br />
 
                 <span>研究方向：</span>
-                <input type="text" name="teacher.researchArea" value="<s:property value="teacher.researchArea" /> " />
+                <input type="text" name="teacher.researchArea" value="<s:property value="teacher.researchArea" />" />
                 <br />
 
                 <span>预招生人数：</span>
-                <input type="text" name="teacher.preNum" value="<s:property value="teacher.preNum" /> " />
+                <input type="text" name="teacher.preNum" value="<s:property value="teacher.preNum" />" />
                 <br />
 
                 <span>最终招生人数：</span>
-                <input type="text" name="teacher.finalNum" value="<s:property value="teacher.finalNum" /> " />
+                <input type="text" name="teacher.finalNum" value="<s:property value="teacher.finalNum" />" />
                 <br />
 
                 <span>邮箱：</span>
-                <input name="teacher.mail" value="<s:property value="teacher.mail" /> " />
+                <input name="teacher.mail" value="<s:property value="teacher.mail" />" />
                 <br />
 
                 <span>个人介绍：</span>
-                <textarea type="text" name="teacher.inf" value=" " > <s:property value="teacher.inf" /></textarea>
+                <textarea type="text" name="teacher.inf" ><s:property value="teacher.inf" /></textarea>
                 <br />
 
                 <span>招生需求：</span>
-                <textarea type="text" name="teacher.requirement" value=" " > <s:property value="teacher.requirement" /></textarea>
+                <textarea type="text" name="teacher.requirement" ><s:property value="teacher.requirement" /></textarea>
                 <br />
 
                 <input type="submit" value="保存修改" />

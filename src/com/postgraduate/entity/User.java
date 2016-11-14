@@ -5,7 +5,7 @@ package com.postgraduate.entity;
  */
 public class User {
     private int id;
-    private int userId;
+    private String userId;
     private String password;
     private String userName;
     private int type;
@@ -18,11 +18,11 @@ public class User {
         this.id = id;
     }
 
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
@@ -69,7 +69,7 @@ public class User {
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + userId;
+        result = 31 * result + (userId != null ? userId.hashCode() : 0);
         result = 31 * result + (password != null ? password.hashCode() : 0);
         result = 31 * result + (userName != null ? userName.hashCode() : 0);
         result = 31 * result + type;

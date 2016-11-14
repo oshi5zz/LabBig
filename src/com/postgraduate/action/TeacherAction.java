@@ -1,5 +1,6 @@
 package com.postgraduate.action;
 
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.postgraduate.dao.TeacherDAO;
 import com.postgraduate.entity.Msg;
@@ -91,6 +92,8 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String updateInf() {
+        Teacher tmp = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        teacher.setTeaId(tmp.getTeaId());
         if(teacherDAO.updateTeachInf(teacher))
             return SUCCESS;
         else
@@ -98,14 +101,14 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String editInf() {
-        teacher = teacherDAO.getTeacherInf(1);
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        teacher = teacherDAO.getTeacherInf(teacher.getTeaId());
         if (teacher != null) {
             return SUCCESS;
         } else {
             return ERROR;
         }
     }
-
 
     public String toSearch() {
         return SUCCESS;
@@ -127,24 +130,20 @@ public class TeacherAction extends ActionSupport {
         }
     }
 
-    public String login() {
-
-        return SUCCESS;
-    }
-
     public String getIndex() {
-
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         return SUCCESS;
     }
 
     public String viewPreSucList() {
-        students = teacherDAO.viewPreSucList(1);
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        students = teacherDAO.viewPreSucList(teacher.getTeaId());
         return SUCCESS;
     }
 
     public String sendPreReq() {
-        int stu_id = 1;
-        teacher.setTeaId(1);
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        int stu_id;
         try {
             stu_id = Integer.parseInt(stuid);
         } catch (Exception e) {
@@ -189,6 +188,7 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String sendFinalReq() {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         int stu_id = 1;
         teacher.setTeaId(1);
         try {
@@ -206,7 +206,8 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String viewMsg() {
-        msgs = teacherDAO.getMsgs();
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        msgs = teacherDAO.getMsgs(teacher.getTeaId());
         for (Msg msg : msgs) {
 
         }
@@ -214,8 +215,15 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String sendMsg() {
-        msg.setStuId(1);
-        msg.setTeaId(1);
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        int stu_id;
+        try {
+            stu_id = Integer.parseInt(stuid);
+        } catch (Exception e) {
+            return ERROR;
+        }
+        msg.setStuId(stu_id);
+        msg.setTeaId(teacher.getTeaId());
         if (msg.getMain().length() < 1)
             return INPUT;
         if (teacherDAO.sendMsg(msg)) {
@@ -234,6 +242,7 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String viewStudentDetail() {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         try {
             int id = Integer.parseInt(stuid);
             student = teacherDAO.getStudent(id);
@@ -244,16 +253,18 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String writeMsg() {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         return SUCCESS;
     }
 
     public String viewPreReqList() {
-        students = teacherDAO.viewPreReqList(1);
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        students = teacherDAO.viewPreReqList(teacher.getTeaId());
         return SUCCESS;
     }
 
     public String agreePreReq(){
-        teacher.setTeaId(1);
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         try {
             int id = Integer.parseInt(stuid);
             if (teacherDAO.solveReq(true,true,teacher.getTeaId(), id)) {
@@ -271,7 +282,7 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String refusePreReq() {
-        teacher.setTeaId(1);
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         try {
             int id = Integer.parseInt(stuid);
             if (teacherDAO.solveReq(false,true,teacher.getTeaId(), id)) {
@@ -289,7 +300,7 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String cancelPreReq() {
-        teacher.setTeaId(1);
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         try {
             int id = Integer.parseInt(stuid);
             if (teacherDAO.cancelPreReq(teacher.getTeaId(), id)) {
@@ -307,6 +318,7 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String viewAllReq() {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
 
         return "success";
     }

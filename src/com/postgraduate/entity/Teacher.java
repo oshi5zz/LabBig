@@ -8,7 +8,7 @@ import java.util.Collection;
 public class Teacher {
     private int teaId;
     private String name;
-    private Integer age;
+    private String age;
     private String professionalTitle;
     private String province;
     private String school;
@@ -17,8 +17,8 @@ public class Teacher {
     private String inf;
     private String mail;
     private String sex;
-    private int preNum;
-    private int finalNum;
+    private String preNum;
+    private String finalNum;
     private String requirement;
     private Collection<Msg> msgsByTeaId;
     private Collection<Request> requestsByTeaId;
@@ -39,11 +39,11 @@ public class Teacher {
         this.name = name;
     }
 
-    public Integer getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
@@ -111,19 +111,19 @@ public class Teacher {
         this.sex = sex;
     }
 
-    public int getPreNum() {
+    public String getPreNum() {
         return preNum;
     }
 
-    public void setPreNum(int preNum) {
+    public void setPreNum(String preNum) {
         this.preNum = preNum;
     }
 
-    public int getFinalNum() {
+    public String getFinalNum() {
         return finalNum;
     }
 
-    public void setFinalNum(int finalNum) {
+    public void setFinalNum(String finalNum) {
         this.finalNum = finalNum;
     }
 
@@ -175,8 +175,8 @@ public class Teacher {
         result = 31 * result + (inf != null ? inf.hashCode() : 0);
         result = 31 * result + (mail != null ? mail.hashCode() : 0);
         result = 31 * result + (sex != null ? sex.hashCode() : 0);
-        result = 31 * result + preNum;
-        result = 31 * result + finalNum;
+        result = 31 * result + (preNum != null ? preNum.hashCode() : 0);
+        result = 31 * result + (finalNum != null ? finalNum.hashCode() : 0);
         result = 31 * result + (requirement != null ? requirement.hashCode() : 0);
         return result;
     }

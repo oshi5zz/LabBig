@@ -17,12 +17,12 @@ public class TeacherConverter {
         Teacher teacher = new Teacher();
         try {
             teacher.setName(rs.getString("name"));
-            teacher.setAge(rs.getInt("age"));
-            teacher.setFinalNum(rs.getInt("final_num"));
+            teacher.setAge(rs.getString("age"));
+            teacher.setFinalNum(rs.getString("final_num"));
             teacher.setInf(rs.getString("inf"));
             teacher.setMail(rs.getString("mail"));
             teacher.setMajor(rs.getString("major"));
-            teacher.setPreNum(rs.getInt("pre_num"));
+            teacher.setPreNum(rs.getString("pre_num"));
             teacher.setProfessionalTitle(rs.getString("professional_title"));
             teacher.setProvince(rs.getString("province"));
             teacher.setSchool(rs.getString("school"));
@@ -40,7 +40,7 @@ public class TeacherConverter {
     public static boolean updateTeacher(PreparedStatement ps, Teacher teacher) {
         try {
             ps.setString(1,teacher.getName());
-            ps.setInt(2,teacher.getAge());
+            ps.setString(2,teacher.getAge());
             ps.setString(3,teacher.getProfessionalTitle());
             ps.setString(4,teacher.getProvince());
             ps.setString(5,teacher.getSchool());
@@ -49,8 +49,8 @@ public class TeacherConverter {
             ps.setString(8,teacher.getInf());
             ps.setString(9,teacher.getMail());
             ps.setString(10,teacher.getSex());
-            ps.setInt(11, teacher.getPreNum());
-            ps.setInt(12, teacher.getFinalNum());
+            ps.setString(11, teacher.getPreNum());
+            ps.setString(12, teacher.getFinalNum());
             ps.setString(13, teacher.getRequirement());
             return true;
         } catch (SQLException e) {
