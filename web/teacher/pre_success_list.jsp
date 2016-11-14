@@ -53,6 +53,7 @@
                     </span>
                 </tr>
             </td>
+            <br />
         </s:iterator>
     </div><!-- #main -->
 

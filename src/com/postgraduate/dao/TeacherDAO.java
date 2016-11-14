@@ -209,21 +209,123 @@ public class TeacherDAO {
         return viewPreList(sql,teaId);
     }
 
-    public boolean agreePreReq(int teaId, int stuId) {
-        String sql = "UPDATE request SET request.status=2 WHERE stu_id=? AND tea_id =? AND request.status=0";
+    public boolean solveReq(boolean agree, boolean pre, int teaId, int stuId) {
+        //已用完名额
+        if (!hasNum(pre,teaId)) {
+            return false;
+        }
+
+        String sql = "";
+        //同意请求
+        if (agree) {
+            //同意预请求
+            if (pre)
+                sql = "UPDATE request SET request.status=2 WHERE stu_id=? AND tea_id =? AND request.status=0 OR request.status=1";
+            //同意最终请求
+            else
+                sql = "UPDATE request SET request.status=6 WHERE stu_id=? AND tea_id =? AND (request.status=4 OR request.status=5)";
+        }
+        //拒绝请求
+        else {
+            //拒绝预请求
+            if (pre)
+                sql = "UPDATE request SET request.status=3 WHERE stu_id=? AND tea_id =? AND request.status=0 OR request.status=1";
+            //拒绝最终请求
+            else
+                sql = "UPDATE request SET request.status=7 WHERE stu_id=? AND tea_id =? AND (request.status=4 OR request.status=5)";
+        }
+
         Connection con = dbConnection.getConnection();
         try {
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setInt(1,stuId);
             ps.setInt(2,teaId);
-            return ps.executeUpdate() == 1;
+            if(ps.executeUpdate() == 1){
+                updateNum(agree,pre,teaId);
+                return true;
+            } else {
+                return false;
+            }
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
         }
-
     }
 
+    /*
+    public boolean agreeReq(boolean pre, int teaId, int stuId) {
+        //已用完名额
+        if (!hasNum(pre,teaId)) {
+            return false;
+        }
+
+        String sql = "";
+        if (pre)
+            sql = "UPDATE request SET request.status=2 WHERE stu_id=? AND tea_id =? AND request.status=0";
+        else
+            sql = "UPDATE request SET request.status=6 WHERE stu_id=? AND tea_id =? AND request.status=2";
+        Connection con = dbConnection.getConnection();
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1,stuId);
+            ps.setInt(2,teaId);
+            if(ps.executeUpdate() == 1){
+                decreaseNum(pre,teaId);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    */
+
+    private boolean hasNum(boolean pre, int teaId) {
+        String sql = "";
+        if (pre)
+            sql = "SELECT pre_num FROM teacher WHERE tea_id=?";
+        else
+            sql = "SELECT final_num FROM teacher WHERE tea_id=?";
+        Connection con = dbConnection.getConnection();
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1, teaId);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                if (pre)
+                    return rs.getInt("pre_num") > 0;
+                else
+                    return rs.getInt("final_num") > 0;
+            }
+            else
+                return false;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    private void updateNum(boolean agree ,boolean pre, int teaId) {
+        String sql = "";
+        if (agree) {
+            if (pre)
+                sql = "UPDATE teacher SET pre_num=pre_num-1 WHERE tea_id=?";
+            else
+                sql = "UPDATE teacher SET final_num=teacher.final_num-1 WHERE tea_id=?";
+        } else {
+            return;
+        }
+        Connection con = dbConnection.getConnection();
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1, teaId);
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /*
     public boolean refusePreReq(int teaId, int stuId) {
         String sql = "UPDATE request SET request.status=3 WHERE stu_id=? AND tea_id =? AND request.status=0";
         Connection con = dbConnection.getConnection();
@@ -236,6 +338,6 @@ public class TeacherDAO {
             e.printStackTrace();
             return false;
         }
-
     }
+    */
 }

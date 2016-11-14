@@ -206,7 +206,7 @@ public class TeacherAction extends ActionSupport {
         teacher.setTeaId(1);
         try {
             int id = Integer.parseInt(stuid);
-            if (teacherDAO.agreePreReq(teacher.getTeaId(), id)) {
+            if (teacherDAO.solveReq(true,true,teacher.getTeaId(), id)) {
                 warning = "已同意预请求";
                 return SUCCESS;
             }
@@ -224,7 +224,7 @@ public class TeacherAction extends ActionSupport {
         teacher.setTeaId(1);
         try {
             int id = Integer.parseInt(stuid);
-            if (teacherDAO.refusePreReq(teacher.getTeaId(), id)) {
+            if (teacherDAO.solveReq(false,true,teacher.getTeaId(), id)) {
                 warning = "已拒绝预请求";
                 return SUCCESS;
             }
