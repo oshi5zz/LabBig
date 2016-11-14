@@ -1,0 +1,151 @@
+<%Connection conn = DBconn.getConnection();
+
+Statement stmt = conn.createStatement();
+
+ResultSet Rs = stmt.executeQuery("select * from news");
+
+System.out.println("success");
+
+%>
+
+<%
+
+String filePath = request.getRealPath("/")+"template.htm";
+
+System.out.println(filePath);
+
+String templateContent;
+
+FileInputStream fileinputstream = new FileInputStream(filePath);
+
+int lenght = fileinputstream.available(); //available() 返回可以不受阻塞地从此文件输入流中读取的字节数。
+
+byte bytes[] = new byte[lenght];
+
+fileinputstream.read(bytes); //read(byte[] b) 从此输入流中将最多 b.length 个字节的数据读入一个字节数组中。
+
+fileinputstream.close();
+
+//templateContent = new String(bytes);
+
+String title;
+
+String content;
+
+String author;
+
+while(Rs.next())
+
+{
+
+templateContent = new String(bytes);//如果不用这句，则替换一次之后，templateContent中就没有#**#标志了。所以要重新生成
+
+title = Rs.getString("Title");
+
+content = Rs.getString("Content");
+
+author = Rs.getString("Author");
+
+out.println(title+"********"+content+"****"+author);
+
+out.print("以下是模板内容：<br>"+templateContent+"<br> 以下是置换以后的html内容<br><hr>");
+
+templateContent=templateContent.replaceAll("#title#",title);
+
+templateContent=templateContent.replaceAll("#author#",author);//替换掉模块中相应的地方
+
+templateContent=templateContent.replaceAll("#content#",content);
+
+// 根据时间得文件名
+
+Calendar calendar = Calendar.getInstance();
+
+String fileame = String.valueOf(calendar.getTimeInMillis()) +".html";
+
+fileame = request.getRealPath("/")+"Html/"+fileame;//生成的html文件保存路径
+
+out.print(templateContent);
+
+FileOutputStream fileoutputstream = new FileOutputStream(fileame);//建立文件输出流
+
+byte tag_bytes[] = templateContent.getBytes();
+
+fileoutputstream.write(tag_bytes);
+
+fileoutputstream.close();
+
+}
+
+if(conn!=null)
+
+{
+
+conn.close();
+
+}
+
+if(stmt!=null)
+
+{
+
+stmt.close();
+
+}
+
+%>
+
+//数据库连接文件
+
+import java.sql.*;
+
+public class DBconn {
+
+public DBconn() {
+
+// TODO Auto-generated constructor stub
+
+}
+
+public static Connection getConnection()
+
+{
+
+Connection conn = null;
+
+try {
+
+Class.forName("org.gjt.mm.mysql.Driver");
+
+conn = DriverManager.getConnection("jdbc:mysql://" + "localhost" + "/" + "test" +
+
+"?useUnicode=true&characterEncoding=GB2312","root","111111");
+
+}
+
+catch(Exception e)
+
+{
+
+e.printStackTrace();
+
+}
+
+return conn;
+
+}
+
+/*public static void
+
+main(String[] args) throws Exception
+
+{
+
+Connection con=getConnection();
+
+System.out.println(con.isClosed());
+
+}
+
+*/
+
+}
