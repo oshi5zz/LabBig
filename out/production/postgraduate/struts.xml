@@ -84,6 +84,11 @@
             <result name="error">/teacher/waring.jsp</result>
         </action>
 
+        <action name="viewAllReq" class="com.postgraduate.action.TeacherAction" method="viewAllReq">
+            <result name="success">/teacher/view_req.jsp</result>
+            <result name="error">/teacher/error.jsp</result>
+        </action>
+
     </package>
 
 

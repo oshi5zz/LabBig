@@ -71,7 +71,7 @@ public class TeacherDAO {
 
     public List<Msg> getMsgs() {
         List<Msg> msgs = new ArrayList<>();
-
+        
         return msgs;
     }
 
@@ -126,42 +126,6 @@ public class TeacherDAO {
             return false;
         }
     }
-
-/*    public boolean hasPreReq(int teaId, int stuId) {
-        String sql = "SELECT * FROM request WHERE stu_id=? AND tea_id =?";
-        Connection con = dbConnection.getConnection();
-
-        try {
-            PreparedStatement ps = con.prepareStatement(sql);
-            ps.setInt(1,stuId);
-            ps.setInt(2,teaId);
-            ResultSet rs = ps.executeQuery();
-            if (rs.next())
-                return true;
-            else
-                return false;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return false;
-    }*/
-
-/*    public boolean sendPreReq(int teaId, int stuId) {
-        String sql = "INSERT INTO request(stu_id, tea_id,  status, flag, last_date)" +
-                " VALUES (?,?,0,1,NOW())";
-        Connection con = dbConnection.getConnection();
-        try {
-            PreparedStatement ps = con.prepareStatement(sql);
-            ps.setInt(1,stuId);
-            ps.setInt(2,teaId);
-            //设置第一条请求的消息
-            return ps.executeUpdate() == 1;
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
-    }*/
 
     private List<Student> viewPreList(String sql ,int teaId) {
         Connection con = dbConnection.getConnection();
@@ -246,34 +210,6 @@ public class TeacherDAO {
             return false;
         }
     }
-
-    /*
-    public boolean agreeReq(boolean pre, int teaId, int stuId) {
-        //已用完名额
-        if (!hasNum(pre,teaId)) {
-            return false;
-        }
-
-        String sql = "";
-        if (pre)
-            sql = "UPDATE request SET request.status=2 WHERE stu_id=? AND tea_id =? AND request.status=0";
-        else
-            sql = "UPDATE request SET request.status=6 WHERE stu_id=? AND tea_id =? AND request.status=2";
-        Connection con = dbConnection.getConnection();
-        try {
-            PreparedStatement ps = con.prepareStatement(sql);
-            ps.setInt(1,stuId);
-            ps.setInt(2,teaId);
-            if(ps.executeUpdate() == 1){
-                decreaseNum(pre,teaId);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
-    }
-
-    */
 
     private boolean hasNum(boolean pre, int teaId) {
         String sql = "";
@@ -371,19 +307,4 @@ public class TeacherDAO {
         }
     }
 
-    /*
-    public boolean refusePreReq(int teaId, int stuId) {
-        String sql = "UPDATE request SET request.status=3 WHERE stu_id=? AND tea_id =? AND request.status=0";
-        Connection con = dbConnection.getConnection();
-        try {
-            PreparedStatement ps = con.prepareStatement(sql);
-            ps.setInt(1,stuId);
-            ps.setInt(2,teaId);
-            return ps.executeUpdate() == 1;
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
-    }
-    */
 }

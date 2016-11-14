@@ -28,6 +28,8 @@ public class TeacherAction extends ActionSupport {
 
     private Msg msg = new Msg();
 
+    private String status = new String();
+
     public Msg getMsg() {
         return msg;
     }
@@ -302,5 +304,10 @@ public class TeacherAction extends ActionSupport {
             warning = "链接错误，学生id不是数字！";
             return ERROR;
         }
+    }
+
+    public String viewAllReq() {
+
+        return "success";
     }
 }

@@ -50,78 +50,23 @@
                     class="mainmenu fancy-rollovers wf-mobile-hidden bit-menu-default"
                     data-bit-menu="bit-menu-default" data-bit-float-menu="underline-hover">
                     <li class=" menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6209 current_page_item bit-menu-post-id-6209 menu-item-6210 act first">
-                        <a href="http://54cb52c7be8c4.t73.qifeiye.com/"><span>首页</span></a></li>
+                        <a href="/teacher/toTeacherIndex.action"><span>教师首页</span></a></li>
                     <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-5714 menu-item-has-children menu-item-5717 has-children">
-                        <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=5714"><span>学校简介</span></a>
-                        <ul class="sub-nav">
-                            <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-5714 menu-item-5718 first level-arrows-on">
-                                <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=5714"><span>学校简介</span></a>
-                            </li>
-                            <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-5725 menu-item-5728 level-arrows-on">
-                                <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=5725"><span>现任领导</span></a>
-                            </li>
-                            <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6009 menu-item-6026 level-arrows-on">
-                                <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=6009"><span>学校标识</span></a>
-                            </li>
-                            <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-5759 menu-item-5931 level-arrows-on">
-                                <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=5759"><span>校园景观</span></a>
-                            </li>
-                            <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6012 menu-item-6025 level-arrows-on">
-                                <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=6012"><span>校园地图</span></a>
-                            </li>
-                        </ul>
+                        <a href="/teacher/editTeacherInf.action"><span>更改个人信息</span></a>
                     </li>
                     <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6064 menu-item-6066">
-                        <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=6064"><span>院系设置</span></a></li>
+                        <a href="/teacher/toSearch.action"><span>按条件查找</span></a></li>
                     <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-5654 menu-item-has-children menu-item-5655 has-children">
-                        <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=5654"><span>教育教学</span></a>
-                        <ul class="sub-nav">
-                            <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-5654 menu-item-5665 first level-arrows-on">
-                                <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=5654"><span>本科生教育</span></a>
-                            </li>
-                        </ul>
+                        <a href="/teacher/viewPreSucList"><span>查看已通过的预请求</span></a>
                     </li>
                     <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6082 menu-item-has-children menu-item-6828 has-children">
-                        <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=6082"><span>师资力量</span></a>
-                        <ul class="sub-nav">
-                            <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6082 menu-item-6085 first level-arrows-on">
-                                <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=6082"><span>学科建设</span></a>
-                            </li>
-                            <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6189 menu-item-6190 level-arrows-on">
-                                <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=6189"><span>教师名录</span></a>
-                            </li>
-                            <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6773 menu-item-6774 level-arrows-on">
-                                <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=6773"><span>名师垂范</span></a>
-                            </li>
-                        </ul>
+                        <a href="/teacher/viewTeacherMsg"><span>查看消息</span></a>
                     </li>
                     <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6793 menu-item-has-children menu-item-6794 has-children">
-                        <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=6793"><span>科研机构</span></a>
-                        <ul class="sub-nav">
-                            <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6793 menu-item-6918 first level-arrows-on">
-                                <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=6793"><span>科研机构</span></a>
-                            </li>
-                        </ul>
+                        <a href="/teacher/viewAllReq"><span>查看所有请求</span></a>
                     </li>
                     <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6796 menu-item-has-children menu-item-6887 has-children">
-                        <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=6796"><span>招生就业</span></a>
-                        <ul class="sub-nav">
-                            <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6796 menu-item-6824 first level-arrows-on">
-                                <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=6796"><span>本科招生</span></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6128 menu-item-6129">
-                        <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=6128"><span>人才招聘</span></a></li>
-                    <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6051 menu-item-has-children menu-item-6791 has-children">
-                        <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=6051"><span>服务指南</span></a>
-                        <ul class="sub-nav">
-                            <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6051 menu-item-6939 first level-arrows-on">
-                                <a href="http://54cb52c7be8c4.t73.qifeiye.com/?page_id=6051"><span>校历</span></a>
-                            </li>
-                            <li class=" menu-item menu-item-type-custom menu-item-object-custom bit-menu-post-id-6792 menu-item-6792 level-arrows-on">
-                                <a href="http://54cb52c7be8c4.t73.qifeiye.com/#"><span>校园门户</span></a></li>
-                        </ul>
+                        <a href="/teacher/viewFinalSucList"><span>查看已录取的学生</span></a>
                     </li>
                 </ul>
             </nav>

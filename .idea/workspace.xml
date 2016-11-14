@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f7ee190-599d-4e65-b5d2-07b4b9529bd6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/action/TeacherAction.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/action/TeacherAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/dao/TeacherDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/dao/TeacherDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/action/TeacherAction.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/action/TeacherAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/dao/TeacherDAO.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/dao/TeacherDAO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/view_req.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/teacher/viewmsg.jsp" afterPath="$PROJECT_DIR$/web/teacher/view_msg.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/error.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/error.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/error.jsp" afterPath="$PROJECT_DIR$/web/teacher/error.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/pre_success_list.jsp" afterPath="$PROJECT_DIR$/web/teacher/pre_success_list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/teacher_header.jsp" afterPath="$PROJECT_DIR$/web/teacher/teacher_header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/teacher_inf.jsp" afterPath="$PROJECT_DIR$/web/teacher/teacher_inf.jsp" />
     </list>
     <ignored path="postgraduate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,18 +51,18 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="139">
+              <caret line="43" column="96" selection-start-line="43" selection-start-column="96" selection-end-line="43" selection-end-column="96" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/teacher/error.jsp">
+      <file leaf-file-name="view_req.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/teacher/view_req.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="171">
+              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -74,10 +71,24 @@
       <file leaf-file-name="TeacherAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="173" column="19" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="19" />
+            <state relative-caret-position="168">
+              <caret line="208" column="29" selection-start-line="208" selection-start-column="29" selection-end-line="208" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#updateInf#0;class#TeacherAction#0" expanded="false" />
+                <element signature="method#editInf#0;class#TeacherAction#0" expanded="false" />
+                <element signature="method#viewSearchResult#0;class#TeacherAction#0" expanded="false" />
+                <element signature="method#login#0;class#TeacherAction#0" expanded="false" />
+                <element signature="method#getIndex#0;class#TeacherAction#0" expanded="false" />
+                <element signature="method#viewPreSucList#0;class#TeacherAction#0" expanded="false" />
+                <element signature="method#sendPreReq#0;class#TeacherAction#0" expanded="false" />
+                <element signature="method#sendFinalReq#0;class#TeacherAction#0" expanded="false" />
+                <element signature="method#sendMsg#0;class#TeacherAction#0" expanded="false" />
+                <element signature="method#viewStudentDetail#0;class#TeacherAction#0" expanded="false" />
+                <element signature="method#viewPreReqList#0;class#TeacherAction#0" expanded="false" />
+                <element signature="method#agreePreReq#0;class#TeacherAction#0" expanded="false" />
+                <element signature="method#refusePreReq#0;class#TeacherAction#0" expanded="false" />
+                <element signature="method#cancelPreReq#0;class#TeacherAction#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -86,48 +97,59 @@
       <file leaf-file-name="TeacherDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="163" selection-end-column="7" />
+            <state relative-caret-position="196">
+              <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
               <folding>
                 <element signature="method#getTeacherInf#0;class#TeacherDAO#0" expanded="false" />
                 <element signature="method#searchStudents#0;class#TeacherDAO#0" expanded="false" />
-                <element signature="method#getMsgs#0;class#TeacherDAO#0" expanded="false" />
                 <element signature="method#updateTeachInf#0;class#TeacherDAO#0" expanded="false" />
                 <element signature="method#getStudent#0;class#TeacherDAO#0" expanded="false" />
                 <element signature="method#sendMsg#0;class#TeacherDAO#0" expanded="false" />
                 <element signature="method#viewPreList#0;class#TeacherDAO#0" expanded="false" />
                 <element signature="method#viewPreSucList#0;class#TeacherDAO#0" expanded="false" />
                 <element signature="method#viewPreReqList#0;class#TeacherDAO#0" expanded="false" />
-                <marker date="1479123826177" expanded="true" signature="591:629" ph="SELECT * FRO... teacher" />
-                <marker date="1479123826177" expanded="true" signature="1197:1228" ph="SELECT * FRO... student" />
-                <marker date="1479123826177" expanded="true" signature="2476:2685" ph="UPDATE teach... " />
-                <marker date="1479123826177" expanded="true" signature="3259:3296" ph="SELECT * FRO... student" />
-                <marker date="1479123826177" expanded="true" signature="3718:3777" ph="INSERT INTO msg... " />
-                <marker date="1479123826177" expanded="true" signature="3718:3778" ph="INSERT INTO msg... " />
-                <marker date="1479123826177" expanded="true" signature="3718:3811" ph="INSERT INTO msg... " />
-                <marker date="1479123826177" expanded="true" signature="3718:3823" ph="INSERT INTO msg... " />
-                <marker date="1479123826177" expanded="true" signature="5873:5909" ph="SELECT * FRO... student" />
-                <marker date="1479123826177" expanded="true" signature="6510:6575" ph="SELECT stu_i... request" />
-                <marker date="1479123826177" expanded="true" signature="7106:7191" ph="UPDATE reque... " />
-                <marker date="1479123826177" expanded="true" signature="7106:7211" ph="UPDATE reque... " />
-                <marker date="1479123826177" expanded="true" signature="7275:7382" ph="UPDATE reque... " />
-                <marker date="1479123826177" expanded="true" signature="7489:7573" ph="UPDATE reque... " />
-                <marker date="1479123826177" expanded="true" signature="7489:7592" ph="UPDATE reque... " />
-                <marker date="1479123826177" expanded="true" signature="7489:7594" ph="UPDATE reque... " />
-                <marker date="1479123826177" expanded="true" signature="7658:7765" ph="UPDATE reque... " />
-                <marker date="1479123826177" expanded="true" signature="8484:8569" ph="UPDATE reque... " />
-                <marker date="1479123826177" expanded="true" signature="8604:8688" ph="UPDATE reque... " />
-                <marker date="1479123826177" expanded="true" signature="8604:8689" ph="UPDATE reque... " />
-                <marker date="1479123826177" expanded="true" signature="9215:9257" ph="SELECT WHERE... " />
-                <marker date="1479123826177" expanded="true" signature="9292:9336" ph="SELECT final... teacher" />
-                <marker date="1479123826177" expanded="true" signature="10062:10113" ph="UPDATE teach... " />
-                <marker date="1479123826177" expanded="true" signature="10156:10219" ph="UPDATE teach... " />
-                <marker date="1479123826177" expanded="true" signature="10628:10654" ph="UPDATE reque... " />
-                <marker date="1479123826177" expanded="true" signature="10628:10683" ph="UPDATE reque... " />
-                <marker date="1479123826177" expanded="true" signature="11112:11167" ph="SELECT statu... request" />
-                <marker date="1479123826177" expanded="true" signature="11716:11821" ph="INSERT INTO request... " />
-                <marker date="1479123826177" expanded="true" signature="12367:12452" ph="UPDATE reque... " />
+                <element signature="method#solveReq#0;class#TeacherDAO#0" expanded="false" />
+                <element signature="method#hasNum#0;class#TeacherDAO#0" expanded="false" />
+                <element signature="method#updateNum#0;class#TeacherDAO#0" expanded="false" />
+                <element signature="method#cancelPreReq#0;class#TeacherDAO#0" expanded="false" />
+                <element signature="method#getReqStatus#0;class#TeacherDAO#0" expanded="false" />
+                <element signature="method#sendReq#0;class#TeacherDAO#0" expanded="false" />
+                <marker date="1479125951597" expanded="true" signature="591:629" ph="SELECT * FRO... teacher" />
+                <marker date="1479125951597" expanded="true" signature="1197:1228" ph="SELECT * FRO... student" />
+                <marker date="1479125951597" expanded="true" signature="2484:2693" ph="UPDATE teach... " />
+                <marker date="1479125951597" expanded="true" signature="3267:3304" ph="SELECT * FRO... student" />
+                <marker date="1479125951597" expanded="true" signature="3726:3785" ph="INSERT INTO msg... " />
+                <marker date="1479125951597" expanded="true" signature="3726:3786" ph="INSERT INTO msg... " />
+                <marker date="1479125951597" expanded="true" signature="3726:3819" ph="INSERT INTO msg... " />
+                <marker date="1479125951597" expanded="true" signature="3726:3831" ph="INSERT INTO msg... " />
+                <marker date="1479125951597" expanded="true" signature="4733:4769" ph="SELECT * FRO... student" />
+                <marker date="1479125951597" expanded="true" signature="5370:5435" ph="SELECT stu_i... request" />
+                <marker date="1479125951597" expanded="true" signature="5966:6051" ph="UPDATE reque... " />
+                <marker date="1479125951597" expanded="true" signature="5966:6071" ph="UPDATE reque... " />
+                <marker date="1479125951597" expanded="true" signature="6135:6242" ph="UPDATE reque... " />
+                <marker date="1479125951597" expanded="true" signature="6349:6433" ph="UPDATE reque... " />
+                <marker date="1479125951597" expanded="true" signature="6349:6452" ph="UPDATE reque... " />
+                <marker date="1479125951597" expanded="true" signature="6349:6454" ph="UPDATE reque... " />
+                <marker date="1479125951597" expanded="true" signature="6518:6625" ph="UPDATE reque... " />
+                <marker date="1479125951597" expanded="true" signature="7238:7280" ph="SELECT WHERE... " />
+                <marker date="1479125951597" expanded="true" signature="7315:7359" ph="SELECT final... teacher" />
+                <marker date="1479125951597" expanded="true" signature="8085:8136" ph="UPDATE teach... " />
+                <marker date="1479125951597" expanded="true" signature="8179:8242" ph="UPDATE teach... " />
+                <marker date="1479125951597" expanded="true" signature="8651:8677" ph="UPDATE reque... " />
+                <marker date="1479125951597" expanded="true" signature="8651:8706" ph="UPDATE reque... " />
+                <marker date="1479125951597" expanded="true" signature="9135:9190" ph="SELECT statu... request" />
+                <marker date="1479125951597" expanded="true" signature="9739:9844" ph="INSERT INTO request... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="teacher_header.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/teacher/teacher_header.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="65" column="52" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -159,8 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/logup.jsp" />
-        <option value="$PROJECT_DIR$/web/help.jsp" />
         <option value="$PROJECT_DIR$/web/teacher/msg.jsp" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/bean/ReqStat.java" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/bean/Req.java" />
@@ -192,7 +212,6 @@
         <option value="$PROJECT_DIR$/src/com/postgraduate/dao/Main.java" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/dao/DBConnection.java" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/entity/Teacher.java" />
-        <option value="$PROJECT_DIR$/web/teacher/teacher_inf.jsp" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/converter/TeacherConverter.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/521b12ca-b2b6-4a64-9600-bc1ef841b516/console.sql" />
         <option value="$PROJECT_DIR$/web/student/student_index.jsp" />
@@ -207,6 +226,9 @@
         <option value="$PROJECT_DIR$/web/teacher/pre_req_list.jsp" />
         <option value="$PROJECT_DIR$/web/teacher/error.jsp" />
         <option value="$PROJECT_DIR$/web/teacher/pre_success_list.jsp" />
+        <option value="$PROJECT_DIR$/web/teacher/teacher_inf.jsp" />
+        <option value="$PROJECT_DIR$/web/teacher/teacher_header.jsp" />
+        <option value="$PROJECT_DIR$/web/teacher/view_req.jsp" />
         <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java" />
@@ -284,7 +306,70 @@
         <subPane />
       </pane>
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postgraduate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postgraduate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postgraduate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postgraduate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postgraduate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postgraduate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postgraduate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="teacher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postgraduate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postgraduate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Scope">
         <subPane subId="Project Files" />
@@ -301,7 +386,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mysql-connector-java-5.1.18-bin.jar!/" />
-    <property name="SearchEverywhereHistoryKey" value="pre&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/pre_success_list.jsp&#10;te&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/TeacherDAO.java&#10;search&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/search_result.jsp&#10;teachera&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;/teach&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher&#10;a8acc2a7816e920dbe8c67737f30ff79&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/res/a8acc2a7816e920dbe8c67737f30ff79.css&#10;47addd80693c25fdb7f15e28bdcb4300&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/res/47addd80693c25fdb7f15e28bdcb4300.css" />
+    <property name="SearchEverywhereHistoryKey" value="teachera&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;pre&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/pre_success_list.jsp&#10;te&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/TeacherDAO.java&#10;search&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/search_result.jsp&#10;/teach&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher&#10;a8acc2a7816e920dbe8c67737f30ff79&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/res/a8acc2a7816e920dbe8c67737f30ff79.css&#10;47addd80693c25fdb7f15e28bdcb4300&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/res/47addd80693c25fdb7f15e28bdcb4300.css" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="JPA.DatabaseSchemaImportDialog" value="521b12ca-b2b6-4a64-9600-bc1ef841b516" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -915,7 +1000,7 @@
       <workItem from="1479029116975" duration="18381000" />
       <workItem from="1479052184023" duration="4750000" />
       <workItem from="1479085750573" duration="3107000" />
-      <workItem from="1479113168792" duration="7083000" />
+      <workItem from="1479113168792" duration="9236000" />
     </task>
     <task id="LOCAL-00001" summary="导师的后台架构和调用关系基本完成">
       <created>1478526089869</created>
@@ -928,7 +1013,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157548000" />
+    <option name="totallyTimeSpent" value="159701000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -940,7 +1025,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -958,10 +1043,10 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20877458" sideWeight="0.43934426" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18154311" sideWeight="0.5606557" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18154311" sideWeight="0.5606557" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20877458" sideWeight="0.43934426" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19742814" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.4737705" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.4737705" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39836067" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1028,7 +1113,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1037,14 +1122,6 @@
     <option name="FILTER_TARGETS" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/teacher/viewmsg.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/bean/Msg.java" />
     <entry file="file://$PROJECT_DIR$/src/com/postgraduate/entity/TeacherEntity.hbm.xml" />
     <entry file="dbDummy://dbtable:/155b480f/521b12ca-b2b6-4a64-9600-bc1ef841b516/postgraduate.student">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -1132,13 +1209,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/web/teacher/teacher_index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/ognl.jar!/ognl/OgnlRuntime.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -1237,13 +1307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/teacher_inf.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1351,10 +1414,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/search_result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/teacher/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="323">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/teacher_inf.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/teacher_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/teacher_header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="65" column="52" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/pre_success_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="34" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="64" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/view_req.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1364,81 +1475,80 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/search_result.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/pre_success_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="139">
+          <caret line="43" column="96" selection-start-line="43" selection-start-column="96" selection-end-line="43" selection-end-column="96" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="173" column="19" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="19" />
+        <state relative-caret-position="168">
+          <caret line="208" column="29" selection-start-line="208" selection-start-column="29" selection-end-line="208" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#updateInf#0;class#TeacherAction#0" expanded="false" />
+            <element signature="method#editInf#0;class#TeacherAction#0" expanded="false" />
+            <element signature="method#viewSearchResult#0;class#TeacherAction#0" expanded="false" />
+            <element signature="method#login#0;class#TeacherAction#0" expanded="false" />
+            <element signature="method#getIndex#0;class#TeacherAction#0" expanded="false" />
+            <element signature="method#viewPreSucList#0;class#TeacherAction#0" expanded="false" />
+            <element signature="method#sendPreReq#0;class#TeacherAction#0" expanded="false" />
+            <element signature="method#sendFinalReq#0;class#TeacherAction#0" expanded="false" />
+            <element signature="method#sendMsg#0;class#TeacherAction#0" expanded="false" />
+            <element signature="method#viewStudentDetail#0;class#TeacherAction#0" expanded="false" />
+            <element signature="method#viewPreReqList#0;class#TeacherAction#0" expanded="false" />
+            <element signature="method#agreePreReq#0;class#TeacherAction#0" expanded="false" />
+            <element signature="method#refusePreReq#0;class#TeacherAction#0" expanded="false" />
+            <element signature="method#cancelPreReq#0;class#TeacherAction#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="163" selection-end-column="7" />
+        <state relative-caret-position="196">
+          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
           <folding>
             <element signature="method#getTeacherInf#0;class#TeacherDAO#0" expanded="false" />
             <element signature="method#searchStudents#0;class#TeacherDAO#0" expanded="false" />
-            <element signature="method#getMsgs#0;class#TeacherDAO#0" expanded="false" />
             <element signature="method#updateTeachInf#0;class#TeacherDAO#0" expanded="false" />
             <element signature="method#getStudent#0;class#TeacherDAO#0" expanded="false" />
             <element signature="method#sendMsg#0;class#TeacherDAO#0" expanded="false" />
             <element signature="method#viewPreList#0;class#TeacherDAO#0" expanded="false" />
             <element signature="method#viewPreSucList#0;class#TeacherDAO#0" expanded="false" />
             <element signature="method#viewPreReqList#0;class#TeacherDAO#0" expanded="false" />
-            <marker date="1479123826177" expanded="true" signature="591:629" ph="SELECT * FRO... teacher" />
-            <marker date="1479123826177" expanded="true" signature="1197:1228" ph="SELECT * FRO... student" />
-            <marker date="1479123826177" expanded="true" signature="2476:2685" ph="UPDATE teach... " />
-            <marker date="1479123826177" expanded="true" signature="3259:3296" ph="SELECT * FRO... student" />
-            <marker date="1479123826177" expanded="true" signature="3718:3777" ph="INSERT INTO msg... " />
-            <marker date="1479123826177" expanded="true" signature="3718:3778" ph="INSERT INTO msg... " />
-            <marker date="1479123826177" expanded="true" signature="3718:3811" ph="INSERT INTO msg... " />
-            <marker date="1479123826177" expanded="true" signature="3718:3823" ph="INSERT INTO msg... " />
-            <marker date="1479123826177" expanded="true" signature="5873:5909" ph="SELECT * FRO... student" />
-            <marker date="1479123826177" expanded="true" signature="6510:6575" ph="SELECT stu_i... request" />
-            <marker date="1479123826177" expanded="true" signature="7106:7191" ph="UPDATE reque... " />
-            <marker date="1479123826177" expanded="true" signature="7106:7211" ph="UPDATE reque... " />
-            <marker date="1479123826177" expanded="true" signature="7275:7382" ph="UPDATE reque... " />
-            <marker date="1479123826177" expanded="true" signature="7489:7573" ph="UPDATE reque... " />
-            <marker date="1479123826177" expanded="true" signature="7489:7592" ph="UPDATE reque... " />
-            <marker date="1479123826177" expanded="true" signature="7489:7594" ph="UPDATE reque... " />
-            <marker date="1479123826177" expanded="true" signature="7658:7765" ph="UPDATE reque... " />
-            <marker date="1479123826177" expanded="true" signature="8484:8569" ph="UPDATE reque... " />
-            <marker date="1479123826177" expanded="true" signature="8604:8688" ph="UPDATE reque... " />
-            <marker date="1479123826177" expanded="true" signature="8604:8689" ph="UPDATE reque... " />
-            <marker date="1479123826177" expanded="true" signature="9215:9257" ph="SELECT WHERE... " />
-            <marker date="1479123826177" expanded="true" signature="9292:9336" ph="SELECT final... teacher" />
-            <marker date="1479123826177" expanded="true" signature="10062:10113" ph="UPDATE teach... " />
-            <marker date="1479123826177" expanded="true" signature="10156:10219" ph="UPDATE teach... " />
-            <marker date="1479123826177" expanded="true" signature="10628:10654" ph="UPDATE reque... " />
-            <marker date="1479123826177" expanded="true" signature="10628:10683" ph="UPDATE reque... " />
-            <marker date="1479123826177" expanded="true" signature="11112:11167" ph="SELECT statu... request" />
-            <marker date="1479123826177" expanded="true" signature="11716:11821" ph="INSERT INTO request... " />
-            <marker date="1479123826177" expanded="true" signature="12367:12452" ph="UPDATE reque... " />
+            <element signature="method#solveReq#0;class#TeacherDAO#0" expanded="false" />
+            <element signature="method#hasNum#0;class#TeacherDAO#0" expanded="false" />
+            <element signature="method#updateNum#0;class#TeacherDAO#0" expanded="false" />
+            <element signature="method#cancelPreReq#0;class#TeacherDAO#0" expanded="false" />
+            <element signature="method#getReqStatus#0;class#TeacherDAO#0" expanded="false" />
+            <element signature="method#sendReq#0;class#TeacherDAO#0" expanded="false" />
+            <marker date="1479125951597" expanded="true" signature="591:629" ph="SELECT * FRO... teacher" />
+            <marker date="1479125951597" expanded="true" signature="1197:1228" ph="SELECT * FRO... student" />
+            <marker date="1479125951597" expanded="true" signature="2484:2693" ph="UPDATE teach... " />
+            <marker date="1479125951597" expanded="true" signature="3267:3304" ph="SELECT * FRO... student" />
+            <marker date="1479125951597" expanded="true" signature="3726:3785" ph="INSERT INTO msg... " />
+            <marker date="1479125951597" expanded="true" signature="3726:3786" ph="INSERT INTO msg... " />
+            <marker date="1479125951597" expanded="true" signature="3726:3819" ph="INSERT INTO msg... " />
+            <marker date="1479125951597" expanded="true" signature="3726:3831" ph="INSERT INTO msg... " />
+            <marker date="1479125951597" expanded="true" signature="4733:4769" ph="SELECT * FRO... student" />
+            <marker date="1479125951597" expanded="true" signature="5370:5435" ph="SELECT stu_i... request" />
+            <marker date="1479125951597" expanded="true" signature="5966:6051" ph="UPDATE reque... " />
+            <marker date="1479125951597" expanded="true" signature="5966:6071" ph="UPDATE reque... " />
+            <marker date="1479125951597" expanded="true" signature="6135:6242" ph="UPDATE reque... " />
+            <marker date="1479125951597" expanded="true" signature="6349:6433" ph="UPDATE reque... " />
+            <marker date="1479125951597" expanded="true" signature="6349:6452" ph="UPDATE reque... " />
+            <marker date="1479125951597" expanded="true" signature="6349:6454" ph="UPDATE reque... " />
+            <marker date="1479125951597" expanded="true" signature="6518:6625" ph="UPDATE reque... " />
+            <marker date="1479125951597" expanded="true" signature="7238:7280" ph="SELECT WHERE... " />
+            <marker date="1479125951597" expanded="true" signature="7315:7359" ph="SELECT final... teacher" />
+            <marker date="1479125951597" expanded="true" signature="8085:8136" ph="UPDATE teach... " />
+            <marker date="1479125951597" expanded="true" signature="8179:8242" ph="UPDATE teach... " />
+            <marker date="1479125951597" expanded="true" signature="8651:8677" ph="UPDATE reque... " />
+            <marker date="1479125951597" expanded="true" signature="8651:8706" ph="UPDATE reque... " />
+            <marker date="1479125951597" expanded="true" signature="9135:9190" ph="SELECT statu... request" />
+            <marker date="1479125951597" expanded="true" signature="9739:9844" ph="INSERT INTO request... " />
           </folding>
         </state>
       </provider>

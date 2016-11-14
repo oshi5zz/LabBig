@@ -79,9 +79,6 @@
                 <input type="text" name="teacher.finalNum" value="<s:property value="teacher.finalNum" /> " />
                 <br />
 
-
-
-
                 <span>邮箱：</span>
                 <input name="teacher.mail" value="<s:property value="teacher.mail" /> " />
                 <br />
