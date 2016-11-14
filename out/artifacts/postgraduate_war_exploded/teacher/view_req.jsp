@@ -37,19 +37,27 @@
     <%@include file="teacher_header.jsp" %>
 
     <div id="main" class="bit_main_content">
-        <s:iterator value="students">
+        <s:iterator value="reqs">
             <td>
                 <tr>
-                    <span><s:property value="name"/>(<s:property value="school" />) </span>
+                    <span><s:property value="student.name"/>(<s:property value="student.school" />) </span>
                 </tr>
+                &nbsp;&nbsp;
                 <tr>
                     <span>
-                        <a href="/teacher/cancelPreReq.action?stuid=<s:property value="stuId" />">取消预录取</a>
+                        状态：<s:property value="status" />
                     </span>
                 </tr>
+                &nbsp;&nbsp;
                 <tr>
                     <span>
-                        <a href="/teacher/sendFinalReq.action?stuid=<s:property value="stuId" />">正式录取</a>
+                        <s:property value="last_date" />
+                    </span>
+                </tr>
+                &nbsp;&nbsp;
+                <tr>
+                    <span>
+                        <a href="/teacher/sendFinalReq.action?stuid=<s:property value="stuId" />">详情</a>
                     </span>
                 </tr>
             </td>

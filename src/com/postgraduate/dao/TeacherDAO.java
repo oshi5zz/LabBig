@@ -4,6 +4,7 @@ package com.postgraduate.dao;
 import com.postgraduate.converter.StudentConverter;
 import com.postgraduate.converter.TeacherConverter;
 import com.postgraduate.entity.Msg;
+import com.postgraduate.entity.Request;
 import com.postgraduate.entity.Student;
 import com.postgraduate.entity.Teacher;
 import java.sql.*;
@@ -69,16 +70,41 @@ public class TeacherDAO {
         return students;
     }
 
-    public List<Msg> getMsgs(int id) {
+    public List<Msg> getMsgs(int teaId) {
         List<Msg> msgs = new ArrayList<>();
-
+        Connection con = dbConnection.getConnection();
+        List<Student> students = new ArrayList<>();
+        String sql = "SELECT * FROM msg WHERE tea_id=? ORDER BY last_date DESC ";
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1,teaId);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                Msg m = new Msg();
+                m.setLastDate(rs.getString("last_date"));
+                m.setMain(rs.getString("main"));
+                m.setRead(rs.getInt("read"));
+                m.setAbs(m.getMain().length() > 10 ? m.getMain().substring(0,10):m.getMain());
+                m.setFlag(rs.getInt("flag"));
+                int stu_id = rs.getInt("stu_id");
+                sql = "SELECT * FROM student WHERE stu_id="+stu_id;
+                ResultSet resultSet = con.createStatement().executeQuery(sql);
+                if (resultSet.next()) {
+                    m.setStudent(StudentConverter.getStudent(resultSet));
+                }
+                msgs.add(m);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            msgs = null;
+        }
         return msgs;
     }
 
     public boolean updateTeachInf(Teacher teacher) {
         String sql = "UPDATE teacher SET name=?, age=?,professional_title=?," +
                 "province=?,school=?,major=?,research_area=?,inf=?,mail=?,sex=?," +
-                "pre_num=?,final_num=?,requirement=? WHERE tea_id=?";
+                "pre_num=?,final_num=?,requirement=? WHERE tea_id="+teacher.getTeaId();
         con = dbConnection.getConnection();
         try {
             PreparedStatement ps = con.prepareStatement(sql);
@@ -127,7 +153,7 @@ public class TeacherDAO {
         }
     }
 
-    private List<Student> viewPreList(String sql ,int teaId) {
+    private List<Student> viewReqList(String sql , int teaId) {
         Connection con = dbConnection.getConnection();
         List<Student> students = new ArrayList<>();
         try {
@@ -159,13 +185,13 @@ public class TeacherDAO {
 
     public List<Student> viewPreSucList(int teaId) {
         String sql = "SELECT stu_id FROM request WHERE tea_id=?  AND request.status = 2";
-        return viewPreList(sql,teaId);
+        return viewReqList(sql,teaId);
     }
 
     public List<Student> viewPreReqList(int teaId) {
         String sql = "SELECT stu_id FROM request WHERE tea_id=?  AND request.status = 0";
 
-        return viewPreList(sql,teaId);
+        return viewReqList(sql,teaId);
     }
 
     public boolean solveReq(boolean agree, boolean pre, int teaId, int stuId) {
@@ -307,4 +333,36 @@ public class TeacherDAO {
         }
     }
 
+    public List<Student> viewFinalSucList(int teaId) {
+        String sql = "SELECT stu_id FROM request WHERE tea_id=?  AND request.status = 6";
+        return viewReqList(sql,teaId);
+    }
+
+    public List<Request> getReqs(int teaId) {
+        List<Request> reqs = new ArrayList<>();
+        Connection con = dbConnection.getConnection();
+        String sql = "SELECT * FROM request WHERE tea_id=? ORDER BY last_date DESC ";
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1,teaId);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                Request request = new Request();
+                request.setLastDate(rs.getString("last_date"));
+                request.setFlag(rs.getInt("flag"));
+                request.setStatus(rs.getInt("status"));
+                int stu_id = rs.getInt("stu_id");
+                sql = "SELECT * FROM student WHERE stu_id="+stu_id;
+                ResultSet resultSet = con.createStatement().executeQuery(sql);
+                if (resultSet.next()) {
+                    request.setStudent(StudentConverter.getStudent(resultSet));
+                }
+                reqs.add(request);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            reqs = null;
+        }
+        return reqs;
+    }
 }

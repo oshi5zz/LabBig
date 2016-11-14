@@ -52,6 +52,7 @@ public class TeacherConverter {
             ps.setString(11, teacher.getPreNum());
             ps.setString(12, teacher.getFinalNum());
             ps.setString(13, teacher.getRequirement());
+//            ps.setInt(14, teacher.getTeaId());
             return true;
         } catch (SQLException e) {
             e.printStackTrace();

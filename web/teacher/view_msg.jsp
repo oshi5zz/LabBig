@@ -11,7 +11,6 @@
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 <%@ taglib prefix="s" uri="/struts-tags"%>
-<%@ page import="com.postgraduate.bean.*" %>
 
 <!DOCTYPE html>
 <html lang="zh-CN"><!--<![endif]-->
@@ -38,39 +37,28 @@
 
     <div id="main" class="bit_main_content">
         <div class="new-msg">
-            <s:iterator value="newMsgs">
+            <s:iterator value="msgs">
                 <tr>
                     <td>
-                        <span><s:property value="stu_name"/>(<s:property value="school" /> )</span>
+                        <span><s:property value="student.name"/>(<s:property value="student.school" /> )</span>
                     </td>
                     &nbsp;&nbsp;
                     <td>
                         <span><s:property value="abs" /> </span>
                     </td>
+                    &nbsp;&nbsp;
                     <td>
-                        <span><a href="#">详情</a> </span>
-                    </td>
-                </tr>
-            </s:iterator>
-        </div>
-
-        <div class="old-msg">
-            <s:iterator value="oldMsgs">
-                <tr>
-                    <td>
-                        <span><s:property value="stu_name"/>(<s:property value="school" /> )</span>
+                        <span><s:property value="lastDate" /> </span>
                     </td>
                     &nbsp;&nbsp;
                     <td>
-                        <span><s:property value="abs" /> </span>
-                    </td>
-                    <td>
                         <span><a href="#">详情</a> </span>
                     </td>
                 </tr>
+                <br />
             </s:iterator>
-
         </div>
+
 
     </div><!-- #main -->
 

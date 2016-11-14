@@ -1,7 +1,5 @@
 package com.postgraduate.entity;
 
-import java.sql.Timestamp;
-
 /**
  * Created by zhao on 2016/11/10.
  */
@@ -13,8 +11,8 @@ public class Request {
     private int status;
     private int flag;
     private String lastDate;
-    private Student studentByStuId;
-    private Teacher teacherByTeaId;
+    private Student student;
+    private Teacher teacher;
 
     public int getReqId() {
         return reqId;
@@ -102,19 +100,19 @@ public class Request {
         return result;
     }
 
-    public Student getStudentByStuId() {
-        return studentByStuId;
+    public Student getStudent() {
+        return student;
     }
 
-    public void setStudentByStuId(Student studentByStuId) {
-        this.studentByStuId = studentByStuId;
+    public void setStudent(Student studentByStuId) {
+        this.student = studentByStuId;
     }
 
-    public Teacher getTeacherByTeaId() {
-        return teacherByTeaId;
+    public Teacher getTeacher() {
+        return teacher;
     }
 
-    public void setTeacherByTeaId(Teacher teacherByTeaId) {
-        this.teacherByTeaId = teacherByTeaId;
+    public void setTeacher(Teacher teacherByTeaId) {
+        this.teacher = teacherByTeaId;
     }
 }

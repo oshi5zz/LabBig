@@ -48,7 +48,7 @@
                 <br />
 
                 <span>年龄：</span>
-                <input type="number" name="teacher.age" value="<s:property value="teacher.age" />" />
+                <input name="teacher.age" value="<s:property value="teacher.age" />" />
                 <br />
 
                 <span>职称：</span>

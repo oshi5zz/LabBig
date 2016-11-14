@@ -15,21 +15,18 @@ import java.util.List;
  */
 public class TeacherAction extends ActionSupport {
     private TeacherDAO teacherDAO = new TeacherDAO();
-
+    private String status = new String();
     //
     private Teacher teacher = new Teacher();
-
     private Student student = new Student();
-    //
     private List<Student> students = new ArrayList<>();
     private List<Msg> msgs = new ArrayList<>();
     private List<Request> reqs = new ArrayList<>();
+    private Msg msg = new Msg();
+    private String warning = new String("出错了！");
+    private String stuid = new String();
 
     private static final String WARNING = "warning";
-
-    private Msg msg = new Msg();
-
-    private String status = new String();
 
     public Msg getMsg() {
         return msg;
@@ -38,8 +35,6 @@ public class TeacherAction extends ActionSupport {
     public void setMsg(Msg msg) {
         this.msg = msg;
     }
-
-    private String warning = new String();
 
     public String getWarning() {
         return warning;
@@ -52,8 +47,6 @@ public class TeacherAction extends ActionSupport {
     public List<Msg> getMsgs() {
         return msgs;
     }
-
-    private String stuid = new String();
 
     public String getStuid() {
         return stuid;
@@ -319,7 +312,16 @@ public class TeacherAction extends ActionSupport {
 
     public String viewAllReq() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        reqs = teacherDAO.getReqs(teacher.getTeaId());
+        if (reqs != null)
+            return "success";
+        else
+            return "error";
+    }
 
-        return "success";
+    public String viewFinalSucList() {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        students = teacherDAO.viewFinalSucList(teacher.getTeaId());
+        return SUCCESS;
     }
 }

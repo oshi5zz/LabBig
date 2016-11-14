@@ -13,12 +13,12 @@
         <property name="lastDate" column="last_date"/>
         <property name="read" column="read"/>
         <property name="flag" column="flag"/>
-        <many-to-one name="studentByStuId"
+        <many-to-one name="getStudent"
                      insert="false" update="false"
                      class="com.postgraduate.entity.Student">
             <column name="stu_id"/>
         </many-to-one>
-        <many-to-one name="teacherByTeaId"
+        <many-to-one name="getTeacher"
                      insert="false" update="false"
                      class="com.postgraduate.entity.Teacher">
             <column name="tea_id"/>
