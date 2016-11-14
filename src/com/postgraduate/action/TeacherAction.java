@@ -24,6 +24,8 @@ public class TeacherAction extends ActionSupport {
     private List<Msg> msgs = new ArrayList<>();
     private List<Request> reqs = new ArrayList<>();
 
+    private static final String WARNING = "warning";
+
     private Msg msg = new Msg();
 
     public Msg getMsg() {
@@ -109,10 +111,18 @@ public class TeacherAction extends ActionSupport {
 
     public String viewSearchResult() {
         students = teacherDAO.searchStudents(student);
-        if (students != null)
-            return SUCCESS;
-        else
+        if (students != null) {
+            if (!students.isEmpty())
+                return SUCCESS;
+            else {
+                warning = "未找到符合条件的学生";
+                return ERROR;
+            }
+        }
+        else {
+            warning = "查询错误！";
             return ERROR;
+        }
     }
 
     public String login() {
@@ -138,21 +148,59 @@ public class TeacherAction extends ActionSupport {
         } catch (Exception e) {
             return ERROR;
         }
-        if (!teacherDAO.hasPreReq(teacher.getTeaId(),stu_id))
-            if (teacherDAO.sendPreReq(teacher.getTeaId(), stu_id)) {
-                warning = "预录取请求已发送！";
-                return SUCCESS;
-            }
-            else
-                return ERROR;
-        else {
-            warning = "已给该生发送过预请求";
-            return "exist";
+
+        int status = teacherDAO.getReqStatus(teacher.getTeaId(), stu_id);
+        switch (status) {
+            //未曾建立过联系
+            case -1:
+                if (teacherDAO.sendReq(true, teacher.getTeaId(), stu_id)) {
+                    warning = "预录取请求已发送！";
+                    return WARNING;
+                } else
+                    return ERROR;
+            case 0:
+                warning = "已经发送预请求，对方还未审查！";
+                return WARNING;
+            case 1:
+                warning = "对方已阅读您的预请求，请耐心等待回应！";
+                return WARNING;
+            case 2:
+                warning = "你们已经通过了预请求关系！";
+                return WARNING;
+            case 3:
+                warning = "你们曾经建立预请求关系失败，无法再发送请求！";
+                return WARNING;
+            case 4:
+            case 5:
+                warning = "你们已经建立了预请求关系，并有了最终关系请求！";
+                return WARNING;
+            case 6:
+                warning = "恭喜！你们一斤建立了最终的录取关系！";
+                return WARNING;
+            case 7:
+                warning = "你们最终录取请求未通过，无法再发送请求！";
+                return WARNING;
+            default:
+                warning = "未知状态！";
+                return WARNING;
         }
     }
 
     public String sendFinalReq() {
-        return SUCCESS;
+        int stu_id = 1;
+        teacher.setTeaId(1);
+        try {
+            stu_id = Integer.parseInt(stuid);
+        } catch (Exception e) {
+            return ERROR;
+        }
+
+        if (teacherDAO.sendReq(false,teacher.getTeaId(), stu_id)) {
+            warning = "最终请求已发送！";
+            return SUCCESS;
+        }
+        else
+            return ERROR;
     }
 
     public String viewMsg() {
@@ -226,6 +274,24 @@ public class TeacherAction extends ActionSupport {
             int id = Integer.parseInt(stuid);
             if (teacherDAO.solveReq(false,true,teacher.getTeaId(), id)) {
                 warning = "已拒绝预请求";
+                return SUCCESS;
+            }
+            else {
+                warning = "未知错误！";
+                return ERROR;
+            }
+        } catch (Exception e) {
+            warning = "链接错误，学生id不是数字！";
+            return ERROR;
+        }
+    }
+
+    public String cancelPreReq() {
+        teacher.setTeaId(1);
+        try {
+            int id = Integer.parseInt(stuid);
+            if (teacherDAO.cancelPreReq(teacher.getTeaId(), id)) {
+                warning = "已取消预请求通过关系";
                 return SUCCESS;
             }
             else {

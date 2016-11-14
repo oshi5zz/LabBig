@@ -44,12 +44,12 @@
                 </tr>
                 <tr>
                     <span>
-                        <a href="#">取消预录取</a>
+                        <a href="/teacher/cancelPreReq.action?stuid=<s:property value="stuId" />">取消预录取</a>
                     </span>
                 </tr>
                 <tr>
                     <span>
-                        <a href="#">正式录取</a>
+                        <a href="/teacher/sendFinalReq.action?stuid=<s:property value="stuId" />">正式录取</a>
                     </span>
                 </tr>
             </td>

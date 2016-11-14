@@ -1,19 +1,14 @@
 package com.postgraduate.dao;
 
 
-import com.postgraduate.converter.ReqConverter;
 import com.postgraduate.converter.StudentConverter;
 import com.postgraduate.converter.TeacherConverter;
 import com.postgraduate.entity.Msg;
-import com.postgraduate.entity.Request;
 import com.postgraduate.entity.Student;
 import com.postgraduate.entity.Teacher;
-import org.apache.commons.lang3.ObjectUtils;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 /**
  * Created by zhao on 2016/11/8.
@@ -132,7 +127,7 @@ public class TeacherDAO {
         }
     }
 
-    public boolean hasPreReq(int teaId, int stuId) {
+/*    public boolean hasPreReq(int teaId, int stuId) {
         String sql = "SELECT * FROM request WHERE stu_id=? AND tea_id =?";
         Connection con = dbConnection.getConnection();
 
@@ -150,9 +145,9 @@ public class TeacherDAO {
         }
 
         return false;
-    }
+    }*/
 
-    public boolean sendPreReq(int teaId, int stuId) {
+/*    public boolean sendPreReq(int teaId, int stuId) {
         String sql = "INSERT INTO request(stu_id, tea_id,  status, flag, last_date)" +
                 " VALUES (?,?,0,1,NOW())";
         Connection con = dbConnection.getConnection();
@@ -166,7 +161,7 @@ public class TeacherDAO {
             e.printStackTrace();
             return false;
         }
-    }
+    }*/
 
     private List<Student> viewPreList(String sql ,int teaId) {
         Connection con = dbConnection.getConnection();
@@ -322,6 +317,57 @@ public class TeacherDAO {
             ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+        }
+    }
+
+    public boolean cancelPreReq(int teaId, int stuId) {
+        String sql = "UPDATE request SET status=3 WHERE stu_id=? AND tea_id=?";
+        Connection con = dbConnection.getConnection();
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1, stuId);
+            ps.setInt(2, teaId);
+            return ps.executeUpdate() == 1;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public int getReqStatus(int teaId, int stuId) {
+        String sql = "SELECT status FROM request WHERE stu_id=? AND tea_id =? ";
+        Connection con = dbConnection.getConnection();
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1,stuId);
+            ps.setInt(2,teaId);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next())
+                return rs.getInt("status");
+            else
+                return -1;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return -1;
+    }
+
+    public boolean sendReq(boolean pre,int teaId, int stuId) {
+        String sql = "INSERT INTO request(stu_id, tea_id,  status, flag, last_date)" +
+                " VALUES (?,?,?,1,NOW())";
+        Connection con = dbConnection.getConnection();
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1,stuId);
+            ps.setInt(2,teaId);
+            if (pre) {
+                ps.setInt(3, 0);
+            } else
+                ps.setInt(3, 4);
+            return ps.executeUpdate() == 1;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
         }
     }
 

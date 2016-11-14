@@ -36,18 +36,25 @@
             <result name="error">/teacher/error.jsp</result>
         </action>
 
+        <action name="cancelPreReq" class="com.postgraduate.action.TeacherAction" method="cancelPreReq">
+            <result name="success">/teacher/waring.jsp</result>
+            <result name="error">/teacher/error.jsp</result>
+        </action>
+
         <action name="viewTeacherMsg" class="com.postgraduate.action.TeacherAction" method="viewMsg" >
             <result name="success" >/teacher/viewmsg.jsp</result>
         </action>
 
         <action name="sendPreReq" class="com.postgraduate.action.TeacherAction" method="sendPreReq">
+            <result name="warning">/teacher/waring.jsp</result>
             <result name="success">/teacher/waring.jsp</result>
-            <result name="exist">/teacher/waring.jsp</result>
             <result name="error">/teacher/error.jsp</result>
         </action>
 
         <action name="sendFinalReq" class="com.postgraduate.action.TeacherAction" method="sendFinalReq" >
-            <result name="success">/teacher/pre_success_list.jsp</result>
+            <result name="success">/teacher/waring.jsp</result>
+            <result name="error">/teacher/error.jsp</result>
+            <result name="warning">/teacher/waring.jsp</result>
         </action>
 
         <action name="viewPreSucList" class="com.postgraduate.action.TeacherAction" method="viewPreSucList">
