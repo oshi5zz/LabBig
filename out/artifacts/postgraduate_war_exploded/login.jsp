@@ -35,43 +35,38 @@
 
     <%@include file="header.jsp" %>
 
-    <div id="main" class="bit_main_content" style="width: 60%;margin-top: 20px;margin-left: 10%">
+    <div id="main" class="bit_main_content" style="width: 40%;margin-top: 20px;margin-left: 30%" align="center">
 
         <div class="panel panel-success ">
-            <form action="login.action" method="post">
-                <div class="panel-heading">
-                    <h3 class="panel-title">用户登录</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="form-group">
-                        <label for="input-id" class="col-sm-2 control-label">学工号</label>
-                        <div class="col-sm-8">
-                            <input type="text" id="input-id"  class="form-control" name="user.userId" placeholder="学工号">
-                        </div>
-                    </div>
-                    <br />
-
-                    <div class="form-group">
-                        <label for="input-pass" class="col-sm-2 control-label">密码</label>
-                        <div class="col-sm-8">
-                            <input type="password" id="input-pass" class="form-control" name="user.password" placeholder="密码">
-                        </div>
+            <div class="panel panel-heading " align="center">
+                <h3 class="panel-title"><span >用户登录</span></h3>
+            </div>
+            <div class="panel-body">
+                <form action="login.action" method="post">
+                    <div class="form-group ">
+                        <label for="input-id" class="control-label">学工号:</label>
+                        <input type="text" id="input-id"  name="user.userId" placeholder="学工号">
                     </div>
 
-                    <br />
-                    <div class="form-group">
-                        <label class="radio-inline col-md">
+                    <div class="form-group ">
+                        <label for="input-pass" class="control-label">密码:</label>
+                        <input type="password" id="input-pass"  name="user.password" placeholder="密码">
+                    </div>
+
+                    <div class="form-group" align="center">
+                        <label class="radio-inline ">
                             <input type="radio" name="type" id="radio-student" value="student"> 学生
                         </label>
-                        <label class="radio-inline col-md">
+                        <label class="radio-inline ">
                             <input type="radio" name="type" id="radio-teacher" value="teacher"> 教师
                         </label>
                     </div>
-                </div>
-                <div class="panel-footer">
-                    <input type="submit" id="input-login" class="btn btn-primary" value="登录">
-                </div>
-            </form>
+
+                    <div class="panel-footer" align="center">
+                        <input type="submit" id="input-login" class="btn btn-primary" value="登录">
+                    </div>
+                </form>
+            </div>
         </div>
 
     </div><!-- #main -->

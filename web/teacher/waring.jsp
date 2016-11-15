@@ -25,6 +25,9 @@
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
     <meta name="description" content="考研师生互选">
+
+    <%@include file="/bootstrap.jsp"%>
+
 </head>
 
 

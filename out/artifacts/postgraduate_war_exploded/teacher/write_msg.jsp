@@ -25,6 +25,9 @@
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
     <meta name="description" content="考研师生互选">
+
+    <%@include file="/bootstrap.jsp"%>
+
 </head>
 
 
@@ -36,11 +39,19 @@
     <%@include file="teacher_header.jsp" %>
 
     <div id="main" class="bit_main_content">
-        <form action="/teacher/sendMsg.action " method="post">
-            <input type="hidden" name="msg.stuId" value="">
-            <textarea name="msg.main"></textarea>
-            <input type="submit" value="发送">
-        </form>
+        <div style="margin-left: 10%;width: 80%;margin-top: 20px;">
+            <form role="form" action="/teacher/sendMsg.action " method="post">
+                <input type="hidden" name="msg.stuId" value="">
+                <textarea name="msg.main" class="form-control " rows="4"></textarea>
+                <br/>
+                <div align="center">
+                    <button type="submit" class="btn btn-lg btn-primary">发送</button>
+                </div>
+            </form>
+
+        </div>
+
+
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>

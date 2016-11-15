@@ -25,6 +25,9 @@
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
     <meta name="description" content="考研师生互选">
+
+    <%@include file="/bootstrap.jsp"%>
+
 </head>
 
 
@@ -35,30 +38,48 @@
 
     <%@include file="teacher_header.jsp" %>
 
-    <div id="main" class="bit_main_content">
-        <s:iterator value="students">
-            <tr>
-                <td>
-                    <span><s:property value="name" /></span>
-                </td>
-                <td>
-                    <span>(<s:property value="school" />)</span>
-                </td>
+    <div id="main"  style="margin-left: 5%;margin-right: 5%">
+        <table class="table table-striped">
+            <thead>
 
-                <td>
-                    <span><a href="/teacher/viewStudentDetail.action?stuid=<s:property value="stuId" />">查看详情</a></span>
-                </td>
+                <tr>
+                    <td>姓名</td>
+                    <td>学校</td>
+                    <td>详情</td>
+                    <td>发送预请求</td>
+                    <td>发送消息</td>
+                </tr>
+            </thead>
+            <tbody>
 
-                <td>
-                    <span><a href="/teacher/writeMsg.action?stuid=<s:property value="stuId" />">发送消息</a></span>
-                </td>
+            <s:iterator value="students">
+                <tr>
+                    <td>
+                        <span><s:property value="name" /></span>
+                    </td>
+                    <td>
+                        <span>(<s:property value="school" />)</span>
+                    </td>
 
-                <td>
-                    <span><a href="/teacher/sendPreReq.action?stuid=<s:property value="stuId" />">发送预请求</a></span>
-                </td>
-            </tr>
-            <br />
-        </s:iterator>
+                    <td>
+                        <span><a href="/teacher/viewStudentDetail.action?stuid=<s:property value="stuId" />">查看详情</a></span>
+                    </td>
+
+                    <td>
+                        <span><a href="/teacher/writeMsg.action?stuid=<s:property value="stuId" />">发送消息</a></span>
+                    </td>
+
+                    <td>
+                        <span><a href="/teacher/sendPreReq.action?stuid=<s:property value="stuId" />">发送预请求</a></span>
+                    </td>
+                </tr>
+                <br />
+            </s:iterator>
+            </tbody>
+
+        </table>
+
+
 <%--<s:debug></s:debug>--%>
     </div><!-- #main -->
 

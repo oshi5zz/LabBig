@@ -87,6 +87,7 @@ public class TeacherAction extends ActionSupport {
     public String updateInf() {
         Teacher tmp = (Teacher) ActionContext.getContext().getSession().get("teacher");
         teacher.setTeaId(tmp.getTeaId());
+        ActionContext.getContext().getSession().put("teacher", teacher);
         if(teacherDAO.updateTeachInf(teacher))
             return SUCCESS;
         else

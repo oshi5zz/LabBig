@@ -25,6 +25,9 @@
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
     <meta name="description" content="考研师生互选">
+
+    <%@include file="/bootstrap.jsp"%>
+
 </head>
 
 
@@ -36,50 +39,67 @@
     <%@include file="teacher_header.jsp" %>
 
     <div id="main" class="bit_main_content">
-        <hr />
-        <div class="student-inf">
-            <form class="student-inf-form" >
-                <span>姓名：</span>
-                <input name="student.name" value="<s:property value="student.name" /> " />
-                <br />
+        <div class="panel panel-default " style="width:80%; margin-left:10%;margin-top:20px;">
+            <div class="panel panel-heading " align="center">
+                <h3 class="panel-title"><span ><s:property value="student.name" />个人信息</span></h3>
+            </div>
+            <div class="panel panel-body">
+                <form role="form" readonly="">
+                    <div class="form-group col-lg-6">
+                        <label for="student-name"><span>姓名：</span></label>
+                        <input name="student.name" type="text" id="student-name" value="<s:property value="student.name" />" readonly/>
+                    </div>
 
-                <span>性别：</span>
-                <input name="student.sex" value="<s:property value="student.sex" /> " />
-                <br />
+                    <div class="form-group col-lg-5">
+                        <label for="student-sex"><span>性别：</span></label>
+                        <input name="student.sex" type="text" id="student-sex" value="<s:property value="student.sex" />" />
 
-                <span>年龄：</span>
-                <input name="student.age" value="<s:property value="student.age" /> " />
-                <br />
+                        <!-- <input name="student.sex" type="text" id="student-sex" value="<s:property value="student.sex" />" /> -->
+                    </div>
 
-                <span>省份：</span>
-                <input name="student.province" value="<s:property value="student.province" /> " />
-                <br />
+                    <div class="form-group col-lg-6">
+                        <label for="student-age"><span>年龄：</span></label>
+                        <input name="student.age" type="number" id="student-age" value="<s:property value="student.age" />" />
+                    </div>
 
-                <span>学校：</span>
-                <input name="student.school" value="<s:property value="student.school" /> " />
-                <br />
+                    <div class="form-group col-lg-6">
+                        <label for="student-province"><span>省份：</span></label>
+                        <input name="student.province" type="text" id="student-province" value="<s:property value="student.province" />" />
+                    </div>
 
-                <span>专业：</span>
-                <input name="student.major" value="<s:property value="student.major" /> " />
-                <br />
+                    <div class="form-group col-lg-6">
+                        <label for="student-school"><span>学校：</span></label>
+                        <input name="student.school" type="text" id="student-school" value="<s:property value="student.school" />" />
+                    </div>
 
-                <span>研究方向：</span>
-                <input type="text" name="student.researchArea" value="<s:property value="student.researchArea" /> " />
-                <br />
+                    <div class="form-group col-lg-6">
+                        <label for="student-major"><span>专业：</span></label>
+                        <input name="student.major" type="text" id="student-major" value="<s:property value="student.major" />" />
+                    </div>
 
-                <span>邮箱：</span>
-                <input name="student.mail" value="<s:property value="student.mail" /> " />
-                <br />
+                    <div class="form-group col-lg-6">
+                        <label for="student-researchArea"><span>方向：</span></label>
+                        <input name="student.researchArea" type="text" id="student-researchArea" value="<s:property value="student.researchArea" />" />
+                    </div>
 
-                <span>预录取剩余名额：</span>
-                <input name="student.preNum" value="<s:property value="student.preNum" /> " />
-                <br />
+                    <div class="form-group col-lg-6">
+                        <label for="student-preNum"><span>预录取剩余名额：</span></label>
+                        <input name="student.preNum" type="number" id="student-preNum" value="<s:property value="student.preNum" />" />
+                    </div>
 
-                <span>个人介绍：</span>
-                <textarea type="text" name="student.inf" value=" " > <s:property value="student.inf" /></textarea>
-                <br />
 
-            </form>
+                    <div class="form-group col-lg-6">
+                        <label for="student-mail"><span>邮箱：</span></label>
+                        <input name="student.mail" type="text" id="student-mail" value="<s:property value="student.mail" />" />
+                    </div>
+
+                    <div class="form-group col-lg-6">
+                        <label for="student-inf"><span>个人介绍：</span></label>
+                        <textarea name="student.inf"  id="student-inf" ><s:property value="student.inf" /></textarea>
+                    </div>
+
+                </form>
+            </div>
 
         </div>
     </div><!-- #main -->

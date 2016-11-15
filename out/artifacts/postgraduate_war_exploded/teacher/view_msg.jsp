@@ -25,6 +25,9 @@
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
     <meta name="description" content="考研师生互选">
+
+    <%@include file="/bootstrap.jsp"%>
+
 </head>
 
 
@@ -35,29 +38,38 @@
 
     <%@include file="teacher_header.jsp" %>
 
-    <div id="main" class="bit_main_content">
-        <div class="new-msg">
+    <div id="main"  style="margin-left: 5%;margin-right: 5%">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <td>来自</td>
+                <td>学校</td>
+                <td>摘要</td>
+                <td>更新日期</td>
+                <td>回复</td>
+            </tr>
+            </thead>
+
+            <tbody>
             <s:iterator value="msgs">
                 <tr>
                     <td>
-                        <span><s:property value="student.name"/>(<s:property value="student.school" /> )</span>
+                        <span><s:property value="student.name"/></span>
                     </td>
-                    &nbsp;&nbsp;
+                    <td><span><s:property value="student.school" /></span></td>
                     <td>
                         <span><s:property value="abs" /> </span>
                     </td>
-                    &nbsp;&nbsp;
                     <td>
                         <span><s:property value="lastDate" /> </span>
                     </td>
-                    &nbsp;&nbsp;
                     <td>
-                        <span><a href="#">详情</a> </span>
+                        <span><a >回复</a> </span>
                     </td>
                 </tr>
-                <br />
             </s:iterator>
-        </div>
+            </tbody>
+            </table>
 
 
     </div><!-- #main -->

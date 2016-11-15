@@ -26,6 +26,9 @@
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
     <meta name="description" content="考研师生互选">
+
+    <%@include file="/bootstrap.jsp"%>
+
 </head>
 
 
@@ -36,33 +39,48 @@
 
     <%@include file="teacher_header.jsp" %>
 
-    <div id="main" class="bit_main_content">
+    <div id="main"  style="margin-left: 5%;margin-right: 5%">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <td>姓名</td>
+                <td>学校</td>
+                <td>状态</td>
+                <td>更新日期</td>
+                <td>详情</td>
+            </tr>
+            </thead>
+
+            <tbody>
         <s:iterator value="reqs">
-            <td>
-                <tr>
-                    <span><s:property value="student.name"/>(<s:property value="student.school" />) </span>
-                </tr>
-                &nbsp;&nbsp;
-                <tr>
+            <tr>
+                <td>
+                    <span><s:property value="student.name"/></span>
+                </td>
+                <td>
                     <span>
-                        状态：<s:property value="status" />
+                        <s:property value="student.school" />
                     </span>
-                </tr>
-                &nbsp;&nbsp;
-                <tr>
+                </td>
+                <td>
+                    <span>
+                        <s:property value="status" />
+                    </span>
+                </td>
+                <td>
                     <span>
                         <s:property value="last_date" />
                     </span>
-                </tr>
-                &nbsp;&nbsp;
-                <tr>
+                </td>
+                <td>
                     <span>
-                        <a href="/teacher/sendFinalReq.action?stuid=<s:property value="stuId" />">详情</a>
+                        <a>详情</a>
                     </span>
-                </tr>
-            </td>
-            <br />
+                </td>
+            </tr>
         </s:iterator>
+            </tbody>
+            </table>
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>

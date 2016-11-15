@@ -26,6 +26,9 @@
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
     <meta name="description" content="考研师生互选">
+
+    <%@include file="/bootstrap.jsp"%>
+
 </head>
 
 
@@ -36,25 +39,42 @@
 
     <%@include file="teacher_header.jsp" %>
 
-    <div id="main" class="bit_main_content">
+    <div id="main"  style="margin-left: 5%;margin-right: 5%">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <td>姓名</td>
+                <td>学校</td>
+                <td>详情</td>
+                <td>取消预录取</td>
+                <td>正式录取</td>
+            </tr>
+            </thead>
+
+            <tbody>
         <s:iterator value="students">
-            <td>
-                <tr>
-                    <span><s:property value="name"/>(<s:property value="school" />) </span>
-                </tr>
-                <tr>
+            <tr>
+                <td>
+                    <span><s:property value="name"/> </span>
+                </td>
+                <td><span><s:property value="school" /></span></td>
+                <td>
+                    <span><a href="/teacher/viewStudentDetail.action?stuid=<s:property value="stuId" />">查看详情</a></span>
+                </td>
+                <td>
                     <span>
                         <a href="/teacher/cancelPreReq.action?stuid=<s:property value="stuId" />">取消预录取</a>
                     </span>
-                </tr>
-                <tr>
+                </td>
+                <td>
                     <span>
                         <a href="/teacher/sendFinalReq.action?stuid=<s:property value="stuId" />">正式录取</a>
                     </span>
-                </tr>
-            </td>
-            <br />
+                </td>
+            </tr>
         </s:iterator>
+            </tbody>
+            </table>
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>

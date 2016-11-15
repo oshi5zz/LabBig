@@ -26,6 +26,9 @@
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
     <meta name="description" content="考研师生互选">
+
+    <%@include file="/bootstrap.jsp"%>
+
 </head>
 
 
@@ -36,7 +39,20 @@
 
     <%@include file="teacher_header.jsp" %>
 
-    <div id="main" class="bit_main_content">
+    <div id="main"  style="margin-left: 5%;margin-right: 5%">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <td>姓名</td>
+                <td>学校</td>
+                <td>详情</td>
+                <td>发送预请求</td>
+                <td>发送消息</td>
+            </tr>
+            </thead>
+
+            <tbody>
+
         <s:iterator value="students">
             <td>
                 <tr>
@@ -60,8 +76,10 @@
                     </span>
                 </tr>
             </td>
-            <br />
         </s:iterator>
+            </tbody>
+
+        </table>
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>

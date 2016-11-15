@@ -25,6 +25,9 @@
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
     <meta name="description" content="考研师生互选">
+
+    <%@include file="/bootstrap.jsp"%>
+
 </head>
 
 
@@ -36,64 +39,86 @@
     <%@include file="teacher_header.jsp" %>
 
     <div id="main" class="bit_main_content">
-        <hr />
-        <div class="teacher-inf">
-            <form class="teacher-inf-form" method="post" action="/teacher/updateTeacherInf.action">
-                <span>姓名：</span>
-                <input name="teacher.name" value="<s:property value="teacher.name" />" />
-                <br />
+        <div class="panel panel-default " style="width:80%; margin-left:10%;margin-top:20px;">
+        <div class="panel panel-heading " align="center">
+        	<h3 class="panel-title"><span >更改个人信息</span></h3>
+        </div>
+        <div class="panel panel-body">
+            <form role="form" method="post" action="/teacher/updateTeacherInf.action">
+				<div class="form-group col-lg-6">
+    	            <label for="teacher-name"><span>姓名：</span></label>
+	                <input name="teacher.name" type="text" id="teacher-name" value="<s:property value="teacher.name" />" readonly/>
+                </div>
 
-                <span>性别：</span>
-                <input name="teacher.sex" value="<s:property value="teacher.sex" />" />
-                <br />
+				<div class="form-group col-lg-5">
+    	            <label for="teacher-sex"><span>性别：</span></label>
+					<input name="teacher.sex" type="text" id="teacher-sex" value="<s:property value="teacher.sex" />" />
+                    
+	               <!-- <input name="teacher.sex" type="text" id="teacher-sex" value="<s:property value="teacher.sex" />" /> -->
+                </div>
 
-                <span>年龄：</span>
-                <input name="teacher.age" value="<s:property value="teacher.age" />" />
-                <br />
+				<div class="form-group col-lg-6">
+    	            <label for="teacher-age"><span>年龄：</span></label>
+	                <input name="teacher.age" type="number" id="teacher-age" value="<s:property value="teacher.age" />" />
+                </div>     
 
-                <span>职称：</span>
-                <input name="teacher.professionalTitle" value="<s:property value="teacher.professionalTitle" />" />
-                <br />
+				<div class="form-group col-lg-6">
+    	            <label for="teacher-professionalTitle"><span>职称：</span></label>
+	                <input name="teacher.professionalTitle" type="text" id="teacher-professionalTitle" value="<s:property value="teacher.professionalTitle" />" />
+                </div>                              
 
-                <span>省份：</span>
-                <input name="teacher.province" value="<s:property value="teacher.province" />" />
-                <br />
+				<div class="form-group col-lg-6">
+    	            <label for="teacher-province"><span>省份：</span></label>
+	                <input name="teacher.province" type="text" id="teacher-province" value="<s:property value="teacher.province" />" />
+                </div>   
 
-                <span>学校：</span>
-                <input name="teacher.school" value="<s:property value="teacher.school" />" />
-                <br />
+				<div class="form-group col-lg-6">
+    	            <label for="teacher-school"><span>学校：</span></label>
+	                <input name="teacher.school" type="text" id="teacher-school" value="<s:property value="teacher.school" />" />
+                </div>  
 
-                <span>专业：</span>
-                <input name="teacher.major" value="<s:property value="teacher.major" />" />
-                <br />
+				<div class="form-group col-lg-6">
+    	            <label for="teacher-major"><span>专业：</span></label>
+	                <input name="teacher.major" type="text" id="teacher-major" value="<s:property value="teacher.major" />" />
+                </div>                                    
 
-                <span>研究方向：</span>
-                <input type="text" name="teacher.researchArea" value="<s:property value="teacher.researchArea" />" />
-                <br />
+				<div class="form-group col-lg-6">
+    	            <label for="teacher-researchArea"><span>方向：</span></label>
+	                <input name="teacher.researchArea" type="text" id="teacher-researchArea" value="<s:property value="teacher.researchArea" />" />
+                </div>  
+                
+				<div class="form-group col-lg-6">
+    	            <label for="teacher-preNum"><span>招生人数：</span></label>
+	                <input name="teacher.preNum" type="number" id="teacher-preNum" value="<s:property value="teacher.preNum" />" />
+                </div>                    
 
-                <span>预招生人数：</span>
-                <input type="text" name="teacher.preNum" value="<s:property value="teacher.preNum" />" />
-                <br />
+				<div class="form-group col-lg-6 hidden">
+    	            <label for="teacher-finalNum"><span>最终招生人数：</span></label>
+	                <input name="teacher.finalNum" type="text" id="teacher-finalNum" value="<s:property value="teacher.finalNum" />" />
+                </div>                    
 
-                <span>最终招生人数：</span>
-                <input type="text" name="teacher.finalNum" value="<s:property value="teacher.finalNum" />" />
-                <br />
 
-                <span>邮箱：</span>
-                <input name="teacher.mail" value="<s:property value="teacher.mail" />" />
-                <br />
+				<div class="form-group col-lg-6">
+    	            <label for="teacher-mail"><span>邮箱：</span></label>
+	                <input name="teacher.mail" type="text" id="teacher-mail" value="<s:property value="teacher.mail" />" />
+                </div>   
+                
+				<div class="form-group col-lg-6">
+    	            <label for="teacher-inf"><span>个人介绍：</span></label>
+	                <textarea name="teacher.inf"  id="teacher-inf" ><s:property value="teacher.inf" /></textarea>
+                </div>                               
 
-                <span>个人介绍：</span>
-                <textarea type="text" name="teacher.inf" ><s:property value="teacher.inf" /></textarea>
-                <br />
-
-                <span>招生需求：</span>
-                <textarea type="text" name="teacher.requirement" ><s:property value="teacher.requirement" /></textarea>
-                <br />
-
-                <input type="submit" value="保存修改" />
-                <input type="button" value="取消" />
+				<div class="form-group col-lg-6">
+    	            <label for="teacher-requirement"><span>招生需求：</span></label>
+	                <textarea name="teacher.requirement"  id="teacher-requirement" ><s:property value="teacher.requirement" /></textarea>
+                </div>   
+                
+				<div class="panel panel-footer" align="center">
+                	<button type="submit" class="btn btn-primary btn-lg " >保存</button>
+	                <button type="button" class="btn wpb_btn-success btn-lg">取消</button>
+                </div>
             </form>
+            </div>
 
         </div>
     </div><!-- #main -->
