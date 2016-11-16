@@ -73,7 +73,6 @@
                         <span><a href="/teacher/sendPreReq.action?stuid=<s:property value="stuId" />">发送预请求</a></span>
                     </td>
                 </tr>
-                <br />
             </s:iterator>
             </tbody>
 

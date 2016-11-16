@@ -90,8 +90,12 @@
         </action>
 
         <action name="sendMsg" class="com.postgraduate.action.TeacherAction" method="sendMsg">
-            <result name="success">/teacher/search_result.jsp</result>
+            <result name="success" type="chain">
+                <param name="namespace">/teacher</param>
+                <param name="actionName">viewTeacherMsg</param>
+            </result>
             <result name="input">/teacher/write_msg.jsp</result>
+            <result name="error">/teacher/error.jsp</result>
             <!--<interceptor-ref name="teacherInterceptor" />-->
         </action>
 

@@ -105,6 +105,7 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String toSearch() {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         return SUCCESS;
     }
 
@@ -170,7 +171,7 @@ public class TeacherAction extends ActionSupport {
                 warning = "你们已经建立了预请求关系，并有了最终关系请求！";
                 return WARNING;
             case 6:
-                warning = "恭喜！你们一斤建立了最终的录取关系！";
+                warning = "恭喜！你们已经建立了最终的录取关系！";
                 return WARNING;
             case 7:
                 warning = "你们最终录取请求未通过，无法再发送请求！";
@@ -202,9 +203,7 @@ public class TeacherAction extends ActionSupport {
     public String viewMsg() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         msgs = teacherDAO.getMsgs(teacher.getTeaId());
-        for (Msg msg : msgs) {
 
-        }
         return SUCCESS;
     }
 
