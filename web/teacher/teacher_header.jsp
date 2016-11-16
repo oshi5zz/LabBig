@@ -30,6 +30,8 @@
                                         <span style="color: rgb(255, 255, 255);">
                                             您好！<s:property value="teacher.name"></s:property>老师！
                                         </span>
+                                        <span >|</span>
+                                        <span style="color: rgb(255, 255, 255);"><a href="/teacher/logout">注销</a></span>
                                     </span>
                             </div>
                         </div>

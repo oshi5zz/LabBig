@@ -171,7 +171,7 @@ public class TeacherAction extends ActionSupport {
                 warning = "你们已经建立了预请求关系，并有了最终关系请求！";
                 return WARNING;
             case 6:
-                warning = "恭喜！你们已经建立了最终的录取关系！";
+                warning = "无法发送！你们已经建立了最终的录取关系！";
                 return WARNING;
             case 7:
                 warning = "你们最终录取请求未通过，无法再发送请求！";
@@ -184,8 +184,7 @@ public class TeacherAction extends ActionSupport {
 
     public String sendFinalReq() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
-        int stu_id = 1;
-        teacher.setTeaId(1);
+        int stu_id;
         try {
             stu_id = Integer.parseInt(stuid);
         } catch (Exception e) {
@@ -323,5 +322,10 @@ public class TeacherAction extends ActionSupport {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         students = teacherDAO.viewFinalSucList(teacher.getTeaId());
         return SUCCESS;
+    }
+
+    public String logout() {
+        ActionContext.getContext().getSession().clear();
+        return "login";
     }
 }

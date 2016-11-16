@@ -2,6 +2,7 @@ package com.postgraduate.dao;
 
 import com.postgraduate.entity.Student;
 import com.postgraduate.entity.Teacher;
+import com.postgraduate.entity.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -55,6 +56,31 @@ public class UserDAO {
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
+        }
+    }
+
+    public boolean logupTeacher(User user) {
+        Teacher teacher = new Teacher();
+        String sql = "INSERT INTO user(user_id, password, user_name, type) VALUES (?,?,?,?)";
+        Connection con = dbConnection.getConnection();
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1, Integer.parseInt(user.getUserId()));
+            ps.setString(2, user.getPassword());
+            ps.setString(3,user.getUserName());
+            ps.setInt(4,user.getType());
+            boolean result = ps.executeUpdate() == 1;
+            if (result) {
+                sql = "INSERT INTO teacher(tea_id,name) VALUES (?,?)";
+                ps = con.prepareStatement(sql);
+                ps.setInt(1,Integer.parseInt(user.getUserId()));
+                ps.setString(2,user.getUserName());
+                return ps.executeUpdate() == 1;
+            } else
+                return false;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
         }
     }
 }

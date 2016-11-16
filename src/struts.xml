@@ -104,6 +104,16 @@
             <!--<interceptor-ref name="teacherInterceptor" />-->
         </action>
 
+        <action name="logout" class="com.postgraduate.action.TeacherAction" method="logout">
+            <result name="success" type="chain">
+                <param name="namespace">/</param>
+                <param name="actionName"></param>
+            </result>
+            <result name="login">
+                /login.jsp
+            </result>
+        </action>
+
         <action name="agreePreReq" class="com.postgraduate.action.TeacherAction" method="agreePreReq" >
             <result name="success">/teacher/waring.jsp</result>
             <result name="error">/teacher/waring.jsp</result>
@@ -141,6 +151,11 @@
             </result>
             <result name="student" type="chain">login</result>
             <result name="login" >/login.jsp</result>
+        </action>
+
+        <action name="logup" class="com.postgraduate.action.UserAction" method="logup">
+            <result name="success">/login.jsp</result>
+            <result name="input">/logup.jsp</result>
         </action>
     </package>
 

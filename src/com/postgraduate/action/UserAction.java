@@ -15,6 +15,16 @@ public class UserAction extends ActionSupport {
     private User user = new User();
     private String type = new String();
 
+    private String passtmp = new String();
+
+    public String getPasstmp() {
+        return passtmp;
+    }
+
+    public void setPasstmp(String passtmp) {
+        this.passtmp = passtmp;
+    }
+
     public String getType() {
         return type;
     }
@@ -52,4 +62,28 @@ public class UserAction extends ActionSupport {
             return "login";
     }
 
+    public String logup() {
+        if (!passtmp.equals(user.getPassword())) {
+            return "input";
+        }
+        int userId;
+        try {
+            userId = Integer.parseInt(user.getUserId());
+        } catch (Exception e) {
+            return "input";
+        }
+
+        if(type.equals("teacher")) {
+            user.setType(1);
+            if(userDAO.logupTeacher(user)) {
+                return SUCCESS;
+            }
+            else
+                return "input";
+        } else {
+            user.setType(0);
+            return INPUT;
+        }
+
+    }
 }

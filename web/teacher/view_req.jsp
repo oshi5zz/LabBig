@@ -45,7 +45,7 @@
             <tr>
                 <td>姓名</td>
                 <td>学校</td>
-                <td>状态</td>
+                <td>标签</td>
                 <td>更新日期</td>
                 <td>详情</td>
             </tr>
@@ -64,12 +64,12 @@
                 </td>
                 <td>
                     <span>
-                        <s:property value="status" />
+                        <s:property value="flag" />
                     </span>
                 </td>
                 <td>
                     <span>
-                        <s:property value="last_date" />
+                        <s:property value="lastDate" />
                     </span>
                 </td>
                 <td>

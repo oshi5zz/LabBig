@@ -29,7 +29,7 @@
                                 <span style="font-size: 14px;">
                                    <a href="login.jsp"> <span style="color: rgb(255, 255, 255);">登录&nbsp;</span> </a>
                                     <span style ="color: rgb(255, 255, 255);"> | </span>
-                                    <span id="register-modal" style="color: rgb(255, 255, 255);">注册</span>
+                                   <a href="logup.jsp"> <span id="register-modal" style="color: rgb(255, 255, 255);">注册</span></a>
                                 </span>
                             </div>
                         </div>

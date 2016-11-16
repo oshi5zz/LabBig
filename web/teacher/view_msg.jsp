@@ -46,6 +46,7 @@
                 <td>学校</td>
                 <td>摘要</td>
                 <td>更新日期</td>
+                <td>状态</td>
                 <td>回复</td>
             </tr>
             </thead>
@@ -64,7 +65,10 @@
                         <span><s:property value="lastDate" /> </span>
                     </td>
                     <td>
-                        <span><a >回复</a> </span>
+                        <span><s:property value="flag" /> </span>
+                    </td>
+                    <td>
+                        <span><a href="/teacher/writeMsg.action?stuid=<s:property value="student.stuId" />">回复</a> </span>
                     </td>
                 </tr>
             </s:iterator>
