@@ -52,50 +52,50 @@
 
                     <div class="form-group col-lg-5">
                         <label for="student-sex"><span>性别：</span></label>
-                        <input name="student.sex" type="text" id="student-sex" value="<s:property value="student.sex" />" />
+                        <input name="student.sex" type="text" id="student-sex" value="<s:property value="student.sex" />" readonly/>
 
                         <!-- <input name="student.sex" type="text" id="student-sex" value="<s:property value="student.sex" />" /> -->
                     </div>
 
                     <div class="form-group col-lg-6">
                         <label for="student-age"><span>年龄：</span></label>
-                        <input name="student.age" type="number" id="student-age" value="<s:property value="student.age" />" />
+                        <input name="student.age" type="number" id="student-age" value="<s:property value="student.age" />" readonly/>
                     </div>
 
                     <div class="form-group col-lg-6">
                         <label for="student-province"><span>省份：</span></label>
-                        <input name="student.province" type="text" id="student-province" value="<s:property value="student.province" />" />
+                        <input name="student.province" type="text" id="student-province" value="<s:property value="student.province" />" readonly/>
                     </div>
 
                     <div class="form-group col-lg-6">
                         <label for="student-school"><span>学校：</span></label>
-                        <input name="student.school" type="text" id="student-school" value="<s:property value="student.school" />" />
+                        <input name="student.school" type="text" id="student-school" value="<s:property value="student.school" />" readonly/>
                     </div>
 
                     <div class="form-group col-lg-6">
                         <label for="student-major"><span>专业：</span></label>
-                        <input name="student.major" type="text" id="student-major" value="<s:property value="student.major" />" />
+                        <input name="student.major" type="text" id="student-major" value="<s:property value="student.major" />" readonly/>
                     </div>
 
                     <div class="form-group col-lg-6">
                         <label for="student-researchArea"><span>方向：</span></label>
-                        <input name="student.researchArea" type="text" id="student-researchArea" value="<s:property value="student.researchArea" />" />
+                        <input name="student.researchArea" type="text" id="student-researchArea" value="<s:property value="student.researchArea" />" readonly/>
                     </div>
 
                     <div class="form-group col-lg-6">
                         <label for="student-preNum"><span>预录取剩余名额：</span></label>
-                        <input name="student.preNum" type="number" id="student-preNum" value="<s:property value="student.preNum" />" />
+                        <input name="student.preNum" type="number" id="student-preNum" value="<s:property value="student.preNum" />" readonly/>
                     </div>
 
 
                     <div class="form-group col-lg-6">
                         <label for="student-mail"><span>邮箱：</span></label>
-                        <input name="student.mail" type="text" id="student-mail" value="<s:property value="student.mail" />" />
+                        <input name="student.mail" type="text" id="student-mail" value="<s:property value="student.mail" />" readonly/>
                     </div>
 
                     <div class="form-group col-lg-6">
                         <label for="student-inf"><span>个人介绍：</span></label>
-                        <textarea name="student.inf"  id="student-inf" ><s:property value="student.inf" /></textarea>
+                        <textarea name="student.inf"  id="student-inf" readonly><s:property value="student.inf" /></textarea>
                     </div>
 
                 </form>

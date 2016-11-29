@@ -71,10 +71,15 @@
 	                <input name="student.name" type="text" id="student-name" value="" />
                 </div>
 
-				<div class="form-group col-lg-6">
-    	            <label for="student-sex"><span>性别：</span></label>
-					<input name="student.sex" type="text" id="student-sex" value="男" />
-                </div>
+
+            <div class="form-group col-lg-6">
+                <label for="student-sex"><span>性别：</span></label>
+                <select name="student.sex" id="student-sex"  />>
+                <option value="男">男</option>
+                <option value="女">女</option>
+                </select>
+            </div>
+
 			<div class="panel panel-footer" align="center">
             	<button type="submit" class="btn btn-lg btn-success" >搜索</button>
             </div>

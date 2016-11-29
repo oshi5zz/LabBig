@@ -17,7 +17,7 @@ public class TeacherAction extends ActionSupport {
     private TeacherDAO teacherDAO = new TeacherDAO();
     private String status = new String();
     //
-    private Teacher teacher = new Teacher();
+    private Teacher teacher = teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
     private Student student = new Student();
     private List<Student> students = new ArrayList<>();
     private List<Msg> msgs = new ArrayList<>();
