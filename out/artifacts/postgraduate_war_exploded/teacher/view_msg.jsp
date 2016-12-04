@@ -39,15 +39,21 @@
     <%@include file="teacher_header.jsp" %>
 
     <div id="main"  style="margin-left: 5%;margin-right: 5%">
+        <div class="panel panel-default " style="width:80%; margin-left:10%;margin-top:20px;">
+            <div class="panel panel-heading " align="center" style="margin-bottom: 0px;">
+                <h3 class="panel-title"><span >消息记录</span></h3>
+            </div>
+            <div class="panel panel-body">
         <table class="table table-striped">
             <thead>
             <tr>
-                <td>来自</td>
-                <td>学校</td>
-                <td>摘要</td>
-                <td>更新日期</td>
-                <td>状态</td>
-                <td>回复</td>
+                <th>来自</th>
+                <th>学校</th>
+                <th>摘要</th>
+                <th>更新日期</th>
+                <th>查看</th>
+                <th>状态</th>
+                <th>回复</th>
             </tr>
             </thead>
 
@@ -65,6 +71,11 @@
                         <span><s:property value="lastDate" /> </span>
                     </td>
                     <td>
+                        <span><a href="/teacher/viewMsgDetail.action?msg.msgId=<s:property value="msgId" />">查看</a> </span>
+                    </td>
+
+
+                    <td>
                         <span><s:property value="flag" /> </span>
                     </td>
                     <td>
@@ -73,8 +84,10 @@
                 </tr>
             </s:iterator>
             </tbody>
-            </table>
+        </table>
+            </div>
 
+            </div>
 
     </div><!-- #main -->
 

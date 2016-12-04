@@ -40,8 +40,8 @@
 
 	<div id="main" class="bit_main_content">
 		<div class="panel panel-default " style="width:80%; margin-left:10%;margin-top:20px;">
-			<div class="panel panel-heading " align="center">
-				<h3 class="panel-title"><span >更改个人信息</span></h3>
+			<div class="panel panel-heading " align="center" style="margin-bottom: 0px;">
+				<h3 class="panel-title"><span >更改个人信息&nbsp;&nbsp;<span id="edit-btn" class="glyphicon glyphicon-edit"></span></span></h3>
 			</div>
 			<div class="panel panel-body">
 				<form role="form" method="post" action="/teacher/updateTeacherInf.action">
@@ -119,10 +119,23 @@
 					</div>
 
 					<div class="panel panel-footer" align="center">
-						<button type="submit" class="btn btn-primary btn-lg " >保存</button>
-						<button type="button" class="btn wpb_btn-success btn-lg">取消</button>
+						<button id="sub-btn" type="submit" class="btn btn-primary btn-lg" >保存</button>
+						<%--<button id="edit-btn" type="button" class="btn wpb_btn-success btn-lg">修改</button>--%>
 					</div>
 				</form>
+
+				<script type="text/javascript">
+					$(document).ready(function () {
+						$("form input").prop("readonly", true);
+						$("form textarea").prop("readonly", true);
+						$("#sub-btn").hide();
+						$("#edit-btn").click(function () {
+							$("#sub-btn").show();
+							$("form input").prop("readonly", false);
+							$("form textarea").prop("readonly", false);
+						});
+					})
+				</script>
 			</div>
 
 		</div>

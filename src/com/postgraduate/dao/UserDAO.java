@@ -1,13 +1,11 @@
 package com.postgraduate.dao;
 
+import com.postgraduate.converter.TeacherConverter;
 import com.postgraduate.entity.Student;
 import com.postgraduate.entity.Teacher;
 import com.postgraduate.entity.User;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 /**
  * Created by zhao on 2016/11/15.
@@ -25,9 +23,13 @@ public class UserDAO {
             ps.setString(2, password);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
-                teacher.setName(rs.getString("user_name"));
-                teacher.setTeaId(rs.getInt("user_id"));
-                return teacher;
+                sql = "SELECT * FROM teacher WHERE tea_id="+userId;
+                Statement stat = con.createStatement();
+                rs = stat.executeQuery(sql);
+                if (rs.next()) {
+                    teacher = TeacherConverter.getTeacher(rs);
+                    return teacher;
+                } else return null;
             } else {
                 return null;
             }

@@ -6,10 +6,12 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="postgraduate" />
+          <element id="jpa-descriptors" facet="postgraduate/jpa/JPA" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Struts 2-2.3.20.1" />
           <element id="library" level="project" name="javax.json.processing-1.0" />
+          <element id="library" level="project" name="Hibernate 4.2.2-4.2.2" />
         </element>
       </element>
     </root>

@@ -50,26 +50,39 @@
                 <ul id="main-nav" data-st="0" data-sp="0" data-fh="" data-mw="" data-lh=""
                     class="mainmenu fancy-rollovers wf-mobile-hidden bit-menu-default"
                     data-bit-menu="bit-menu-default" data-bit-float-menu="underline-hover">
-                    <li class=" menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6209 current_page_item bit-menu-post-id-6209 menu-item-6210 act first">
-                        <a href="/teacher/toTeacherIndex.action"><span>教师首页</span></a></li>
-                    <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-5714 menu-item-has-children menu-item-5717 has-children">
-                        <a href="/teacher/editTeacherInf.action"><span>更改个人信息</span></a>
+                    <li id="toTeacherIndex" class=" menu-item">
+                        <a href="/teacher/toTeacherIndex"><span>教师首页</span></a></li>
+                    <li id="editTeacherInf" class=" menu-item">
+                        <a href="/teacher/editTeacherInf"><span>更改个人信息</span></a>
                     </li>
-                    <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6064 menu-item-6066">
-                        <a href="/teacher/toSearch.action"><span>按条件查找</span></a></li>
-                    <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-5654 menu-item-has-children menu-item-5655 has-children">
-                        <a href="/teacher/viewPreSucList"><span>查看已通过的预请求</span></a>
+                    <li id="toSearch" class=" menu-item">
+                        <a href="/teacher/toSearch"><span>按条件查找</span></a></li>
+                    <li id="viewPreSucList" class=" menu-item ">
+                        <a href="/teacher/viewPreSucList"><span>查看预录取</span></a>
                     </li>
-                    <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6082 menu-item-has-children menu-item-6828 has-children">
+                    <li id="viewTeacherMsg" class=" menu-item ">
                         <a href="/teacher/viewTeacherMsg"><span>查看消息</span></a>
                     </li>
-                    <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6793 menu-item-has-children menu-item-6794 has-children">
+                    <li id="viewAllReq" class=" menu-item">
                         <a href="/teacher/viewAllReq"><span>查看所有请求</span></a>
                     </li>
-                    <li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6796 menu-item-has-children menu-item-6887 has-children">
-                        <a href="/teacher/viewFinalSucList"><span>查看已录取的学生</span></a>
+                    <li id="viewFinalSucList" class=" menu-item ">
+                        <a href="/teacher/viewFinalSucList"><span>查看已录取</span></a>
                     </li>
                 </ul>
+
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        var href = window.location.href;
+                        var lst = href.split('/');
+                        var href_id = lst[lst.length - 1];
+
+                        if(href_id == "login.action") {
+                            href_id = "toTeacherIndex";
+                        }
+                        document.getElementById(href_id).className = "menu-item act";
+                    })
+                </script>
             </nav>
             <div style="display:none;" id="main-nav-slide">
                 <div class="main-nav-slide-inner" data-class="">

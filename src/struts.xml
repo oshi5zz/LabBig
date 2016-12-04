@@ -124,6 +124,23 @@
             <!--<interceptor-ref name="teacherInterceptor" />-->
         </action>
 
+        <action name="agreeFinalReq" class="com.postgraduate.action.TeacherAction" method="agreeFinalReq" >
+            <result name="success">/teacher/waring.jsp</result>
+            <result name="error">/teacher/waring.jsp</result>
+            <!--<interceptor-ref name="teacherInterceptor" />-->
+        </action>
+
+        <action name="refuseFinalReq" class="com.postgraduate.action.TeacherAction" method="refuseFinalReq">
+            <result name="success">/teacher/waring.jsp</result>
+            <result name="error">/teacher/waring.jsp</result>
+            <!--<interceptor-ref name="teacherInterceptor" />-->
+        </action>
+
+        <action name="viewMsgDetail" class="com.postgraduate.action.TeacherAction" method="viewMsgDetail">
+            <result name="success">/teacher/msg_detail.jsp</result>
+            <result name="error">/teacher/waring.jsp</result>
+        </action>
+
         <action name="viewAllReq" class="com.postgraduate.action.TeacherAction" method="viewAllReq">
             <result name="success">/teacher/view_req.jsp</result>
             <result name="error">/teacher/error.jsp</result>
