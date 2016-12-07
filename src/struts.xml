@@ -152,6 +152,14 @@
             <result name="error">/teacher/error.jsp</result>
         </action>
 
+        <action name="getStudentList" class="com.postgraduate.action.MsgAction" method="getStudentList">
+            <result name="success">/teacher/view_msg.jsp</result>
+        </action>
+
+        <action name="getStudentMsg" class="com.postgraduate.action.MsgAction" method="getStudentMsg">
+
+        </action>
+
     </package>
 
     <package name="student" namespace="/student" extends="struts-default">

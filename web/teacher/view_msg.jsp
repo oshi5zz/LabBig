@@ -42,9 +42,11 @@
         <jsp:include page="chat/index.jsp" />
     </div><!-- #main -->
 
+
     <%@include file="../footer.jsp" %>
 </div>
 
 </body>
+
 
 </html>

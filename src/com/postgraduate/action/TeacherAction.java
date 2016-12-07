@@ -234,7 +234,7 @@ public class TeacherAction extends ActionSupport {
     public String viewMsg() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         msgs = teacherDAO.getMsgs(teacher.getTeaId());
-
+//        students = msgDao.getStudentList(teacher.getTeaId());
         return SUCCESS;
     }
 

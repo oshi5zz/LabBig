@@ -1,3 +1,4 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="container">
 <style>
@@ -213,36 +214,39 @@
         <div class="sidebar">
             <div class="m-card">
                 <header><img class="avatar" width="40" height="40" alt="Coffce" src="/teacher/chat/dist/images/1.jpg">
-                    <p class="name">Coffce</p></header>
+                    <p class="name"><s:property value="teacher.name" /> </p></header>
                 <footer><input class="search" placeholder="search user..."></footer>
             </div><!--v-component-->
 
             <div class="m-list">
                 <ul><!--v-for-start-->
-                    <li class="active"><img class="avatar" width="30" height="30" alt="示例介绍"
-                                            src="/teacher/chat/dist/images/2.png">
-                        <p class="name">示例介绍</p></li>
-                    <li><img class="avatar" width="30" height="30" alt="webpack" src="/teacher/chat/dist/images/3.jpg">
-                        <p class="name">webpack</p></li><!--v-for-end--></ul>
-            </div><!--v-component--></div>
+                    <s:iterator value="students">
+                        <li class="student-list" id="<s:property value="stuId" />">
+                            <img class="avatar" width="30" height="30" alt="示例介绍"
+                                                src="/teacher/chat/dist/images/2.png">
+                            <p class="name"><s:property value="name" /></p></li>
+                    </s:iterator>
+                </ul>
+            </div><!--v-component-->
+
+        </div>
 
         <div class="main">
             <div class="m-message">
                 <ul>
-                    <li><p class="time"><span>15:16</span></p>
-                        <div class="main"><img class="avatar" width="30" height="30"
-                                               src="/teacher/chat/dist/images/2.png">
-                            <div class="text">Hello，这是一个基于Vue +
-                                Webpack构建的简单chat示例，聊天记录保存在localStorge。简单演示了Vue的基础特性和webpack配置。
+                    <s:iterator value="msgs">
+                        <li><p class="time"><span><s:property value="lastDate" /></span></p>
+                            <div class="main <s:if test="flag==1" >self</s:if>">
+                                <s:if test="flag==1">
+                                    <img class="avatar" width="30" height="30" src="/teacher/chat/dist/images/2.png">
+                                </s:if>
+                                <s:else>
+                                    <img class="avatar" width="30" height="30" src="/teacher/chat/dist/images/1.jpg">
+                                </s:else>
+                                <div class="text"><s:property value="main" /></div>
                             </div>
-                        </div>
-                    </li>
-                    <li><p class="time"><span>15:16</span></p>
-                        <div class="main self"><img class="avatar" width="30" height="30"
-                                               src="/teacher/chat/dist/images/2.png">
-                            <div class="text">项目地址: https://github.com/coffcer/vue-chat</div>
-                        </div>
-                    </li><!--v-for-end-->
+                        </li>
+                    </s:iterator>
                 </ul>
             </div>
             <div class="m-text"><textarea placeholder="按 Ctrl + Enter 发送"></textarea></div>
@@ -252,3 +256,17 @@
 <%--<script src="teacher/chat/src/main.js.old"></script>--%>
 
 </div>
+
+<script src="/bootstrap/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("li.student-list").click(function () {
+            var stu_id = this.getAttribute("id");
+            var li = $("li.active");
+            for(var i =0; i<li.length; i++)
+                li[i].className = "student-list";
+            this.className = "student-list active";
+
+        });
+    })
+</script>

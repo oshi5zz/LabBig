@@ -61,7 +61,7 @@
                         <a href="/teacher/viewPreSucList"><span>查看预录取</span></a>
                     </li>
                     <li id="viewTeacherMsg" class=" menu-item ">
-                        <a href="/teacher/viewTeacherMsg"><span>查看消息</span></a>
+                        <a href="/teacher/getStudentList"><span>查看消息</span></a>
                     </li>
                     <li id="viewAllReq" class=" menu-item">
                         <a href="/teacher/viewAllReq"><span>查看所有请求</span></a>
