@@ -2,74 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f7ee190-599d-4e65-b5d2-07b4b9529bd6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/res/rlink_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/res/trans.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/postgraduate/entity/ReqStatus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/postgraduate/service/Recommend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/postgraduate/service/StudentRecommend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/postgraduate/service/TeacherRecommend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/rebel.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/res/sidebar_style.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/msg_detail.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/req_include.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/req_include_old.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/dao/TeacherDAO.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/action/TeacherAction.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/action/TeacherAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/converter/ReqConverter.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/converter/ReqConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/dao/TeacherDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/dao/TeacherDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/dao/UserDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/dao/UserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/interceptors/TeacherLoginInterceptor.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/interceptors/TeacherLoginInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/action/TeacherAction.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/action/TeacherAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/converter/ReqConverter.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/converter/ReqConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/dao/UserDAO.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/dao/UserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/interceptors/TeacherLoginInterceptor.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/interceptors/TeacherLoginInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/postgraduate_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/postgraduate_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/521b12ca-b2b6-4a64-9600-bc1ef841b516.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/521b12ca-b2b6-4a64-9600-bc1ef841b516.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Hibernate_4_2_2_4_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_4_2_2_4_2_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/res/Untitled-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/res/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/dist/images/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/dist/images/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/dist/images/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/dist/images/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/dist/images/intro.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/dist/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/dist/main.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/dist/vue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/dist/vue.js.old" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/src/components/app.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/src/components/card.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/src/components/list.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/src/components/message.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/src/components/text.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/src/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/src/main.js.old" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/chat/src/store.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/msg_test.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/teacher/view_msg_old.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/entity/Msg.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/entity/Msg.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/entity/Request.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/entity/Request.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/entity/Student.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/entity/Student.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/entity/Teacher.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/entity/Teacher.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/entity/User.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/entity/User.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/bootstrap/jquery.min.js" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/bootstrap/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/res/frame_a.css" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/res/frame_a.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/res/frame_b.css" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/res/frame_b.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/res/main.css" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/res/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/final_suc_list.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/final_suc_list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/pre_req_list.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/pre_req_list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/pre_success_list.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/pre_success_list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/search_result.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/search_result.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/student_detail.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/student_detail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/teacher_header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/teacher_header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/teacher_index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/teacher_index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/teacher_inf.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/teacher_inf.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/teacher_search.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/teacher_search.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/view_msg.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/view_msg.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/view_req.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/view_req.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/struts.xml" afterPath="$PROJECT_DIR$/out/production/postgraduate/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/postgraduate.iml" afterPath="$PROJECT_DIR$/postgraduate.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/converter/ReqConverter.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/converter/ReqConverter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/dao/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/interceptors/TeacherLoginInterceptor.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/interceptors/TeacherLoginInterceptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/final_suc_list.jsp" afterPath="$PROJECT_DIR$/web/teacher/final_suc_list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/pre_req_list.jsp" afterPath="$PROJECT_DIR$/web/teacher/pre_req_list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/pre_success_list.jsp" afterPath="$PROJECT_DIR$/web/teacher/pre_success_list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/search_result.jsp" afterPath="$PROJECT_DIR$/web/teacher/search_result.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/student_detail.jsp" afterPath="$PROJECT_DIR$/web/teacher/student_detail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/teacher_header.jsp" afterPath="$PROJECT_DIR$/web/teacher/teacher_header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/teacher_index.jsp" afterPath="$PROJECT_DIR$/web/teacher/teacher_index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/teacher_inf.jsp" afterPath="$PROJECT_DIR$/web/teacher/teacher_inf.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/teacher_search.jsp" afterPath="$PROJECT_DIR$/web/teacher/teacher_search.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/res/frame_b.css" afterPath="$PROJECT_DIR$/web/res/frame_b.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/view_msg.jsp" afterPath="$PROJECT_DIR$/web/teacher/view_msg.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/view_req.jsp" afterPath="$PROJECT_DIR$/web/teacher/view_req.jsp" />
     </list>
     <ignored path="postgraduate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,12 +60,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="final_suc_list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/teacher/final_suc_list.jsp">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/teacher/chat/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="214">
+              <caret line="213" column="32" selection-start-line="213" selection-start-column="32" selection-end-line="213" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="e#293#341#0#HTML" expanded="false" />
+                <element signature="e#371#391#0#HTML" expanded="false" />
+                <element signature="e#408#496#0#HTML" expanded="false" />
+                <element signature="e#510#586#0#HTML" expanded="false" />
+                <element signature="e#602#673#0#HTML" expanded="false" />
+                <element signature="e#845#869#0#HTML" expanded="false" />
+                <element signature="e#950#976#0#HTML" expanded="false" />
+                <element signature="e#1107#1327#0#HTML" expanded="false" />
+                <element signature="n#style#3;n#div#0;n#!!top" expanded="false" />
+                <element signature="e#1373#1541#0#HTML" expanded="false" />
+                <element signature="e#1560#1608#0#HTML" expanded="false" />
+                <element signature="e#1628#1675#0#HTML" expanded="false" />
+                <element signature="e#1708#1738#0#HTML" expanded="false" />
+                <element signature="e#1756#1782#0#HTML" expanded="false" />
+                <element signature="e#1798#1851#0#HTML" expanded="false" />
+                <element signature="n#style#4;n#div#0;n#!!top" expanded="false" />
+                <element signature="e#1894#1946#0#HTML" expanded="false" />
+                <element signature="e#1965#2114#0#HTML" expanded="false" />
+                <element signature="n#style#5;n#div#0;n#!!top" expanded="false" />
+                <element signature="e#2160#2210#0#HTML" expanded="false" />
+                <element signature="e#2226#2253#0#HTML" expanded="false" />
+                <element signature="e#2272#2317#0#HTML" expanded="false" />
+                <element signature="e#2343#2485#0#HTML" expanded="false" />
+                <element signature="e#2506#2573#0#HTML" expanded="false" />
+                <element signature="e#2592#2868#0#HTML" expanded="false" />
+                <element signature="e#2894#3037#0#HTML" expanded="false" />
+                <element signature="e#3056#3081#0#HTML" expanded="false" />
+                <element signature="e#3108#3152#0#HTML" expanded="false" />
+                <element signature="e#3177#3210#0#HTML" expanded="false" />
+                <element signature="e#3242#3349#0#HTML" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,18 +105,8 @@
       <file leaf-file-name="view_msg.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/teacher/view_msg.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-654">
-              <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeacherAction.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="221" column="0" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -156,13 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/head.jsp" />
-        <option value="$PROJECT_DIR$/web/teacher/error.jsp" />
-        <option value="$PROJECT_DIR$/web/teacher/waring.jsp" />
-        <option value="$PROJECT_DIR$/web/bootstrap.jsp" />
-        <option value="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/login.jsp" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/search_result.jsp" />
         <option value="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/pre_success_list.jsp" />
         <option value="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/view_req.jsp" />
         <option value="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/final_suc_list.jsp" />
@@ -204,9 +180,16 @@
         <option value="$PROJECT_DIR$/web/teacher/req_include_old.jsp" />
         <option value="$PROJECT_DIR$/web/teacher/search_result.jsp" />
         <option value="$PROJECT_DIR$/web/teacher/final_suc_list.jsp" />
-        <option value="$PROJECT_DIR$/web/teacher/view_msg.jsp" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java" />
+        <option value="$PROJECT_DIR$/web/teacher/msg_test.jsp" />
+        <option value="$PROJECT_DIR$/web/teacher/view_msg.jsp" />
+        <option value="$PROJECT_DIR$/web/teacher/chat/src/main_old.js" />
+        <option value="$PROJECT_DIR$/web/teacher/chat/src/main.js" />
+        <option value="$PROJECT_DIR$/web/res/frame_b.css" />
+        <option value="$PROJECT_DIR$/web/teacher/chat/src/store.js" />
+        <option value="$PROJECT_DIR$/web/teacher/chat/dist/main.js" />
+        <option value="$PROJECT_DIR$/web/teacher/chat/index.jsp" />
       </list>
     </option>
   </component>
@@ -276,11 +259,42 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postgraduate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postgraduate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postgraduate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postgraduate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postgraduate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -293,7 +307,7 @@
     <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.AboutConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="update&#9;PSI&#9;JAVA://com.postgraduate.dao.TeacherDAO#updateTeachInf&#10;ac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;msg&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/view_msg.jsp&#10;fi&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/final_suc_list.jsp&#10;pre&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/pre_success_list.jsp&#10;sea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/search_result.jsp&#10;str&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;view&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/view_req.jsp&#10;teaac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;teain&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_index.jsp&#10;tea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_inf.jsp&#10;final&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/final_suc_list.jsp&#10;log&#9;null&#9;null&#10;viewfi&#9;null&#9;null&#10;student_det&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/student_detail.jsp&#10;student&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/out/artifacts/postgraduate_war_exploded/teacher/student_detail.jsp&#10;Teacher&#9;PSI&#9;JAVA://com.postgraduate.entity.Teacher&#10;teahea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;stru&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;teainf&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_inf.jsp&#10;viewre&#9;null&#9;null&#10;Re&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Request.java&#10;ReqC&#9;PSI&#9;JAVA://com.postgraduate.converter.ReqConverter&#10;Req&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Request.java&#10;st&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;req&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/ReqStatus.java&#10;sg&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/view_msg.jsp&#10;write&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/write_msg.jsp&#10;msgde&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/msg_detail.jsp&#10;tea_se&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_search.jsp&#10;index&#9;PSI&#9;JAVA://com.postgraduate.action.TeacherAction#getIndex&#10;Ms&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Msg.java&#10;TDA&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/TeacherDAO.java&#10;Tea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;msg\&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Msg.java&#10;ms&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Msg.java&#10;inter&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/interceptors/TeacherLoginInterceptor.java&#10;User&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/User.java&#10;Use&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/User.java&#10;lo&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/login.jsp&#10;teachera&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;te&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/TeacherDAO.java&#10;search&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/search_result.jsp&#10;/teach&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher&#10;a8acc2a7816e920dbe8c67737f30ff79&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/res/a8acc2a7816e920dbe8c67737f30ff79.css&#10;47addd80693c25fdb7f15e28bdcb4300&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/res/47addd80693c25fdb7f15e28bdcb4300.css" />
+    <property name="SearchEverywhereHistoryKey" value="view&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/view_msg.jsp&#10;msg&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/out/artifacts/postgraduate_war_exploded/teacher/view_msg.jsp&#10;update&#9;PSI&#9;JAVA://com.postgraduate.dao.TeacherDAO#updateTeachInf&#10;ac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;fi&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/final_suc_list.jsp&#10;pre&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/pre_success_list.jsp&#10;sea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/search_result.jsp&#10;str&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;teaac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;teain&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_index.jsp&#10;tea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_inf.jsp&#10;final&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/final_suc_list.jsp&#10;log&#9;null&#9;null&#10;viewfi&#9;null&#9;null&#10;student_det&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/student_detail.jsp&#10;student&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/out/artifacts/postgraduate_war_exploded/teacher/student_detail.jsp&#10;Teacher&#9;PSI&#9;JAVA://com.postgraduate.entity.Teacher&#10;teahea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;stru&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;teainf&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_inf.jsp&#10;viewre&#9;null&#9;null&#10;Re&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Request.java&#10;ReqC&#9;PSI&#9;JAVA://com.postgraduate.converter.ReqConverter&#10;Req&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Request.java&#10;st&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;req&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/ReqStatus.java&#10;sg&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/view_msg.jsp&#10;write&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/write_msg.jsp&#10;msgde&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/msg_detail.jsp&#10;tea_se&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_search.jsp&#10;index&#9;PSI&#9;JAVA://com.postgraduate.action.TeacherAction#getIndex&#10;Ms&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Msg.java&#10;TDA&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/TeacherDAO.java&#10;Tea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;msg\&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Msg.java&#10;ms&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Msg.java&#10;inter&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/interceptors/TeacherLoginInterceptor.java&#10;User&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/User.java&#10;Use&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/User.java&#10;lo&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/login.jsp&#10;teachera&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;te&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/TeacherDAO.java&#10;search&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/search_result.jsp&#10;/teach&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher&#10;a8acc2a7816e920dbe8c67737f30ff79&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/res/a8acc2a7816e920dbe8c67737f30ff79.css&#10;47addd80693c25fdb7f15e28bdcb4300&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/res/47addd80693c25fdb7f15e28bdcb4300.css" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="JPA.DatabaseSchemaImportDialog" value="521b12ca-b2b6-4a64-9600-bc1ef841b516" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -303,25 +317,26 @@
     <property name="ToolWindowMaven Projects.ShowToolbar" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.postgraduate.entity" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zhao\IdeaProjects\postgraduate\web\teacher\chat\dist" />
+      <recent name="C:\Users\zhao\IdeaProjects\postgraduate\web" />
+      <recent name="C:\Users\zhao\IdeaProjects\postgraduate\web\student" />
+      <recent name="C:\Users\zhao\IdeaProjects\postgraduate\web\teacher" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\zhao\IdeaProjects\postgraduate\web\res" />
+      <recent name="C:\Users\zhao\IdeaProjects\postgraduate\web\teacher\chat\src" />
       <recent name="C:\Users\zhao\IdeaProjects\postgraduate\web\teacher" />
+      <recent name="C:\Users\zhao\IdeaProjects\postgraduate\web\teacher\chat" />
       <recent name="C:\Users\zhao\IdeaProjects\postgraduate\web\bootstrap" />
-      <recent name="C:\Users\zhao\IdeaProjects\postgraduate\lib" />
-      <recent name="C:\Users\zhao\IdeaProjects\postgraduate\src\com\postgraduate\dao" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="com.postgraduate.entity" />
       <recent name="" />
       <recent name="com.postgraduate" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\zhao\IdeaProjects\postgraduate\web" />
-      <recent name="C:\Users\zhao\IdeaProjects\postgraduate\web\student" />
-      <recent name="C:\Users\zhao\IdeaProjects\postgraduate\web\teacher" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.postgraduate.entity" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.70">
@@ -961,6 +976,10 @@
       <workItem from="1480846095991" duration="10751000" />
       <workItem from="1480857718526" duration="11914000" />
       <workItem from="1480880141576" duration="9595000" />
+      <workItem from="1480918307523" duration="2971000" />
+      <workItem from="1480938765743" duration="3523000" />
+      <workItem from="1481025082517" duration="2222000" />
+      <workItem from="1481093587730" duration="7318000" />
     </task>
     <task id="LOCAL-00001" summary="导师的后台架构和调用关系基本完成">
       <created>1478526089869</created>
@@ -973,7 +992,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270703000" />
+    <option name="totallyTimeSpent" value="286737000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -986,35 +1005,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5060514" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5030257" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2749591" sideWeight="0.49394855" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2749591" sideWeight="0.49394855" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19692533" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2065053" sideWeight="0.49512196" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2065053" sideWeight="0.4893617" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34754097" sideWeight="0.49546143" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.4969743" order="11" side_tool="false" content_ui="tabs" x="0" y="260" width="1366" height="208" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.4969743" order="13" side_tool="false" content_ui="tabs" x="0" y="260" width="1366" height="208" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2700491" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" x="0" y="259" width="1366" height="209" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20877458" sideWeight="0.43934426" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22390318" sideWeight="0.5606557" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2065053" sideWeight="0.49144253" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2065053" sideWeight="0.50487804" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17019667" sideWeight="0.5606557" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2065053" sideWeight="0.49144253" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2065053" sideWeight="0.5106383" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20877458" sideWeight="0.43272728" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20877458" sideWeight="0.43272728" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1022,42 +1041,8 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42786884" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42786884" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34754097" sideWeight="0.5045386" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19742814" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22541603" sideWeight="0.4737705" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34754097" sideWeight="0.49546143" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.4969743" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2590164" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" x="0" y="259" width="1366" height="209" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20877458" sideWeight="0.43934426" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42786884" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2246596" sideWeight="0.5606557" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20877458" sideWeight="0.43934426" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20877458" sideWeight="0.43272728" order="5" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1076,7 +1061,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="46" />
+      <option name="time" value="48" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1085,191 +1070,10 @@
     <option name="FILTER_TARGETS" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/logup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/teacher_header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/search_result.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="44" column="42" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/HibernateSessionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/service/Recommend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/service/StudentRecommend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/service/TeacherRecommend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/postgraduate.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/StudentAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bootstrap/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2527">
-          <caret line="5" column="543" selection-start-line="5" selection-start-column="543" selection-end-line="5" selection-end-column="543" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/view_msg.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/teacher_index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="44" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/teacher_search.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rebel.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/struts2-core.jar!/org/apache/struts2/dispatcher/ng/filter/StrutsPrepareAndExecuteFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/IndexAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/pre_req_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/write_msg.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="42" column="68" selection-start-line="0" selection-start-column="0" selection-end-line="61" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/entity/Msg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/msg_detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-237">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/DBConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/entity/ReqStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/teacher_inf.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1277,9 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
           <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
-          <folding>
-            <element signature="e#1728#1793#0#HTML" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1287,7 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1295,7 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="6" column="21" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1303,7 +1102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1334,9 +1132,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1344,13 +1139,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <marker date="1480873943945" expanded="true" signature="480:545" ph="SELECT * FRO... user" />
-            <marker date="1480873943945" expanded="true" signature="850:885" ph="SELECT * FRO... teacher" />
-            <marker date="1480873943945" expanded="true" signature="1464:1529" ph="SELECT * FRO... user" />
-            <marker date="1480873943945" expanded="true" signature="2241:2310" ph="INSERT INTO user... " />
-            <marker date="1480873943945" expanded="true" signature="2747:2792" ph="INSERT INTO teacher... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1358,7 +1146,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="53" column="48" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1366,7 +1153,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="47">
           <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1409,9 +1195,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="113" column="31" selection-start-line="113" selection-start-column="31" selection-end-line="113" selection-end-column="31" />
-          <folding>
-            <element signature="e#2245#2246#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1455,63 +1238,255 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/final_suc_list.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="142" column="19" selection-start-line="142" selection-start-column="19" selection-end-line="142" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/view_msg.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/final_suc_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
           <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6612">
+          <caret line="396" column="0" selection-start-line="396" selection-start-column="0" selection-end-line="396" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bootstrap.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/msg_test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/view_msg_old.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/src/main.js.old">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="0" column="968" selection-start-line="0" selection-start-column="968" selection-end-line="0" selection-end-column="968" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/dist/vue.js.old">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/index_img.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/index_img-back.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/rlink_bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/trans.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/frame_a.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="10" column="91947" selection-start-line="10" selection-start-column="91945" selection-end-line="10" selection-end-column="91947" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/frame_b.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="3297" column="18" selection-start-line="3297" selection-start-column="16" selection-end-line="3297" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/src/components/app.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/src/components/card.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/src/components/list.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/src/components/message.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/src/components/text.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/src/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/dist/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1533">
+          <caret line="0" column="5881" selection-start-line="0" selection-start-column="5876" selection-end-line="0" selection-end-column="5881" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/dist/main.js.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1843">
+          <caret line="0" column="454" selection-start-line="0" selection-start-column="454" selection-end-line="0" selection-end-column="454" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/dist/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="3493" column="0" selection-start-line="3493" selection-start-column="0" selection-end-line="3493" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="228" column="16" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/teacher/view_msg.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-654">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+        <state relative-caret-position="288">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java">
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="142" column="19" selection-start-line="142" selection-start-column="19" selection-end-line="142" selection-end-column="19" />
+        <state relative-caret-position="214">
+          <caret line="213" column="32" selection-start-line="213" selection-start-column="32" selection-end-line="213" selection-end-column="32" />
           <folding>
-            <marker date="1480890856442" expanded="true" signature="683:721" ph="SELECT * FRO... teacher" />
-            <marker date="1480890856442" expanded="true" signature="1289:1320" ph="SELECT * FRO... student" />
-            <marker date="1480890856442" expanded="true" signature="2602:2658" ph="SELECT * FRO... msg" />
-            <marker date="1480890856442" expanded="true" signature="3299:3334" ph="SELECT * FRO... student" />
-            <marker date="1480890856442" expanded="true" signature="3804:4012" ph="UPDATE teach... " />
-            <marker date="1480890856442" expanded="true" signature="4605:4642" ph="SELECT * FRO... student" />
-            <marker date="1480890856442" expanded="true" signature="5064:5169" ph="INSERT INTO msg... " />
-            <marker date="1480890856442" expanded="true" signature="6072:6108" ph="SELECT * FRO... student" />
-            <marker date="1480890856442" expanded="true" signature="7307:7412" ph="UPDATE reque... " />
-            <marker date="1480890856442" expanded="true" signature="7476:7583" ph="UPDATE reque... " />
-            <marker date="1480890856442" expanded="true" signature="7690:7795" ph="UPDATE reque... " />
-            <marker date="1480890856442" expanded="true" signature="7859:7966" ph="UPDATE reque... " />
-            <marker date="1480890856442" expanded="true" signature="8583:8625" ph="SELECT pre_n... teacher" />
-            <marker date="1480890856442" expanded="true" signature="8660:8704" ph="SELECT final... teacher" />
-            <marker date="1480890856442" expanded="true" signature="9439:9474" ph="SELECT count... request" />
-            <marker date="1480890856442" expanded="true" signature="9439:9504" ph="SELECT count... request" />
-            <marker date="1480890856442" expanded="true" signature="9936:9991" ph="SELECT statu... request" />
-            <marker date="1480890856442" expanded="true" signature="10537:10647" ph="INSERT INTO request... " />
-            <marker date="1480890856442" expanded="true" signature="10538:10647" ph="INSERT INTO request... " />
-            <marker date="1480890856442" expanded="true" signature="10544:10647" ph="INSERT INTO request... " />
-            <marker date="1480890856442" expanded="true" signature="10686:10712" ph="UPDATE reque... " />
-            <marker date="1480890856442" expanded="true" signature="10686:10750" ph="UPDATE reque... " />
-            <marker date="1480890856442" expanded="true" signature="11551:11611" ph="SELECT * FRO... request" />
-            <marker date="1480890856442" expanded="true" signature="12150:12185" ph="SELECT * FRO... student" />
-            <marker date="1480890856442" expanded="true" signature="12727:12762" ph="SELECT * FRO... teacher" />
-            <marker date="1480890856442" expanded="true" signature="13418:13483" ph="SELECT * FRO... student" />
-            <marker date="1480890856442" expanded="true" signature="14069:14100" ph="SELECT * FRO... msg" />
+            <element signature="n#style#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="e#293#341#0#HTML" expanded="false" />
+            <element signature="e#371#391#0#HTML" expanded="false" />
+            <element signature="e#408#496#0#HTML" expanded="false" />
+            <element signature="e#510#586#0#HTML" expanded="false" />
+            <element signature="e#602#673#0#HTML" expanded="false" />
+            <element signature="e#845#869#0#HTML" expanded="false" />
+            <element signature="e#950#976#0#HTML" expanded="false" />
+            <element signature="e#1107#1327#0#HTML" expanded="false" />
+            <element signature="n#style#3;n#div#0;n#!!top" expanded="false" />
+            <element signature="e#1373#1541#0#HTML" expanded="false" />
+            <element signature="e#1560#1608#0#HTML" expanded="false" />
+            <element signature="e#1628#1675#0#HTML" expanded="false" />
+            <element signature="e#1708#1738#0#HTML" expanded="false" />
+            <element signature="e#1756#1782#0#HTML" expanded="false" />
+            <element signature="e#1798#1851#0#HTML" expanded="false" />
+            <element signature="n#style#4;n#div#0;n#!!top" expanded="false" />
+            <element signature="e#1894#1946#0#HTML" expanded="false" />
+            <element signature="e#1965#2114#0#HTML" expanded="false" />
+            <element signature="n#style#5;n#div#0;n#!!top" expanded="false" />
+            <element signature="e#2160#2210#0#HTML" expanded="false" />
+            <element signature="e#2226#2253#0#HTML" expanded="false" />
+            <element signature="e#2272#2317#0#HTML" expanded="false" />
+            <element signature="e#2343#2485#0#HTML" expanded="false" />
+            <element signature="e#2506#2573#0#HTML" expanded="false" />
+            <element signature="e#2592#2868#0#HTML" expanded="false" />
+            <element signature="e#2894#3037#0#HTML" expanded="false" />
+            <element signature="e#3056#3081#0#HTML" expanded="false" />
+            <element signature="e#3108#3152#0#HTML" expanded="false" />
+            <element signature="e#3177#3210#0#HTML" expanded="false" />
+            <element signature="e#3242#3349#0#HTML" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="221" column="0" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1535,8 +1510,8 @@
             <show-content>
               <type id="library" />
               <type id="javaee-facet-resources" />
-              <type id="artifact" />
               <type id="jpa-descriptors" />
+              <type id="artifact" />
             </show-content>
           </artifact-editor>
           <last-edited>postgraduate:war exploded</last-edited>

@@ -5,12 +5,12 @@
   Time: 0:55
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" import="java.util.*" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String path = request.getContextPath();
-    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
-<%@ taglib prefix="s" uri="/struts-tags"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 
 <!DOCTYPE html>
 <html lang="zh-CN"><!--<![endif]-->
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
     <meta name="description" content="考研师生互选">
 
-    <%@include file="/bootstrap.jsp"%>
+    <%@include file="/bootstrap.jsp" %>
 
 </head>
 
@@ -38,60 +38,11 @@
 
     <%@include file="teacher_header.jsp" %>
 
-    <div id="main"  style="margin-left: 5%;margin-right: 5%">
-        <div class="panel panel-default " style="width:80%; margin-left:10%;margin-top:20px;">
-            <div class="panel panel-heading " align="center" style="margin-bottom: 0px;">
-                <h3 class="panel-title"><span >消息记录</span></h3>
-            </div>
-            <div class="panel panel-body">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>来自</th>
-                <th>学校</th>
-                <th>摘要</th>
-                <th>更新日期</th>
-                <th>查看</th>
-                <th>状态</th>
-                <th>回复</th>
-            </tr>
-            </thead>
-
-            <tbody>
-            <s:iterator value="msgs">
-                <tr>
-                    <td>
-                        <span><s:property value="student.name"/></span>
-                    </td>
-                    <td><span><s:property value="student.school" /></span></td>
-                    <td>
-                        <span><s:property value="abs" /> </span>
-                    </td>
-                    <td>
-                        <span><s:property value="lastDate" /> </span>
-                    </td>
-                    <td>
-                        <span><a href="/teacher/viewMsgDetail.action?msg.msgId=<s:property value="msgId" />">查看</a> </span>
-                    </td>
-
-
-                    <td>
-                        <span><s:property value="flag" /> </span>
-                    </td>
-                    <td>
-                        <span><a href="/teacher/writeMsg.action?stuid=<s:property value="student.stuId" />">回复</a> </span>
-                    </td>
-                </tr>
-            </s:iterator>
-            </tbody>
-        </table>
-            </div>
-
-            </div>
-
+    <div id="main" style="margin-left: 5%;margin-right: 5%">
+        <jsp:include page="chat/index.jsp" />
     </div><!-- #main -->
 
-    <%@include file="../footer.jsp"%>
+    <%@include file="../footer.jsp" %>
 </div>
 
 </body>

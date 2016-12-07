@@ -55,7 +55,7 @@ html, body, body.page, .wf-container > *, .gform_wrapper .top_label .gfield_labe
 }
 
 body {
-    background: #ffffff url("http://54cb52c7be8c4.t73.qifeiye.com/qfy-content/uploads/wp-less/qfy-01/css/../../../../uploads/2014/12/Untitled-4.jpg") repeat left top;
+    background: #ffffff url("/res/Untitled-4.jpg") repeat left top;
     background-size: auto;
 }
 
@@ -733,7 +733,7 @@ h6 a, h6 a:hover {
 }
 
 #header .navigation-holder {
-    background-image: url("http://54cb52c7be8c4.t73.qifeiye.com/qfy-content/uploads/wp-less/qfy-01/css/../../../../themes/qfy-01/inc/bit/assets/images/menu/blackbar/bg/bg.png");
+    background-image: url("/res/bg.png");
     background-size: 2px 100%;
     background-repeat: repeat-x;
     background-color: #024722;
