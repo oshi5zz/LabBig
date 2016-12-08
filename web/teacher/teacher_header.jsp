@@ -70,7 +70,7 @@
                         <a href="/teacher/viewFinalSucList"><span>查看已录取</span></a>
                     </li>
                 </ul>
-
+                <script src="/res/jquery.timer.js"></script>
                 <script type="text/javascript">
                     $(document).ready(function () {
                         var href = window.location.href;
@@ -91,7 +91,13 @@
                                 }
                             );
                         }
-                        update_msg_num();
+
+                        if(href_id!="getStudentList") {
+                            update_msg_num();
+                            $.timer(1000, function () {
+                                update_msg_num();
+                            });
+                        }
                     })
                 </script>
             </nav>

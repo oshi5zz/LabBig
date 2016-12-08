@@ -46,7 +46,15 @@ public class MsgDAO {
                 sql = "SELECT * FROM student WHERE stu_id="+i;
                 rs = statement.executeQuery(sql);
                 if (rs.next()) {
-                    students.add(StudentConverter.getStudent(rs));
+                    Student stu = StudentConverter.getStudent(rs);
+                    sql = "SELECT count(*) FROM msg WHERE stu_id="+i+" AND tea_id="+teaId+" AND msg.read=0 AND msg.flag=0";
+                    ResultSet res = statement.executeQuery(sql);
+                    int newMsgNum = 0;
+                    if (res.next()) {
+                        newMsgNum = res.getInt(1);
+                    }
+                    stu.setNewMsgNum(newMsgNum);
+                    students.add(stu);
                 }
             }
         } catch (SQLException e) {
@@ -94,16 +102,19 @@ public class MsgDAO {
         }
     }
 
-    public int getMsgNum(int teaId) {
+    public int getMsgNum(int teaId,int stuId) {
         con = dbConnection.getConnection();
-        String sql = "SELECT count(*) FROM msg WHERE tea_id="+teaId+" AND `read`=0 AND msg.flag=0";
+        String sql = "SELECT count(*) FROM msg WHERE tea_id="+teaId+" AND `read`=0 AND msg.flag=0 ";
+        if (stuId!=-1) {
+            sql += "AND stu_id=" + stuId;
+        }
         try {
             Statement statement = con.createStatement();
             ResultSet rs = statement.executeQuery(sql);
             if (rs.next()) {
-                return rs.getInt(1);
+                int num = rs.getInt(1);
+                return num;
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -120,4 +131,5 @@ public class MsgDAO {
             e.printStackTrace();
         }
     }
+
 }

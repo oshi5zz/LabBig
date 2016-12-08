@@ -21,6 +21,15 @@ public class Student {
     private String interest;
     private Collection<Msg> msgsByStuId;
     private Collection<Request> requestsByStuId;
+    private int newMsgNum = 0;
+
+    public int getNewMsgNum() {
+        return newMsgNum;
+    }
+
+    public void setNewMsgNum(int newMsgNum) {
+        this.newMsgNum = newMsgNum;
+    }
 
     @Override
     public String toString() {

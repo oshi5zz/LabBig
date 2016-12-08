@@ -224,7 +224,7 @@
                         <li class="student-list" id="<s:property value="stuId" />">
                             <img class="avatar" width="30" height="30" alt="示例介绍"
                                                 src="/teacher/chat/dist/images/2.png">
-                            <p class="name"><s:property value="name" /></p></li>
+                            <p class="name"><s:property value="name" /><span><s:if test="newMsgNum!=0">(<s:property value="newMsgNum" />)</span></s:if></p></li>
                     </s:iterator>
                 </ul>
             </div><!--v-component-->
@@ -258,6 +258,8 @@
 
 </div>
 <script src="/bootstrap/jquery.min.js"></script>
+<script src="/res/jquery.timer.js"></script>
+
 <script type="text/javascript">
 
     $(document).ready(function () {
@@ -269,10 +271,27 @@
             $.post("/msg/updateReadMsg",{"student.stuId":stu_id});
         }
 
+        /*var new_list_num = 0;
+        var get_new_msg_num = function (stu_id) {
+            $.post("/msg/getNewMsgNum",{"student.stuId":stu_id},function (data) {
+                new_list_num = data;
+            });
+        }
+        var list = $("li.student-list");
+        $.timer(3000,function () {
+            for(var i=0; i<list.length; i++) {
+                get_new_msg_num(list[i].getAttribute("id"));
+                if (new_list_num!="0") {
+                    $(list[i]).find("span").html("(" + new_list_num + ")");
+                }
+            }
+        })*/
+
         $("li.student-list").click(function () {
             var stu_id = this.getAttribute("id");
             showMsgs(stu_id);
             update_read_msg(stu_id);
+            $(this).find("span").html("");
         });
 
         $(document).on('keydown', '.msg-text', function(e) {

@@ -199,6 +199,12 @@
         <action name="updateReadMsg" class="com.postgraduate.action.MsgAction" method="updateReadMsg">
             <result type="json" name="success"></result>
         </action>
+
+        <action name="getNewMsgNum" class="com.postgraduate.action.MsgAction" method="getNewMsgListNum">
+            <result type="json" name="success">
+                <param name="root">perMsgNum</param>
+            </result>
+        </action>
     </package>
 
     <package name="index" namespace="/" extends="json-default">

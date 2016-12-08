@@ -24,6 +24,15 @@ public class MsgAction extends ActionSupport {
     private Msg msg = new Msg();
     private boolean firstFlag = false;
     private int newMsgNum = 0;
+    private int perMsgNum = 0;
+
+    public int getPerMsgNum() {
+        return perMsgNum;
+    }
+
+    public void setPerMsgNum(int perMsgNum) {
+        this.perMsgNum = perMsgNum;
+    }
 
     public int getNewMsgNum() {
         return newMsgNum;
@@ -131,13 +140,20 @@ public class MsgAction extends ActionSupport {
 
     public String getMsgNum() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
-        newMsgNum = msgDAO.getMsgNum(teacher.getTeaId());
+        newMsgNum = msgDAO.getMsgNum(teacher.getTeaId(), -1);
         return "success";
     }
 
     public String updateReadMsg() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         msgDAO.updateReadMsg(student.getStuId(), teacher.getTeaId());
+        return "success";
+    }
+
+    public String getNewMsgListNum() {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        perMsgNum = msgDAO.getMsgNum(teacher.getTeaId(), student.getStuId());
+//        System.out.println(student.getStuId()+":"+perMsgNum);
         return "success";
     }
 }
