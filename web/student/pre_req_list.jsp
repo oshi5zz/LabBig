@@ -11,6 +11,7 @@
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 <%@ taglib prefix="s" uri="/struts-tags"%>
+
 <!DOCTYPE html>
 <html lang="zh-CN"><!--<![endif]-->
 <head>
@@ -39,56 +40,57 @@
 
     <div id="main"  style="margin-left: 5%;margin-right: 5%">
         <div class="panel panel-default " style="width:80%; margin-left:10%;margin-top:20px;">
-            <div class="panel panel-heading " align="center" style="margin-bottom: 0px;">
-                <h3 class="panel-title"><span >最新推荐</span></h3>
+            <div class="panel panel-heading " align="center">
+                <h3 class="panel-title"><span >消息记录</span></h3>
             </div>
             <div class="panel panel-body">
-                <table class="table table-striped table-hover">
-                    <thead>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <td>姓名</td>
+                <td>学校</td>
+                <td>详情</td>
+                <td>发送预请求</td>
+                <td>发送消息</td>
+            </tr>
+            </thead>
 
-                    <tr>
-                        <td>姓名</td>
-                        <td>学校</td>
-                        <td>详情</td>
-                        <td>发送消息</td>
-                        <td>操作</td>
-                    </tr>
-                    </thead>
-                    <tbody>
+            <tbody>
 
-                    <s:iterator value="students">
-                        <tr>
-                            <td><span><s:property value="name" /></span></td>
+        <s:iterator value="teachers">
+            <td>
+                <tr>
+                    <span><s:property value="name"/>(<s:property value="school" />) </span>
+                </tr>
 
-                            <td><span>(<s:property value="school" />)</span></td>
+                <tr>
+                    <span>
+                        <a href="/student/viewTeacherDetail.action?teaid=<s:property value="teaId" />">详细信息</a>
+                    </span>
+                </tr>
 
-                            <td>
-                                <a href="/student/viewTeacherDetail.action?teaid=<s:property value="teaId" />">&nbsp;&nbsp;<span class="glyphicon glyphicon-eye-open"></span></a>
-                            </td>
+                <tr>
+                    <span>
+                        <a href="/student/agreePreReq.action?teaid=<s:property value="teaId" />">同意</a>
+                    </span>
+                </tr>
+                <tr>
+                    <span>
+                        <a href="/student/refusePreReq.action?teaid=<s:property value="teaId" />">拒绝</a>
+                    </span>
+                </tr>
+            </td>
+        </s:iterator>
+            </tbody>
 
-                            <td>
-                                <a href="/student/writeMsg.action?teaid=<s:property value="teaId" />">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment"></span></a>
-                            </td>
-
-                            <td><span>
-                        <a href="/student/sendPreReq.action?teaid=<s:property value="teaId" />">发送预请求</a>
-                    </span></td>
-                        </tr>
-                    </s:iterator>
-                    </tbody>
-
-                </table>
+        </table>
+                </div>
             </div>
-        </div>
-
-
-        <%--<s:debug></s:debug>--%>
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>
 </div>
 
 </body>
-
 
 </html>

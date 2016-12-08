@@ -5,12 +5,12 @@
   Time: 0:55
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" import="java.util.*" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String path = request.getContextPath();
-    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
-<%@ taglib prefix="s" uri="/struts-tags"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 
 <!DOCTYPE html>
 <html lang="zh-CN"><!--<![endif]-->
@@ -20,13 +20,13 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>警告</title>
+    <title>考研师生互选系统</title>
     <link rel="stylesheet" href="../res/frame_a.css" type="text/css" media="all">
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
     <meta name="description" content="考研师生互选">
 
-    <%@include file="/bootstrap.jsp"%>
+    <%@include file="/bootstrap.jsp" %>
 
 </head>
 
@@ -36,15 +36,17 @@
 
 <div id="page" class="contentFixWidth fix-width">
 
-    <%@include file="teacher_header.jsp" %>
+    <%@include file="student_header.jsp" %>
 
-    <div id="main" class="bit_main_content">
-        <s:property value="warning" />
+    <div id="main" style="margin-left: 5%;margin-right: 5%">
+        <jsp:include page="chat/index.jsp" />
     </div><!-- #main -->
 
-    <%@include file="../footer.jsp"%>
+
+    <%@include file="../footer.jsp" %>
 </div>
 
 </body>
+
 
 </html>

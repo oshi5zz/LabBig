@@ -11,6 +11,7 @@
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 <%@ taglib prefix="s" uri="/struts-tags"%>
+
 <!DOCTYPE html>
 <html lang="zh-CN"><!--<![endif]-->
 <head>
@@ -19,7 +20,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>考研师生互选系统</title>
+    <title>搜索老师列表</title>
     <link rel="stylesheet" href="../res/frame_a.css" type="text/css" media="all">
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
@@ -38,57 +39,49 @@
     <%@include file="student_header.jsp" %>
 
     <div id="main"  style="margin-left: 5%;margin-right: 5%">
-        <div class="panel panel-default " style="width:80%; margin-left:10%;margin-top:20px;">
-            <div class="panel panel-heading " align="center" style="margin-bottom: 0px;">
-                <h3 class="panel-title"><span >最新推荐</span></h3>
-            </div>
-            <div class="panel panel-body">
-                <table class="table table-striped table-hover">
-                    <thead>
+        <table class="table table-striped">
+            <thead>
 
-                    <tr>
-                        <td>姓名</td>
-                        <td>学校</td>
-                        <td>详情</td>
-                        <td>发送消息</td>
-                        <td>操作</td>
-                    </tr>
-                    </thead>
-                    <tbody>
+                <tr>
+                    <th>姓名</th>
+                    <th>学校</th>
+                    <th>详情</th>
+                    <th>发消息</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
 
-                    <s:iterator value="students">
-                        <tr>
-                            <td><span><s:property value="name" /></span></td>
+            <s:iterator value="teachers">
+                <tr>
+                    <td><span><s:property value="name" /></span></td>
 
-                            <td><span>(<s:property value="school" />)</span></td>
+                    <td><span>(<s:property value="school" />)</span></td>
 
-                            <td>
-                                <a href="/student/viewTeacherDetail.action?teaid=<s:property value="teaId" />">&nbsp;&nbsp;<span class="glyphicon glyphicon-eye-open"></span></a>
-                            </td>
+                    <td>
+                        <a href="/student/viewStudentDetail.action?teaid=<s:property value="teaId" />">&nbsp;&nbsp;<span class="glyphicon glyphicon-eye-open"></a>
+                    </td>
 
-                            <td>
-                                <a href="/student/writeMsg.action?teaid=<s:property value="teaId" />">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment"></span></a>
-                            </td>
+                    <td>
+                        <a href="/student/writeMsg.action?teaid=<s:property value="teaId" />">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment"></span></a>
+                    </td>
 
-                            <td><span>
+                    <td><span>
                         <a href="/student/sendPreReq.action?teaid=<s:property value="teaId" />">发送预请求</a>
                     </span></td>
-                        </tr>
-                    </s:iterator>
-                    </tbody>
+                </tr>
+            </s:iterator>
+            </tbody>
 
-                </table>
-            </div>
-        </div>
+        </table>
 
 
-        <%--<s:debug></s:debug>--%>
+<%--<s:debug></s:debug>--%>
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>
 </div>
 
 </body>
-
 
 </html>

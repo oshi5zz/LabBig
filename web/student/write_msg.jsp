@@ -20,7 +20,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>警告</title>
+    <title>发消息</title>
     <link rel="stylesheet" href="../res/frame_a.css" type="text/css" media="all">
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
@@ -36,10 +36,22 @@
 
 <div id="page" class="contentFixWidth fix-width">
 
-    <%@include file="teacher_header.jsp" %>
+    <%@include file="student_header.jsp" %>
 
     <div id="main" class="bit_main_content">
-        <s:property value="warning" />
+        <div style="margin-left: 10%;width: 80%;margin-top: 20px;">
+            <form role="form" action="/msg/sendMsgToTeacher?teacher.teaId=<s:property value="teaid" />&firstFlag=true" method="post">
+                <input type="hidden" name="msg.teaId" value="">
+                <textarea name="msg.main" class="form-control " rows="4"></textarea>
+                <br/>
+                <div align="center">
+                    <button type="submit" class="btn btn-lg btn-primary">发送</button>
+                </div>
+            </form>
+
+        </div>
+
+
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>

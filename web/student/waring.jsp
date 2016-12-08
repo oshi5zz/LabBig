@@ -36,7 +36,7 @@
 
 <div id="page" class="contentFixWidth fix-width">
 
-    <%@include file="teacher_header.jsp" %>
+    <%@include file="student_header.jsp" %>
 
     <div id="main" class="bit_main_content">
         <s:property value="warning" />
