@@ -11,10 +11,10 @@
     <div class="wf-wrap">
         <div class="wf-table">
             <div id="branding" class="wf-td bit-logo-bar" style="">
-                <a class="bitem logo small" style="display: table-cell;"
-                ><span class="logospan"><img class="preload-me" src="res/index_img.png"
-                                             width="382" height="94"
-                                             alt="教育网站"></span></a>
+                <a class="bitem logo small" style="display: table-cell;">
+                    <span class="logospan"><img class="preload-me" src="res/index_img.png"
+                                                width="382" height="94"
+                                                alt="教育网站"></span></a>
 
             </div>
 
@@ -61,7 +61,7 @@
                         <a href="/teacher/viewPreSucList"><span>查看预录取</span></a>
                     </li>
                     <li id="viewTeacherMsg" class=" menu-item ">
-                        <a href="/msg/getStudentList"><span>查看消息</span></a>
+                        <a href="/msg/getStudentList"><span>查看消息<span id="msg_num"></span></span></a>
                     </li>
                     <li id="viewAllReq" class=" menu-item">
                         <a href="/teacher/viewAllReq"><span>查看所有请求</span></a>
@@ -81,6 +81,17 @@
                             href_id = "toTeacherIndex";
                         }
                         document.getElementById(href_id).className = "menu-item act";
+
+                        var update_msg_num = function () {
+                            $.post("/msg/getMsgNum",{},
+                                function (data) {
+                                    if(data!="0") {
+                                        document.getElementById("msg_num").innerHTML = "(" + data + ")";
+                                    }
+                                }
+                            );
+                        }
+                        update_msg_num();
                     })
                 </script>
             </nav>

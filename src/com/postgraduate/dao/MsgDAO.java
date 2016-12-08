@@ -4,6 +4,7 @@ import com.postgraduate.converter.MsgConverter;
 import com.postgraduate.converter.StudentConverter;
 import com.postgraduate.entity.Msg;
 import com.postgraduate.entity.Student;
+import com.postgraduate.service.Recommend;
 import net.sf.json.JSONObject;
 
 import javax.json.Json;
@@ -90,6 +91,33 @@ public class MsgDAO {
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
+        }
+    }
+
+    public int getMsgNum(int teaId) {
+        con = dbConnection.getConnection();
+        String sql = "SELECT count(*) FROM msg WHERE tea_id="+teaId+" AND `read`=0 AND msg.flag=0";
+        try {
+            Statement statement = con.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+            if (rs.next()) {
+                return rs.getInt(1);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    public void updateReadMsg(int stuId, int teaId) {
+        con = dbConnection.getConnection();
+        String sql = "UPDATE msg SET `read`=1 WHERE stu_id="+stuId+" AND tea_id="+teaId+" AND msg.flag=0";
+        try {
+            Statement statement = con.createStatement();
+            statement.execute(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }

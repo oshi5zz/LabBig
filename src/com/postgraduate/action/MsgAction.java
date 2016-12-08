@@ -22,6 +22,24 @@ public class MsgAction extends ActionSupport {
     private MsgDAO msgDAO = new MsgDAO();
     private List<List<String>> msgsJson = new ArrayList<>();
     private Msg msg = new Msg();
+    private boolean firstFlag = false;
+    private int newMsgNum = 0;
+
+    public int getNewMsgNum() {
+        return newMsgNum;
+    }
+
+    public void setNewMsgNum(int newMsgNum) {
+        this.newMsgNum = newMsgNum;
+    }
+
+    public boolean isFirstFlag() {
+        return firstFlag;
+    }
+
+    public void setFirstFlag(boolean firstFlag) {
+        this.firstFlag = firstFlag;
+    }
 
     public Msg getMsg() {
         return msg;
@@ -97,7 +115,8 @@ public class MsgAction extends ActionSupport {
 
     public String sendMsgToStudent() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
-        return sendMsg(true);
+        String res = sendMsg(true);
+        return firstFlag ? "view" : SUCCESS;
     }
 
     private String sendMsg(boolean toStudent) {
@@ -108,5 +127,17 @@ public class MsgAction extends ActionSupport {
             return SUCCESS;
         else
             return ERROR;
+    }
+
+    public String getMsgNum() {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        newMsgNum = msgDAO.getMsgNum(teacher.getTeaId());
+        return "success";
+    }
+
+    public String updateReadMsg() {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        msgDAO.updateReadMsg(student.getStuId(), teacher.getTeaId());
+        return "success";
     }
 }

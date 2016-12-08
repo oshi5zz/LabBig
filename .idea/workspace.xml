@@ -2,33 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f7ee190-599d-4e65-b5d2-07b4b9529bd6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/chat/dist/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/chat/dist/main.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/chat/dist/vue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/chat/dist/vue.js.old" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/chat/src/components/app.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/chat/src/components/card.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/chat/src/components/list.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/chat/src/components/message.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/chat/src/components/text.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/chat/src/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/chat/src/main.js.old" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/chat/src/store.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/teacher/chat/dist/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/teacher/chat/dist/main.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/teacher/chat/dist/vue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/teacher/chat/dist/vue.js.old" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/teacher/chat/src/components/app.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/teacher/chat/src/components/card.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/teacher/chat/src/components/list.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/teacher/chat/src/components/message.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/teacher/chat/src/components/text.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/teacher/chat/src/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/teacher/chat/src/main.js.old" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/teacher/chat/src/store.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/action/MsgAction.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/action/MsgAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/action/MsgAction.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/action/MsgAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/dao/MsgDAO.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/dao/MsgDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/chat/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/chat/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/write_msg.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/write_msg.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/struts.xml" afterPath="$PROJECT_DIR$/out/production/postgraduate/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/action/MsgAction.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/action/MsgAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/dao/MsgDAO.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/dao/MsgDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/chat/index.jsp" afterPath="$PROJECT_DIR$/web/teacher/chat/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/teacher_header.jsp" afterPath="$PROJECT_DIR$/web/teacher/teacher_header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/teacher_index.jsp" afterPath="$PROJECT_DIR$/web/teacher/teacher_index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/write_msg.jsp" afterPath="$PROJECT_DIR$/web/teacher/write_msg.jsp" />
     </list>
     <ignored path="postgraduate.iws" />
@@ -59,11 +46,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="view_msg.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/teacher/view_msg.jsp">
+      <file leaf-file-name="MsgAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/MsgAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+            <state relative-caret-position="209">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+              <folding>
+                <element signature="e#906#907#0" expanded="true" />
+                <element signature="e#938#939#0" expanded="true" />
+                <element signature="e#985#986#0" expanded="true" />
+                <element signature="e#1027#1028#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/postgraduate/entity/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -72,50 +74,9 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/teacher/chat/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="314" column="0" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
+            <state relative-caret-position="232">
+              <caret line="226" column="71" selection-start-line="226" selection-start-column="71" selection-end-line="226" selection-end-column="71" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="teacher_inf.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/teacher/teacher_inf.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1326">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_result.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/teacher/search_result.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="65" column="50" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MsgAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/MsgAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="97" column="34" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="34" />
-              <folding>
-                <element signature="e#830#831#0" expanded="true" />
-                <element signature="e#856#857#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
-                <element signature="e#968#969#0" expanded="true" />
-                <element signature="e#999#1000#0" expanded="true" />
-                <element signature="e#1059#1060#0" expanded="true" />
-                <element signature="e#1099#1100#0" expanded="true" />
-                <element signature="e#1141#1142#0" expanded="true" />
-                <element signature="e#1172#1173#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -123,26 +84,23 @@
       <file leaf-file-name="MsgDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/MsgDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="87" column="40" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
+            <state relative-caret-position="383">
+              <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
               <folding>
-                <marker date="1481184492930" expanded="true" signature="702:733" ph="SELECT * FRO... msg" />
-                <marker date="1481184492930" expanded="true" signature="702:761" ph="SELECT * FRO... msg" />
-                <marker date="1481184492930" expanded="true" signature="702:766" ph="SELECT * FRO... msg" />
-                <marker date="1481184492930" expanded="true" signature="1453:1488" ph="SELECT * FRO... student" />
-                <marker date="1481184492930" expanded="true" signature="1957:2021" ph="SELECT * FRO... msg" />
-                <marker date="1481184492930" expanded="true" signature="2545:2650" ph="INSERT INTO msg... " />
+                <marker date="1481205586556" expanded="true" signature="745:776" ph="SELECT * FRO... msg" />
+                <marker date="1481205586556" expanded="true" signature="745:804" ph="SELECT * FRO... msg" />
+                <marker date="1481205586556" expanded="true" signature="745:809" ph="SELECT * FRO... msg" />
+                <marker date="1481205586556" expanded="true" signature="1496:1531" ph="SELECT * FRO... student" />
+                <marker date="1481205586556" expanded="true" signature="2000:2064" ph="SELECT * FRO... msg" />
+                <marker date="1481205586556" expanded="true" signature="2588:2693" ph="INSERT INTO msg... " />
+                <marker date="1481205586556" expanded="true" signature="3254:3292" ph="SELECT * FRO... msg" />
+                <marker date="1481205586556" expanded="true" signature="3254:3301" ph="SELECT * FRO... msg" />
+                <marker date="1481205586556" expanded="true" signature="3254:3329" ph="SELECT count... msg" />
+                <marker date="1481205586556" expanded="true" signature="3763:3800" ph="UPDATE msg S... " />
+                <marker date="1481205586556" expanded="true" signature="3763:3821" ph="UPDATE msg S... " />
+                <marker date="1481205586556" expanded="true" signature="3763:3823" ph="UPDATE msg S... " />
+                <marker date="1481205586556" expanded="true" signature="3763:3845" ph="UPDATE msg S... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeacherDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="146" column="13" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -150,8 +108,8 @@
       <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="172" column="38" selection-start-line="172" selection-start-column="22" selection-end-line="172" selection-end-column="38" />
+            <state relative-caret-position="301">
+              <caret line="198" column="35" selection-start-line="198" selection-start-column="22" selection-end-line="198" selection-end-column="35" />
               <folding>
                 <element signature="n#package#1;n#struts#0;n#!!top" expanded="false" />
                 <element signature="n#package#3;n#struts#0;n#!!top" expanded="false" />
@@ -160,26 +118,6 @@
           </provider>
           <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="write_msg.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/teacher/write_msg.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeacherAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -238,11 +176,9 @@
         <option value="$PROJECT_DIR$/src/com/postgraduate/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/web/teacher/teacher_search.jsp" />
         <option value="$PROJECT_DIR$/web/teacher/teacher_inf.jsp" />
-        <option value="$PROJECT_DIR$/web/teacher/teacher_index.jsp" />
         <option value="$PROJECT_DIR$/web/teacher/req_include.jsp" />
         <option value="$PROJECT_DIR$/web/teacher/pre_success_list.jsp" />
         <option value="$PROJECT_DIR$/web/teacher/req_include_old.jsp" />
-        <option value="$PROJECT_DIR$/web/teacher/search_result.jsp" />
         <option value="$PROJECT_DIR$/web/teacher/final_suc_list.jsp" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java" />
         <option value="$PROJECT_DIR$/web/teacher/msg_test.jsp" />
@@ -254,13 +190,15 @@
         <option value="$PROJECT_DIR$/web/teacher/view_msg.jsp" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/converter/MsgConverter.java" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/entity/Msg.java" />
-        <option value="$PROJECT_DIR$/src/com/postgraduate/dao/MsgDAO.java" />
-        <option value="$PROJECT_DIR$/src/struts.xml" />
-        <option value="$PROJECT_DIR$/web/teacher/teacher_header.jsp" />
-        <option value="$PROJECT_DIR$/src/com/postgraduate/action/MsgAction.java" />
         <option value="$PROJECT_DIR$/web/teacher/chat/dist/main.js" />
-        <option value="$PROJECT_DIR$/web/teacher/chat/index.jsp" />
         <option value="$PROJECT_DIR$/web/teacher/write_msg.jsp" />
+        <option value="$PROJECT_DIR$/web/teacher/search_result.jsp" />
+        <option value="$PROJECT_DIR$/web/teacher/teacher_index.jsp" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/src/com/postgraduate/action/MsgAction.java" />
+        <option value="$PROJECT_DIR$/src/com/postgraduate/dao/MsgDAO.java" />
+        <option value="$PROJECT_DIR$/web/teacher/chat/index.jsp" />
+        <option value="$PROJECT_DIR$/web/teacher/teacher_header.jsp" />
       </list>
     </option>
   </component>
@@ -331,104 +269,7 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="postgraduate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="postgraduate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="postgraduate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="postgraduate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="postgraduate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="postgraduate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="postgraduate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="postgraduate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="postgraduate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="postgraduate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="postgraduate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
@@ -444,7 +285,7 @@
     <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.AboutConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/commons-lang-2.6.jar!/" />
-    <property name="SearchEverywhereHistoryKey" value="resu&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/search_result.jsp&#10;wri&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/write_msg.jsp&#10;str&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;teain&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_inf.jsp&#10;teachhea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;Teadao&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/TeacherDAO.java&#10;send&#9;null&#9;null&#10;DAO&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/MsgDAO.java&#10;Msg&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Msg.java&#10;teach&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;Stude&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Student.java&#10;tea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;stru&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;Stu&#9;PSI&#9;JAVA://com.postgraduate.entity.Student&#10;view&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/view_msg.jsp&#10;msg&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/out/artifacts/postgraduate_war_exploded/teacher/view_msg.jsp&#10;update&#9;PSI&#9;JAVA://com.postgraduate.dao.TeacherDAO#updateTeachInf&#10;ac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;fi&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/final_suc_list.jsp&#10;pre&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/pre_success_list.jsp&#10;sea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/search_result.jsp&#10;teaac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;final&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/final_suc_list.jsp&#10;log&#9;null&#9;null&#10;viewfi&#9;null&#9;null&#10;student_det&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/student_detail.jsp&#10;student&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/out/artifacts/postgraduate_war_exploded/teacher/student_detail.jsp&#10;Teacher&#9;PSI&#9;JAVA://com.postgraduate.entity.Teacher&#10;teahea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;teainf&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_inf.jsp&#10;viewre&#9;null&#9;null&#10;Re&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Request.java&#10;ReqC&#9;PSI&#9;JAVA://com.postgraduate.converter.ReqConverter&#10;Req&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Request.java&#10;st&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;req&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/ReqStatus.java&#10;sg&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/view_msg.jsp&#10;write&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/write_msg.jsp&#10;msgde&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/msg_detail.jsp&#10;tea_se&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_search.jsp&#10;index&#9;PSI&#9;JAVA://com.postgraduate.action.TeacherAction#getIndex&#10;Ms&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Msg.java&#10;TDA&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/TeacherDAO.java&#10;Tea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;msg\&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Msg.java&#10;ms&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Msg.java&#10;inter&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/interceptors/TeacherLoginInterceptor.java&#10;User&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/User.java&#10;Use&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/User.java&#10;lo&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/login.jsp" />
+    <property name="SearchEverywhereHistoryKey" value="teahea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;str&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;index&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/chat/index.jsp&#10;view&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/view_msg.jsp&#10;tea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_index.jsp&#10;teaind&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_index.jsp&#10;search&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/search_result.jsp&#10;wri&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/write_msg.jsp&#10;w&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/write_msg.jsp&#10;stru&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;resu&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/search_result.jsp&#10;teain&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_inf.jsp&#10;teachhea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;Teadao&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/TeacherDAO.java&#10;send&#9;null&#9;null&#10;DAO&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/MsgDAO.java&#10;Msg&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Msg.java&#10;teach&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;Stude&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Student.java&#10;Stu&#9;PSI&#9;JAVA://com.postgraduate.entity.Student&#10;msg&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/out/artifacts/postgraduate_war_exploded/teacher/view_msg.jsp&#10;update&#9;PSI&#9;JAVA://com.postgraduate.dao.TeacherDAO#updateTeachInf&#10;ac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;fi&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/final_suc_list.jsp&#10;pre&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/pre_success_list.jsp&#10;sea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/search_result.jsp&#10;teaac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;final&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/final_suc_list.jsp&#10;log&#9;null&#9;null&#10;viewfi&#9;null&#9;null&#10;student_det&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/student_detail.jsp&#10;student&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/out/artifacts/postgraduate_war_exploded/teacher/student_detail.jsp&#10;Teacher&#9;PSI&#9;JAVA://com.postgraduate.entity.Teacher&#10;teainf&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_inf.jsp&#10;viewre&#9;null&#9;null&#10;Re&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Request.java&#10;ReqC&#9;PSI&#9;JAVA://com.postgraduate.converter.ReqConverter&#10;Req&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Request.java&#10;st&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;req&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/ReqStatus.java&#10;sg&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/view_msg.jsp&#10;write&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/write_msg.jsp&#10;msgde&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/msg_detail.jsp&#10;tea_se&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_search.jsp&#10;Ms&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Msg.java&#10;TDA&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/TeacherDAO.java&#10;Tea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;msg\&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Msg.java&#10;ms&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/entity/Msg.java&#10;inter&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/interceptors/TeacherLoginInterceptor.java" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="JPA.DatabaseSchemaImportDialog" value="521b12ca-b2b6-4a64-9600-bc1ef841b516" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -1118,7 +959,7 @@
       <workItem from="1481025082517" duration="2222000" />
       <workItem from="1481093587730" duration="15552000" />
       <workItem from="1481125147876" duration="1321000" />
-      <workItem from="1481167317272" duration="18231000" />
+      <workItem from="1481167317272" duration="25277000" />
     </task>
     <task id="LOCAL-00001" summary="导师的后台架构和调用关系基本完成">
       <created>1478526089869</created>
@@ -1131,7 +972,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314523000" />
+    <option name="totallyTimeSpent" value="321569000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1151,7 +992,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2749591" sideWeight="0.50907713" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28641573" sideWeight="0.49092284" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.28641573" sideWeight="0.49092284" order="12" side_tool="false" content_ui="tabs" x="9" y="507" width="1322" height="175" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19667171" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1168,7 +1009,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7725041" sideWeight="0.49092284" order="3" side_tool="false" content_ui="tabs" x="0" y="259" width="1366" height="209" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20877458" sideWeight="0.43934426" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16263238" sideWeight="0.5606557" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16263238" sideWeight="0.5606557" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2065053" sideWeight="0.49144253" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2065053" sideWeight="0.5106383" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1420,14 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/teacher_index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/res/frame_b.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -1451,14 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/entity/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1505,34 +1330,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="146" column="13" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/teacher_header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-796">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/teacher/chat/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/view_msg.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1545,18 +1346,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/chat/index.jsp">
+    <entry file="file://$PROJECT_DIR$/web/teacher/teacher_inf.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="314" column="0" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
+        <state relative-caret-position="-1326">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/write_msg.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="42" column="117" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="146" column="13" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/search_result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="71" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/teacher_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/view_msg.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/MsgDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+          <folding>
+            <marker date="1481205586556" expanded="true" signature="745:776" ph="SELECT * FRO... msg" />
+            <marker date="1481205586556" expanded="true" signature="745:804" ph="SELECT * FRO... msg" />
+            <marker date="1481205586556" expanded="true" signature="745:809" ph="SELECT * FRO... msg" />
+            <marker date="1481205586556" expanded="true" signature="1496:1531" ph="SELECT * FRO... student" />
+            <marker date="1481205586556" expanded="true" signature="2000:2064" ph="SELECT * FRO... msg" />
+            <marker date="1481205586556" expanded="true" signature="2588:2693" ph="INSERT INTO msg... " />
+            <marker date="1481205586556" expanded="true" signature="3254:3292" ph="SELECT * FRO... msg" />
+            <marker date="1481205586556" expanded="true" signature="3254:3301" ph="SELECT * FRO... msg" />
+            <marker date="1481205586556" expanded="true" signature="3254:3329" ph="SELECT count... msg" />
+            <marker date="1481205586556" expanded="true" signature="3763:3800" ph="UPDATE msg S... " />
+            <marker date="1481205586556" expanded="true" signature="3763:3821" ph="UPDATE msg S... " />
+            <marker date="1481205586556" expanded="true" signature="3763:3823" ph="UPDATE msg S... " />
+            <marker date="1481205586556" expanded="true" signature="3763:3845" ph="UPDATE msg S... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="172" column="38" selection-start-line="172" selection-start-column="22" selection-end-line="172" selection-end-column="38" />
+        <state relative-caret-position="301">
+          <caret line="198" column="35" selection-start-line="198" selection-start-column="22" selection-end-line="198" selection-end-column="35" />
           <folding>
             <element signature="n#package#1;n#struts#0;n#!!top" expanded="false" />
             <element signature="n#package#3;n#struts#0;n#!!top" expanded="false" />
@@ -1567,60 +1430,39 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/write_msg.jsp">
+    <entry file="file://$PROJECT_DIR$/web/teacher/teacher_header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+          <caret line="91" column="30" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/MsgDAO.java">
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="87" column="40" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
-          <folding>
-            <marker date="1481184492930" expanded="true" signature="702:733" ph="SELECT * FRO... msg" />
-            <marker date="1481184492930" expanded="true" signature="702:761" ph="SELECT * FRO... msg" />
-            <marker date="1481184492930" expanded="true" signature="702:766" ph="SELECT * FRO... msg" />
-            <marker date="1481184492930" expanded="true" signature="1453:1488" ph="SELECT * FRO... student" />
-            <marker date="1481184492930" expanded="true" signature="1957:2021" ph="SELECT * FRO... msg" />
-            <marker date="1481184492930" expanded="true" signature="2545:2650" ph="INSERT INTO msg... " />
-          </folding>
+        <state relative-caret-position="232">
+          <caret line="226" column="71" selection-start-line="226" selection-start-column="71" selection-end-line="226" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/MsgAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="97" column="34" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="34" />
+        <state relative-caret-position="209">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
           <folding>
-            <element signature="e#830#831#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/teacher_inf.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/entity/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1326">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/search_result.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="65" column="50" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="50" />
+        <state relative-caret-position="209">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding />
         </state>
       </provider>

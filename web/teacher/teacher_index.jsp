@@ -50,32 +50,29 @@
                         <td>姓名</td>
                         <td>学校</td>
                         <td>详情</td>
-                        <td>发送预请求</td>
                         <td>发送消息</td>
+                        <td>操作</td>
                     </tr>
                     </thead>
                     <tbody>
 
                     <s:iterator value="students">
                         <tr>
+                            <td><span><s:property value="name" /></span></td>
+
+                            <td><span>(<s:property value="school" />)</span></td>
+
                             <td>
-                                <span><s:property value="name" /></span>
-                            </td>
-                            <td>
-                                <span>(<s:property value="school" />)</span>
+                                <a href="/teacher/viewStudentDetail.action?stuid=<s:property value="stuId" />">&nbsp;&nbsp;<span class="glyphicon glyphicon-eye-open"></a>
                             </td>
 
                             <td>
-                                <span><a href="/teacher/viewStudentDetail.action?stuid=<s:property value="stuId" />">查看详情</a></span>
+                                <a href="/teacher/writeMsg.action?stuid=<s:property value="stuId" />">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment"></span></a>
                             </td>
 
-                            <td>
-                                <span><a href="/teacher/writeMsg.action?stuid=<s:property value="stuId" />">发送消息</a></span>
-                            </td>
-
-                            <td>
-                                <span><a href="/teacher/sendPreReq.action?stuid=<s:property value="stuId" />">发送预请求</a></span>
-                            </td>
+                            <td><span>
+                        <a href="/teacher/sendPreReq.action?stuid=<s:property value="stuId" />">发送预请求</a>
+                    </span></td>
                         </tr>
                     </s:iterator>
                     </tbody>

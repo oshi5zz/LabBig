@@ -215,7 +215,7 @@
             <div class="m-card">
                 <header><img class="avatar" width="40" height="40" alt="Coffce" src="/teacher/chat/dist/images/1.jpg">
                     <p class="name"><s:property value="teacher.name" /> </p></header>
-                <footer><input class="search" placeholder="search user..."></footer>
+                <footer></footer>
             </div><!--v-component-->
 
             <div class="m-list">
@@ -247,6 +247,7 @@
                             </div>
                         </li>
                     </s:iterator>
+
                 </ul>
             </div>
             <div class="m-text"><textarea class="msg-text" placeholder="按 Ctrl + Enter 发送"></textarea></div>
@@ -256,7 +257,6 @@
 <%--<script src="teacher/chat/src/main.js.old"></script>--%>
 
 </div>
-
 <script src="/bootstrap/jquery.min.js"></script>
 <script type="text/javascript">
 
@@ -264,9 +264,15 @@
         var _text_area = $("textarea.msg-text");
         _text_area.prop("readonly",true);
         var text_area = _text_area[0];
+
+        var update_read_msg = function (stu_id) {
+            $.post("/msg/updateReadMsg",{"student.stuId":stu_id});
+        }
+
         $("li.student-list").click(function () {
             var stu_id = this.getAttribute("id");
             showMsgs(stu_id);
+            update_read_msg(stu_id);
         });
 
         $(document).on('keydown', '.msg-text', function(e) {
@@ -324,3 +330,4 @@
         }
     });
 </script>
+
