@@ -322,5 +322,5 @@
             text_area.setAttribute("id",stu_id);
             _text_area.prop("readonly",false);
         }
-    })
+    });
 </script>
