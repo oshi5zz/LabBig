@@ -1,5 +1,8 @@
 package com.postgraduate.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by zhao on 2016/11/10.
  */
@@ -78,6 +81,20 @@ public class Msg {
     public void setFlag(int flag) {
         this.flag = flag;
     }
+
+    @Override
+    public String toString() {
+        return flag+"$"+main+"$"+lastDate;
+    }
+
+    public List<String> toList() {
+        List<String> list = new ArrayList<>();
+        list.add(flag+"");
+        list.add(main);
+        list.add(lastDate);
+        return list;
+    }
+
 
     @Override
     public boolean equals(Object o) {

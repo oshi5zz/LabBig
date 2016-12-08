@@ -1,12 +1,14 @@
 package com.postgraduate.dao;
 
+import com.postgraduate.converter.MsgConverter;
 import com.postgraduate.converter.StudentConverter;
+import com.postgraduate.entity.Msg;
 import com.postgraduate.entity.Student;
+import net.sf.json.JSONObject;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import javax.json.Json;
+import javax.json.JsonObject;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +22,7 @@ public class MsgDAO {
     public List<Student> getStudentList(int teaId) {
         List<Student> students = new ArrayList<>();
         con = dbConnection.getConnection();
-        String sql = "SELECT * FROM msg WHERE tea_id="+teaId+" ORDER BY last_date";
+        String sql = "SELECT * FROM msg WHERE tea_id="+teaId+" ORDER BY last_date DESC ";
         Statement statement = null;
         try {
             statement = con.createStatement();
@@ -50,5 +52,44 @@ public class MsgDAO {
             e.printStackTrace();
         }
         return students;
+    }
+
+    public List<Msg> getStudentMsgs(int stu_id, int tea_id) {
+        List<Msg> msgs = new ArrayList<>();
+        con = dbConnection.getConnection();
+        String sql = "SELECT * FROM msg WHERE stu_id=? AND tea_id=? ORDER BY last_date";
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1,stu_id);
+            ps.setInt(2,tea_id);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                Msg msg = MsgConverter.getMsg(rs);
+                if (msg != null)
+                    msgs.add(msg);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return msgs;
+    }
+
+    public boolean sendMsg(Msg msg) {
+        String sql = "INSERT INTO msg(stu_id, tea_id, main,last_date,`read`,flag) " +
+                "VALUES (?,?,?,NOW(),1,?)";
+        Connection con = dbConnection.getConnection();
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1, msg.getStuId());
+            ps.setInt(2, msg.getTeaId());
+            ps.setString(3,msg.getMain());
+            ps.setInt(4, msg.getFlag());
+            return ps.executeUpdate() == 1;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 }

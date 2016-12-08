@@ -7,7 +7,6 @@ import com.postgraduate.dao.MsgDAO;
 import com.postgraduate.entity.Msg;
 import com.postgraduate.entity.Student;
 import com.postgraduate.entity.Teacher;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +20,24 @@ public class MsgAction extends ActionSupport {
     private Teacher teacher = new Teacher();
     private List<Msg> msgs = new ArrayList<>();
     private MsgDAO msgDAO = new MsgDAO();
+    private List<List<String>> msgsJson = new ArrayList<>();
+    private Msg msg = new Msg();
+
+    public Msg getMsg() {
+        return msg;
+    }
+
+    public void setMsg(Msg msg) {
+        this.msg = msg;
+    }
+
+    public List<List<String>> getMsgsJson() {
+        return msgsJson;
+    }
+
+    public void setMsgsJson(List<List<String>> msgsJson) {
+        this.msgsJson = msgsJson;
+    }
 
     public List<Student> getStudents() {
         return students;
@@ -69,8 +86,27 @@ public class MsgAction extends ActionSupport {
     }
 
     public String getStudentMsg() {
-
+        int stu_id = student.getStuId();
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        msgs = msgDAO.getStudentMsgs(stu_id,teacher.getTeaId());
+        for (Msg m : msgs) {
+            msgsJson.add(m.toList());
+        }
         return "success";
     }
 
+    public String sendMsgToStudent() {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        return sendMsg(true);
+    }
+
+    private String sendMsg(boolean toStudent) {
+        msg.setStuId(student.getStuId());
+        msg.setTeaId(teacher.getTeaId());
+        msg.setFlag(toStudent ? 1 : 0);
+        if (msgDAO.sendMsg(msg))
+            return SUCCESS;
+        else
+            return ERROR;
+    }
 }

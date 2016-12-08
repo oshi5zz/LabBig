@@ -5,7 +5,7 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-    <package name="teacher" namespace="/teacher" extends="struts-default">
+    <package name="teacher" namespace="/teacher" extends="json-default">
 
         <interceptors>
             <interceptor name="teacherInterceptor"
@@ -89,15 +89,15 @@
             <!--<interceptor-ref name="teacherInterceptor" />-->
         </action>
 
-        <action name="sendMsg" class="com.postgraduate.action.TeacherAction" method="sendMsg">
+<!--        <action name="sendMsg" class="com.postgraduate.action.TeacherAction" method="sendMsg">
             <result name="success" type="chain">
                 <param name="namespace">/teacher</param>
                 <param name="actionName">viewTeacherMsg</param>
             </result>
             <result name="input">/teacher/write_msg.jsp</result>
             <result name="error">/teacher/error.jsp</result>
-            <!--<interceptor-ref name="teacherInterceptor" />-->
-        </action>
+            &lt;!&ndash;<interceptor-ref name="teacherInterceptor" />&ndash;&gt;
+        </action>-->
 
         <action name="writeMsg" class="com.postgraduate.action.TeacherAction" method="writeMsg">
             <result name="success" >/teacher/write_msg.jsp</result>
@@ -151,14 +151,17 @@
             <result name="success">/teacher/final_suc_list.jsp</result>
             <result name="error">/teacher/error.jsp</result>
         </action>
-
+<!--
         <action name="getStudentList" class="com.postgraduate.action.MsgAction" method="getStudentList">
             <result name="success">/teacher/view_msg.jsp</result>
         </action>
 
         <action name="getStudentMsg" class="com.postgraduate.action.MsgAction" method="getStudentMsg">
-
-        </action>
+            <result type="json" name="success">
+                <param name="root">msgsJson</param>
+            </result>
+            <result name="error">/error.jsp</result>
+        </action>-->
 
     </package>
 
@@ -166,7 +169,26 @@
 
     </package>
 
-    <package name="index" namespace="/" extends="struts-default">
+    <package name="msg" namespace="/msg" extends="json-default">
+        <action name="sendMsgToStudent" class="com.postgraduate.action.MsgAction" method="sendMsgToStudent">
+            <result name="success" type="chain">
+                <param name="actionName">getStudentMsg</param>
+            </result>
+        </action>
+
+        <action name="getStudentList" class="com.postgraduate.action.MsgAction" method="getStudentList">
+            <result name="success">/teacher/view_msg.jsp</result>
+        </action>
+
+        <action name="getStudentMsg" class="com.postgraduate.action.MsgAction" method="getStudentMsg">
+            <result type="json" name="success">
+                <param name="root">msgsJson</param>
+            </result>
+            <result name="error">/error.jsp</result>
+        </action>
+    </package>
+
+    <package name="index" namespace="/" extends="json-default">
         <action name="login" class="com.postgraduate.action.UserAction" method="login">
             <result name="teacher" type="chain">
                 <param name="namespace">/teacher</param>
@@ -181,5 +203,6 @@
             <result name="input">/logup.jsp</result>
         </action>
     </package>
+
 
 </struts>

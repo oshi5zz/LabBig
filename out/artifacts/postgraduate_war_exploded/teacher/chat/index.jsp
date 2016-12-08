@@ -233,7 +233,7 @@
 
         <div class="main">
             <div class="m-message">
-                <ul>
+                <ul class="msgs">
                     <s:iterator value="msgs">
                         <li><p class="time"><span><s:property value="lastDate" /></span></p>
                             <div class="main <s:if test="flag==1" >self</s:if>">
@@ -249,7 +249,7 @@
                     </s:iterator>
                 </ul>
             </div>
-            <div class="m-text"><textarea placeholder="按 Ctrl + Enter 发送"></textarea></div>
+            <div class="m-text"><textarea class="msg-text" placeholder="按 Ctrl + Enter 发送"></textarea></div>
         </div>
     </div>
     <%--<script src="teacher/chat/dist/vue.js.old"></script>--%>
@@ -259,14 +259,68 @@
 
 <script src="/bootstrap/jquery.min.js"></script>
 <script type="text/javascript">
+
     $(document).ready(function () {
+        var _text_area = $("textarea.msg-text");
+        _text_area.prop("readonly",true);
+        var text_area = _text_area[0];
         $("li.student-list").click(function () {
             var stu_id = this.getAttribute("id");
+            showMsgs(stu_id);
+        });
+
+        $(document).on('keydown', '.msg-text', function(e) {
+            if(e.keyCode == 13 && (e.metaKey || e.ctrlKey)) {
+                var text = $(this).val();
+                var stu_id = text_area.getAttribute("id");
+                $.post("/msg/sendMsgToStudent",
+                        {
+                            "student.stuId":stu_id,
+                            "msg.main":text,
+                        },
+                        function () {
+                            text_area.value = "";
+                            showMsgs(stu_id);
+                        }
+                );
+            }
+        });
+
+        var getLi = function(data) {
+            var li = '<li><p class="time"><span>'+data[2]+'</span></p>';
+            li = li + '<div class="main ';
+            if (data[0]=="1") {
+                li+='self"><img class="avatar" width="30" height="30" src="/teacher/chat/dist/images/1.jpg">';
+            } else {
+                li+='"><img class="avatar" width="30" height="30" src="/teacher/chat/dist/images/2.png">';
+            }
+            li += '<div class="text">'+data[1]+'</div></li>';
+            return li;
+        }
+
+        var getMsgs = function (stu_id) {
+            $.post("/msg/getStudentMsg",
+                    {
+                        "student.stuId" : stu_id,
+                    },
+                    function (data) {
+                        var li = "";
+                        for (var i=0; i<data.length; i++) {
+                            li += getLi(data[i]);
+                        }
+                        $("ul.msgs")[0].innerHTML = li;
+                    }
+            );
+        }
+
+        var showMsgs = function (stu_id) {
             var li = $("li.active");
             for(var i =0; i<li.length; i++)
                 li[i].className = "student-list";
             this.className = "student-list active";
-
-        });
+            getMsgs(stu_id);
+            text_area.setAttribute("id",stu_id);
+            _text_area.prop("readonly",false);
+        }
     })
 </script>
