@@ -15,7 +15,6 @@ import java.util.List;
  */
 public class StudentAction extends ActionSupport {
     private StudentDAO studentDAO = new StudentDAO();
-    //
     private Student student = student = (Student) ActionContext.getContext().getSession().get("student");
     private Teacher teacher = new Teacher();
     private List<Teacher> teachers = new ArrayList<>();
@@ -109,6 +108,14 @@ public class StudentAction extends ActionSupport {
 
     public void setStudent(Student student) {
         this.student = student;
+    }
+
+    public List<Teacher> getTeachers() {
+        return teachers;
+    }
+
+    public void setTeachers(List<Teacher> teachers) {
+        this.teachers = teachers;
     }
 
     public String updateInf() {
@@ -254,7 +261,7 @@ public class StudentAction extends ActionSupport {
         } catch (Exception e) {
             return ERROR;
         }
-        msg.setStuId(tea_id);
+        msg.setTeaId(tea_id);
         msg.setStuId(student.getStuId());
         if (msg.getMain().length() < 1)
             return INPUT;
@@ -265,13 +272,7 @@ public class StudentAction extends ActionSupport {
             return INPUT;
     }
 
-    public List<Teacher> getTeachers() {
-        return teachers;
-    }
 
-    public void setTeachers(List<Teacher> teachers) {
-        this.teachers = teachers;
-    }
 
     public String viewTeacherDetail() {
         student = (Student) ActionContext.getContext().getSession().get("student");
@@ -380,8 +381,8 @@ public class StudentAction extends ActionSupport {
             return WARNING;
         }
         try {
-            int id = Integer.parseInt(teaid);
-            if (studentDAO.updateReq(6,student.getStuId(), id)) {
+            int tea_id = Integer.parseInt(teaid);
+            if (studentDAO.updateReq(6,student.getStuId(), tea_id)) {
                 warning = "已同意最终请求";
                 return SUCCESS;
             }

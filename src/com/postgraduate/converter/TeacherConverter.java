@@ -1,5 +1,6 @@
 package com.postgraduate.converter;
 
+import com.postgraduate.action.TeacherAction;
 import com.postgraduate.entity.Teacher;
 import com.sun.org.apache.regexp.internal.RE;
 import com.sun.org.apache.xalan.internal.utils.XMLSecurityManager;
@@ -7,6 +8,7 @@ import com.sun.org.apache.xalan.internal.utils.XMLSecurityManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -52,11 +54,22 @@ public class TeacherConverter {
             ps.setString(11, teacher.getPreNum());
             ps.setString(12, teacher.getFinalNum());
             ps.setString(13, teacher.getRequirement());
-//            ps.setInt(14, teacher.getTeaId());
             return true;
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
         }
+    }
+
+    public static List<Teacher> getTeachers(ResultSet rs) {
+        List<Teacher> teachers = new ArrayList<>();
+        try {
+            while (rs.next()) {
+                teachers.add(getTeacher(rs));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return teachers;
     }
 }
