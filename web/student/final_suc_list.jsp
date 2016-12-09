@@ -54,7 +54,7 @@
             </thead>
 
             <tbody>
-                <s:iterator value="students">
+                <s:iterator value="teachers">
                     <tr>
                         <td>
                             <span><s:property value="name"/> </span>

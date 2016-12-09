@@ -153,7 +153,28 @@ public class MsgAction extends ActionSupport {
     public String getNewMsgListNum() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         perMsgNum = msgDAO.getMsgNum(teacher.getTeaId(), student.getStuId());
-//        System.out.println(student.getStuId()+":"+perMsgNum);
+        return "success";
+    }
+
+    public String sendMsgToTeacher() throws Exception {
+        student = (Student) ActionContext.getContext().getSession().get("student");
+        String res = sendMsg(true);
+        return firstFlag ? "view" : SUCCESS;
+    }
+
+    public String getTeacherList() throws Exception {
+        student = (Student) ActionContext.getContext().getSession().get("student");
+        teachers = msgDAO.getTeacherList(student.getStuId());
+        return "success";
+    }
+
+    public String getTeacherMsg() throws Exception {
+        int tea_id = teacher.getTeaId();
+        student = (Student) ActionContext.getContext().getSession().get("student");
+        msgs = msgDAO.getStudentMsgs(tea_id,student.getStuId());
+        for (Msg m : msgs) {
+            msgsJson.add(m.toList());
+        }
         return "success";
     }
 }

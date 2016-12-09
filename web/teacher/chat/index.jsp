@@ -220,7 +220,7 @@
 
             <div class="m-list">
                 <ul><!--v-for-start-->
-                    <s:iterator value="students">
+                    <s:iterator value="teachers">
                         <li class="student-list" id="<s:property value="stuId" />">
                             <img class="avatar" width="30" height="30" alt="示例介绍"
                                                 src="/teacher/chat/dist/images/2.png">

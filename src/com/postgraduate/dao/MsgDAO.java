@@ -4,6 +4,7 @@ import com.postgraduate.converter.MsgConverter;
 import com.postgraduate.converter.StudentConverter;
 import com.postgraduate.entity.Msg;
 import com.postgraduate.entity.Student;
+import com.postgraduate.entity.Teacher;
 import com.postgraduate.service.Recommend;
 import net.sf.json.JSONObject;
 
@@ -132,4 +133,7 @@ public class MsgDAO {
         }
     }
 
+    public List<Teacher> getTeacherList(int stuId) {
+        return null;
+    }
 }
