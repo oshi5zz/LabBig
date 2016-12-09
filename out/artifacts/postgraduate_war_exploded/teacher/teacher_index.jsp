@@ -63,7 +63,7 @@
                             <td><span>(<s:property value="school" />)</span></td>
 
                             <td>
-                                <a href="/teacher/viewStudentDetail.action?stuid=<s:property value="stuId" />">&nbsp;&nbsp;<span class="glyphicon glyphicon-eye-open"></a>
+                                <a href="/teacher/viewStudentDetail.action?stuid=<s:property value="stuId" />">&nbsp;&nbsp;<span class="glyphicon glyphicon-eye-open"></span></a>
                             </td>
 
                             <td>

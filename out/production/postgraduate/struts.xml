@@ -278,41 +278,42 @@
 </package>
 
 <package name="msg" namespace="/msg" extends="json-default">
-    <action name="sendMsgToStudent" class="com.postgraduate.action.MsgAction" method="sendMsgToTeacher">
+    <action name="sendMsgToStudent" class="com.postgraduate.action.MsgAction" method="sendMsgToStudent">
         <result name="success" type="chain">
-            <param name="actionName">getTeacherMsg</param>
+            <param name="actionName">getStudentMsg</param>
         </result>
         <result name="view" type="chain">
-            <param name="actionName">getTeacherList</param>
+            <param name="actionName">getStudentList</param>
         </result>
     </action>
 
-    <action name="getTeacherList" class="com.postgraduate.action.MsgAction" method="getTeacherList">
-        <result name="success">/student/view_msg.jsp</result>
+    <action name="getStudentList" class="com.postgraduate.action.MsgAction" method="getStudentList">
+        <result name="success">/teacher/view_msg.jsp</result>
     </action>
 
-    <action name="getTeacherMsg" class="com.postgraduate.action.MsgAction" method="getTeacherMsg">
+    <action name="getStudentMsg" class="com.postgraduate.action.MsgAction" method="getStudentMsg">
         <result type="json" name="success">
             <param name="root">msgsJson</param>
         </result>
         <result name="error">/error.jsp</result>
     </action>
 
-    <action name="getMsgNum" class="com.postgraduate.action.MsgAction" method="getMsgNum">
+    <action name="getStudentMsgNum" class="com.postgraduate.action.MsgAction" method="getStudentMsgNum">
         <result type="json" name="success">
             <param name="root">newMsgNum</param>
         </result>
     </action>
 
-    <action name="updateReadMsg" class="com.postgraduate.action.MsgAction" method="updateReadMsg">
+    <action name="getTeacherMsgNum" class="com.postgraduate.action.MsgAction" method="getTeacherMsgNum">
+        <result type="json" name="success">
+            <param name="root">newMsgNum</param>
+        </result>
+    </action>
+
+    <action name="updateTeacherReadMsg" class="com.postgraduate.action.MsgAction" method="updateTeacherReadMsg">
         <result type="json" name="success"></result>
     </action>
 
-    <action name="getNewMsgNum" class="com.postgraduate.action.MsgAction" method="getNewMsgListNum">
-        <result type="json" name="success">
-            <param name="root">perMsgNum</param>
-        </result>
-    </action>
 </package>
 
 <package name="index" namespace="/" extends="json-default">

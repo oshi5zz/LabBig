@@ -124,7 +124,7 @@ public class MsgAction extends ActionSupport {
 
     public String sendMsgToStudent() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
-        String res = sendMsg(true);
+        sendMsg(true);
         return firstFlag ? "view" : SUCCESS;
     }
 
@@ -138,23 +138,23 @@ public class MsgAction extends ActionSupport {
             return ERROR;
     }
 
-    public String getMsgNum() {
+    public String getTeacherMsgNum() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
-        newMsgNum = msgDAO.getMsgNum(teacher.getTeaId(), -1);
+        newMsgNum = msgDAO.getMsgNum(teacher.getTeaId(), -1, 0);
         return "success";
     }
 
-    public String updateReadMsg() {
+    public String getTeacherNewMsgListNum() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
-        msgDAO.updateReadMsg(student.getStuId(), teacher.getTeaId());
+        perMsgNum = msgDAO.getMsgNum(teacher.getTeaId(), student.getStuId(), 0);
         return "success";
     }
 
-    public String getNewMsgListNum() {
-        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
-        perMsgNum = msgDAO.getMsgNum(teacher.getTeaId(), student.getStuId());
+/*    public String getStudentNewMsgListNum() {
+        student = (Student) ActionContext.getContext().getSession().get("student");
+        perMsgNum = msgDAO.getMsgNum(teacher.getTeaId(), student.getStuId(), 1);
         return "success";
-    }
+    }*/
 
     public String sendMsgToTeacher() throws Exception {
         student = (Student) ActionContext.getContext().getSession().get("student");
@@ -162,19 +162,31 @@ public class MsgAction extends ActionSupport {
         return firstFlag ? "view" : SUCCESS;
     }
 
-    public String getTeacherList() throws Exception {
+/*    public String getTeacherList() throws Exception {
         student = (Student) ActionContext.getContext().getSession().get("student");
         teachers = msgDAO.getTeacherList(student.getStuId());
         return "success";
-    }
+    }*/
 
-    public String getTeacherMsg() throws Exception {
+/*    public String getTeacherMsg() throws Exception {
         int tea_id = teacher.getTeaId();
         student = (Student) ActionContext.getContext().getSession().get("student");
         msgs = msgDAO.getStudentMsgs(tea_id,student.getStuId());
         for (Msg m : msgs) {
             msgsJson.add(m.toList());
         }
+        return "success";
+    }*/
+
+    public String getStudentMsgNum() throws Exception {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        newMsgNum = msgDAO.getMsgNum(-1,student.getStuId(), 1);
+        return "success";
+    }
+
+    public String updateTeacherReadMsg() throws Exception {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        msgDAO.updateReadMsg(student.getStuId(), teacher.getTeaId(), 0);
         return "success";
     }
 }

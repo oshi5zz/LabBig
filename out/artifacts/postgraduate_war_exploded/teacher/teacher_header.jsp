@@ -60,7 +60,7 @@
                     <li id="viewPreSucList" class=" menu-item ">
                         <a href="/teacher/viewPreSucList"><span>查看预录取</span></a>
                     </li>
-                    <li id="viewTeacherMsg" class=" menu-item ">
+                    <li id="getStudentList" class=" menu-item ">
                         <a href="/msg/getStudentList"><span>查看消息<span id="msg_num"></span></span></a>
                     </li>
                     <li id="viewAllReq" class=" menu-item">
@@ -83,7 +83,7 @@
                         document.getElementById(href_id).className = "menu-item act";
 
                         var update_msg_num = function () {
-                            $.post("/msg/getMsgNum",{},
+                            $.post("/msg/getTeacherMsgNum",{},
                                 function (data) {
                                     if(data!="0") {
                                         document.getElementById("msg_num").innerHTML = "(" + data + ")";

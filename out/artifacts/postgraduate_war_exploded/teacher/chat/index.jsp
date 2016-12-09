@@ -268,7 +268,7 @@
         var text_area = _text_area[0];
 
         var update_read_msg = function (stu_id) {
-            $.post("/msg/updateReadMsg",{"student.stuId":stu_id});
+            $.post("/msg/updateTeacherReadMsg",{"student.stuId":stu_id});
         }
 
         /*var new_list_num = 0;
@@ -286,8 +286,6 @@
                 }
             }
         })*/
-
-        
 
         $("li.student-list").click(function () {
             var stu_id = this.getAttribute("id");

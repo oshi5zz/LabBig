@@ -103,11 +103,14 @@ public class MsgDAO {
         }
     }
 
-    public int getMsgNum(int teaId,int stuId) {
+    public int getMsgNum(int teaId,int stuId, int flag) {
         con = dbConnection.getConnection();
-        String sql = "SELECT count(*) FROM msg WHERE tea_id="+teaId+" AND `read`=0 AND msg.flag=0 ";
+        String sql = "SELECT count(*) FROM msg WHERE `read`=0 AND msg.flag="+flag;
         if (stuId!=-1) {
-            sql += "AND stu_id=" + stuId;
+            sql += " AND stu_id=" + stuId;
+        }
+        else if (teaId != -1) {
+            sql += " AND tea_id=" + teaId;
         }
         try {
             Statement statement = con.createStatement();
@@ -122,9 +125,9 @@ public class MsgDAO {
         return 0;
     }
 
-    public void updateReadMsg(int stuId, int teaId) {
+    public void updateReadMsg(int stuId, int teaId, int flag) {
         con = dbConnection.getConnection();
-        String sql = "UPDATE msg SET `read`=1 WHERE stu_id="+stuId+" AND tea_id="+teaId+" AND msg.flag=0";
+        String sql = "UPDATE msg SET `read`=1 WHERE stu_id="+stuId+" AND tea_id="+teaId+" AND msg.flag="+flag;
         try {
             Statement statement = con.createStatement();
             statement.execute(sql);

@@ -220,7 +220,7 @@
 
             <div class="m-list">
                 <ul><!--v-for-start-->
-                    <s:iterator value="teachers">
+                    <s:iterator value="students">
                         <li class="student-list" id="<s:property value="stuId" />">
                             <img class="avatar" width="30" height="30" alt="示例介绍"
                                                 src="/teacher/chat/dist/images/2.png">
@@ -268,7 +268,7 @@
         var text_area = _text_area[0];
 
         var update_read_msg = function (stu_id) {
-            $.post("/msg/updateReadMsg",{"student.stuId":stu_id});
+            $.post("/msg/updateTeacherReadMsg",{"student.stuId":stu_id});
         }
 
         /*var new_list_num = 0;
