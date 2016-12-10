@@ -40,7 +40,7 @@
     <div id="main"  style="margin-left: 5%;margin-right: 5%">
         <div class="panel panel-default " style="width:80%; margin-left:10%;margin-top:20px;">
             <div class="panel panel-heading " align="center" style="margin-bottom: 0px;">
-                <h3 class="panel-title"><span >预通过名单（<s:property value="usedPreNum" />/<s:property value="student.preNum" />）</span></h3>
+                <h3 class="panel-title"><span >通过的预请求（<s:property value="usedPreNum" />/<s:property value="student.preNum" />）</span></h3>
             </div>
             <div class="panel panel-body">
         <table class="table table-striped table-hover">

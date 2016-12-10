@@ -60,8 +60,8 @@
                     <li id="viewPreSucList" class=" menu-item ">
                         <a href="/teacher/viewPreSucList"><span>查看预录取</span></a>
                     </li>
-                    <li id="getStudentList" class=" menu-item ">
-                        <a href="/msg/getStudentList"><span>查看消息<span id="msg_num"></span></span></a>
+                    <li id="viewMsgPanel" class=" menu-item ">
+                        <a href="/msg/teacher/viewMsgPanel"><span>查看消息<span id="msg_num"></span></span></a>
                     </li>
                     <li id="viewAllReq" class=" menu-item">
                         <a href="/teacher/viewAllReq"><span>查看所有请求</span></a>
@@ -83,7 +83,7 @@
                         document.getElementById(href_id).className = "menu-item act";
 
                         var update_msg_num = function () {
-                            $.post("/msg/getTeacherMsgNum",{},
+                            $.post("/msg/teacher/getNewMsgNum",{},
                                 function (data) {
                                     if(data!="0") {
                                         document.getElementById("msg_num").innerHTML = "(" + data + ")";
@@ -92,7 +92,7 @@
                             );
                         }
 
-                        if(href_id!="getStudentList") {
+                        if(href_id!="viewMsgPanel") {
                             update_msg_num();
                             $.timer(1000, function () {
                                 update_msg_num();

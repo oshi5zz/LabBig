@@ -34,11 +34,11 @@
                     <td><span><s:property value="teacher.school" /></span></td>
 
                     <td><span>
-                        <s:if test="flag==1">OUT</s:if>
+                        <s:if test="flag==0">OUT</s:if>
                         <s:else>IN</s:else>
                         </span></td>
                     <td><span><s:property value="lastDate" /></span></td>
-                    <s:if test="status==0 && flag==0">
+                    <s:if test="status==0 && flag==1">
                         <td><span><a href="/student/agreePreReq.action?teaid=<s:property value="teacher.teaId" />" >同意</a></span></td>
                         <td><span><a href="/student/refusePreReq.action?teaid=<s:property value="teacher.teaId" />" >拒绝</a></span></td>
                     </s:if>
@@ -46,7 +46,7 @@
                         <td><span><a href="/student/refusePreReq.action?teaid=<s:property value="teacher.teaId" />" >解除关系</a></span></td>
                         <td><span><a href="/student/sendFinalReq.action?teaid=<s:property value="teacher.teaId" />" >发送最终请求</a></span></td>
                     </s:elseif>
-                    <s:elseif test="status==4 && flag==0">
+                    <s:elseif test="status==4 && flag==1">
                         <td><span><a href="/student/agreeFinalReq.action?teaid=<s:property value="teacher.teaId" />" >同意</a></span></td>
                         <td><span><a href="/student/refuseFinalReq.action?teaid=<s:property value="teacher.teaId" />" >拒绝</a></span></td>
                     </s:elseif>

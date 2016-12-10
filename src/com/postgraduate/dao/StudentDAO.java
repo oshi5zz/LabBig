@@ -265,11 +265,11 @@ public class StudentDAO {
                 request.setFlag(rs.getInt("flag"));
                 request.setStatus(rs.getInt("status"));
                 request.setReqId(rs.getInt("req_id"));
-                int tea_id = rs.getInt("stu_id");
+                int tea_id = rs.getInt("tea_id");
                 sql = "SELECT * FROM teacher WHERE tea_id="+tea_id;
                 ResultSet resultSet = con.createStatement().executeQuery(sql);
                 if (resultSet.next()) {
-                    request.setStudent(StudentConverter.getStudent(resultSet));
+                    request.setTeacher(TeacherConverter.getTeacher(resultSet));
                 }
                 reqs.add(request);
             }

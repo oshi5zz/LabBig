@@ -60,14 +60,14 @@
                     <li id="viewPreSucList" class=" menu-item ">
                         <a href="/student/viewPreSucList"><span>查看预录取</span></a>
                     </li>
-                    <li id="getTeacherList" class=" menu-item ">
-                        <a href="/msg/getTeacherList"><span>查看消息<span id="msg_num"></span></span></a>
+                    <li id="viewMsgPanel" class=" menu-item ">
+                        <a href="/msg/student/viewMsgPanel"><span>查看消息<span id="msg_num"></span></span></a>
                     </li>
                     <li id="viewAllReq" class=" menu-item">
                         <a href="/student/viewAllReq"><span>查看所有请求</span></a>
                     </li>
                     <li id="viewFinalSucList" class=" menu-item ">
-                        <a href="/student/viewFinalSucList"><span>查看已录取</span></a>
+                        <a href="/student/viewFinalSucList"><span>查看最终导师</span></a>
                     </li>
                 </ul>
                 <script src="/res/jquery.timer.js"></script>
@@ -83,7 +83,7 @@
                         document.getElementById(href_id).className = "menu-item act";
 
                         var update_msg_num = function () {
-                            $.post("/msg/getStudentMsgNum",{},
+                            $.post("/msg/student/getNewMsgNum",{},
                                 function (data) {
                                     if(data!="0") {
                                         document.getElementById("msg_num").innerHTML = "(" + data + ")";
@@ -92,7 +92,7 @@
                             );
                         }
 
-                        if(href_id!="getTeacherList") {
+                        if(href_id!="viewMsgPanel") {
                             update_msg_num();
                             $.timer(1000, function () {
                                 update_msg_num();

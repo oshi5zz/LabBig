@@ -224,7 +224,7 @@
                         <li class="student-list" id="<s:property value="stuId" />">
                             <img class="avatar" width="30" height="30" alt="示例介绍"
                                                 src="/teacher/chat/dist/images/2.png">
-                            <p class="name"><s:property value="name" /><span><s:if test="newMsgNum!=0">(<s:property value="newMsgNum" />)</span></s:if></p></li>
+                            <p class="name"><s:property value="name" /><span><s:if test="msgNum!=0">(<s:property value="msgNum" />)</span></s:if></p></li>
                     </s:iterator>
                 </ul>
             </div><!--v-component-->
@@ -268,7 +268,7 @@
         var text_area = _text_area[0];
 
         var update_read_msg = function (stu_id) {
-            $.post("/msg/updateTeacherReadMsg",{"student.stuId":stu_id});
+            $.post("/msg/teacher/updateReadMsg",{"student.stuId":stu_id});
         }
 
         /*var new_list_num = 0;
@@ -298,7 +298,7 @@
             if(e.keyCode == 13 && (e.metaKey || e.ctrlKey)) {
                 var text = $(this).val();
                 var stu_id = text_area.getAttribute("id");
-                $.post("/msg/sendMsgToStudent",
+                $.post("/msg/teacher/sendMsg",
                         {
                             "student.stuId":stu_id,
                             "msg.main":text,
@@ -324,7 +324,7 @@
         }
 
         var getMsgs = function (stu_id) {
-            $.post("/msg/getStudentMsg",
+            $.post("/msg/teacher/getPersonMsgs",
                     {
                         "student.stuId" : stu_id,
                     },

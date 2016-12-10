@@ -221,10 +221,10 @@
             <div class="m-list">
                 <ul><!--v-for-start-->
                     <s:iterator value="teachers">
-                        <li class="teacher-list" id="<s:property value="stuId" />">
+                        <li class="teacher-list" id="<s:property value="teaId" />">
                             <img class="avatar" width="30" height="30" alt="示例介绍"
                                                 src="/student/chat/dist/images/1.jpg">
-                            <p class="name"><s:property value="name" /><span><s:if test="newMsgNum!=0">(<s:property value="newMsgNum" />)</span></s:if></p></li>
+                            <p class="name"><s:property value="name" /><span><s:if test="msgNum!=0">(<s:property value="msgNum" />)</span></s:if></p></li>
                     </s:iterator>
                 </ul>
             </div><!--v-component-->
@@ -236,7 +236,7 @@
                 <ul class="msgs">
                     <s:iterator value="msgs">
                         <li><p class="time"><span><s:property value="lastDate" /></span></p>
-                            <div class="main <s:if test="flag==1" >self</s:if>">
+                            <div class="main <s:if test="flag==0" >self</s:if>">
                                 <s:if test="flag==1">
                                     <img class="avatar" width="30" height="30" src="/student/chat/dist/images/2.png">
                                 </s:if>
@@ -268,7 +268,7 @@
         var text_area = _text_area[0];
 
         var update_read_msg = function (tea_id) {
-            $.post("/msg/updateStudentReadMsg",{"teacher.teaId":tea_id});
+            $.post("/msg/student/updateReadMsg",{"teacher.teaId":tea_id});
         }
 
         /*var new_list_num = 0;
@@ -298,7 +298,7 @@
             if(e.keyCode == 13 && (e.metaKey || e.ctrlKey)) {
                 var text = $(this).val();
                 var tea_id = text_area.getAttribute("id");
-                $.post("/msg/sendMsgToTeacher",
+                $.post("/msg/student/sendMsg",
                         {
                             "teacher.teaId":tea_id,
                             "msg.main":text,
@@ -314,17 +314,17 @@
         var getLi = function(data) {
             var li = '<li><p class="time"><span>'+data[2]+'</span></p>';
             li = li + '<div class="main ';
-            if (data[0]=="1") {
-                li+='self"><img class="avatar" width="30" height="30" src="/student/chat/dist/images/1.jpg">';
+            if (data[0]=="0") {
+                li+='self"><img class="avatar" width="30" height="30" src="/student/chat/dist/images/2.png">';
             } else {
-                li+='"><img class="avatar" width="30" height="30" src="/student/chat/dist/images/2.png">';
+                li+='"><img class="avatar" width="30" height="30" src="/student/chat/dist/images/1.jpg">';
             }
             li += '<div class="text">'+data[1]+'</div></li>';
             return li;
         }
 
         var getMsgs = function (tea_id) {
-            $.post("/msg/getTeacherMsg",
+            $.post("/msg/student/getPersonMsgs",
                     {
                         "teacher.teaId" : tea_id,
                     },

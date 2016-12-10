@@ -1,5 +1,6 @@
 package com.postgraduate.dao;
 
+import com.postgraduate.converter.StudentConverter;
 import com.postgraduate.converter.TeacherConverter;
 import com.postgraduate.entity.Student;
 import com.postgraduate.entity.Teacher;
@@ -49,9 +50,13 @@ public class UserDAO {
             ps.setString(2, password);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
-                student.setName(rs.getString("user_name"));
-                student.setStuId(rs.getInt("user_id"));
-                return student;
+                sql = "SELECT * FROM student WHERE stu_id="+userId;
+                Statement stat = con.createStatement();
+                rs = stat.executeQuery(sql);
+                if (rs.next()) {
+                    student = StudentConverter.getStudent(rs);
+                    return student;
+                } else return null;
             } else {
                 return null;
             }

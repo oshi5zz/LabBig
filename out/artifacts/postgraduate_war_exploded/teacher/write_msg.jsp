@@ -40,7 +40,7 @@
 
     <div id="main" class="bit_main_content">
         <div style="margin-left: 10%;width: 80%;margin-top: 20px;">
-            <form role="form" action="/msg/sendMsgToStudent?student.stuId=<s:property value="stuid" />&firstFlag=true" method="post">
+            <form role="form" action="/msg/teacher/sendMsg?student.stuId=<s:property value="stuid" />&firstFlag=true" method="post">
                 <input type="hidden" name="msg.stuId" value="">
                 <textarea name="msg.main" class="form-control " rows="4"></textarea>
                 <br/>

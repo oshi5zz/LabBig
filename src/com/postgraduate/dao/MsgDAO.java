@@ -2,6 +2,7 @@ package com.postgraduate.dao;
 
 import com.postgraduate.converter.MsgConverter;
 import com.postgraduate.converter.StudentConverter;
+import com.postgraduate.converter.TeacherConverter;
 import com.postgraduate.entity.Msg;
 import com.postgraduate.entity.Student;
 import com.postgraduate.entity.Teacher;
@@ -64,7 +65,7 @@ public class MsgDAO {
         return students;
     }
 
-    public List<Msg> getStudentMsgs(int stu_id, int tea_id) {
+    public List<Msg> getMsgs(int stu_id, int tea_id) {
         List<Msg> msgs = new ArrayList<>();
         con = dbConnection.getConnection();
         String sql = "SELECT * FROM msg WHERE stu_id=? AND tea_id=? ORDER BY last_date";
@@ -87,8 +88,8 @@ public class MsgDAO {
     }
 
     public boolean sendMsg(Msg msg) {
-        String sql = "INSERT INTO msg(stu_id, tea_id, main,last_date,`read`,flag) " +
-                "VALUES (?,?,?,NOW(),1,?)";
+        String sql = "INSERT INTO msg(stu_id, tea_id, main,last_date,flag) " +
+                "VALUES (?,?,?,NOW(),?)";
         Connection con = dbConnection.getConnection();
         try {
             PreparedStatement ps = con.prepareStatement(sql);
@@ -137,6 +138,45 @@ public class MsgDAO {
     }
 
     public List<Teacher> getTeacherList(int stuId) {
-        return null;
+        List<Teacher> teachers = new ArrayList<>();
+        con = dbConnection.getConnection();
+        String sql = "SELECT * FROM msg WHERE stu_id="+stuId+" ORDER BY last_date DESC ";
+        Statement statement = null;
+        try {
+            statement = con.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+            List<Integer> teaIdList = new ArrayList<>();
+            while (rs.next()) {
+                int tea_id = rs.getInt("tea_id");
+                boolean flag = true;
+                for (int i : teaIdList) {
+                    if (i == tea_id) {
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag) {
+                    teaIdList.add(tea_id);
+                }
+            }
+            for (int i : teaIdList) {
+                sql = "SELECT * FROM teacher WHERE tea_id="+i;
+                rs = statement.executeQuery(sql);
+                if (rs.next()) {
+                    Teacher teacher = TeacherConverter.getTeacher(rs);
+                    sql = "SELECT count(*) FROM msg WHERE tea_id="+i+" AND stu_id="+stuId+" AND msg.read=0 AND msg.flag=1";
+                    ResultSet res = statement.executeQuery(sql);
+                    int newMsgNum = 0;
+                    if (res.next()) {
+                        newMsgNum = res.getInt(1);
+                    }
+                    teacher.setNewMsgNum(newMsgNum);
+                    teachers.add(teacher);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return teachers;
     }
 }

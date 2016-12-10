@@ -94,7 +94,7 @@
         var table = $("tbody").children("tr");
         for (var i=0; i<table.length; i++) {
             var iter = table[i];
-            if (iter.getAttribute("flag").trim() == "1") {
+            if (iter.getAttribute("flag").trim() == "0") {
                 iter.className = "req-list info"
             } else {
                 iter.className = "req-list success"
