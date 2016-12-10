@@ -142,7 +142,6 @@
         <result name="error">/teacher/error.jsp</result>
     </action>
 
-
 </package>
 
 <package name="student" namespace="/student" extends="json-default">
@@ -167,8 +166,8 @@
         <interceptor-ref name="studentInterceptor" />
     </action>
 
-    <action name="viewStudentDetail" class="com.postgraduate.action.StudentAction" method="viewTeacherDetail">
-        <result name="success">/student/student_detail.jsp</result>
+    <action name="viewTeacherDetail" class="com.postgraduate.action.StudentAction" method="viewTeacherDetail">
+        <result name="success">/student/teacher_detail.jsp</result>
         <result name="error">/student/error.jsp</result>
         <!--<interceptor-ref name="teacherInterceptor" />-->
     </action>

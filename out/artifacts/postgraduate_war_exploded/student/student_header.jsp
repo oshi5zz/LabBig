@@ -28,7 +28,7 @@
                             <div>
                                     <span style="font-size: 14px;">
                                         <span style="color: rgb(255, 255, 255);">
-                                            您好！<s:property value="teacher.name"></s:property>同学！
+                                            您好！<s:property value="student.name"></s:property>同学！
                                         </span>
                                         <span >|</span>
                                         <span style="color: rgb(255, 255, 255);"><a href="/teacher/logout">注销</a></span>
@@ -50,7 +50,7 @@
                 <ul id="main-nav" data-st="0" data-sp="0" data-fh="" data-mw="" data-lh=""
                     class="mainmenu fancy-rollovers wf-mobile-hidden bit-menu-default"
                     data-bit-menu="bit-menu-default" data-bit-float-menu="underline-hover">
-                    <li id="toTeacherIndex" class=" menu-item">
+                    <li id="toStudentIndex" class=" menu-item">
                         <a href="/student/toStudentIndex"><span>学生首页</span></a></li>
                     <li id="editStudentInf" class=" menu-item">
                         <a href="/student/editStudentInf"><span>更改个人信息</span></a>
@@ -60,8 +60,8 @@
                     <li id="viewPreSucList" class=" menu-item ">
                         <a href="/student/viewPreSucList"><span>查看预录取</span></a>
                     </li>
-                    <li id="viewStudentMsg" class=" menu-item ">
-                        <a href="/msg/getStudentList"><span>查看消息<span id="msg_num"></span></span></a>
+                    <li id="getTeacherList" class=" menu-item ">
+                        <a href="/msg/getTeacherList"><span>查看消息<span id="msg_num"></span></span></a>
                     </li>
                     <li id="viewAllReq" class=" menu-item">
                         <a href="/student/viewAllReq"><span>查看所有请求</span></a>

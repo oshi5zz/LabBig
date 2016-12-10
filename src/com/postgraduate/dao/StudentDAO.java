@@ -202,6 +202,7 @@ public class StudentDAO {
             while (res.next()) {
                 num++;
             }
+            System.out.println(stu.getPreNum());
             if (pre && num >= stu.getPreNum())
                 return -2;
             else if(!pre && stu.getFinalTeacherId() != 0)

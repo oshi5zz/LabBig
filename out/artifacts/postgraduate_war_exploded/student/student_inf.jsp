@@ -44,7 +44,7 @@
 				<h3 class="panel-title"><span >更改个人信息&nbsp;&nbsp;<span id="edit-btn" class="glyphicon glyphicon-edit"></span></span></h3>
 			</div>
 			<div class="panel panel-body">
-				<form role="form" method="post" action="/student/updateTeacherInf.action">
+				<form role="form" method="post" action="/student/updateStudentInf.action">
 					<div class="form-group col-lg-6">
 						<label for="student-name"><span>姓名：</span></label>
 						<input name="student.name" type="text" id="student-name" value="<s:property value="student.name" />" readonly/>
@@ -68,11 +68,6 @@
 					</div>
 
 					<div class="form-group col-lg-6">
-						<label for="student-professionalTitle"><span>职称：</span></label>
-						<input name="student.professionalTitle" type="text" id="student-professionalTitle" value="<s:property value="student.professionalTitle" />" />
-					</div>
-
-					<div class="form-group col-lg-6">
 						<label for="student-province"><span>省份：</span></label>
 						<input name="student.province" type="text" id="student-province" value="<s:property value="student.province" />" />
 					</div>
@@ -92,16 +87,6 @@
 						<input name="student.researchArea" type="text" id="student-researchArea" value="<s:property value="student.researchArea" />" />
 					</div>
 
-					<div class="form-group col-lg-6">
-						<label for="student-preNum"><span>招生人数：</span></label>
-						<input name="student.preNum" type="number" id="student-preNum" value="<s:property value="student.preNum" />" />
-					</div>
-
-					<div class="form-group col-lg-6 hidden">
-						<label for="student-finalNum"><span>最终招生人数：</span></label>
-						<input name="student.finalNum" type="text" id="student-finalNum" value="<s:property value="student.finalNum" />" />
-					</div>
-
 
 					<div class="form-group col-lg-6">
 						<label for="student-mail"><span>邮箱：</span></label>
@@ -114,8 +99,8 @@
 					</div>
 
 					<div class="form-group col-lg-6">
-						<label for="student-requirement"><span>招生需求：</span></label>
-						<textarea name="student.requirement"  id="student-requirement" ><s:property value="student.requirement" /></textarea>
+						<label for="student-interest"><span>个人兴趣：</span></label>
+						<textarea name="student.interest"  id="student-interest" ><s:property value="student.interest" /></textarea>
 					</div>
 
 					<div class="panel panel-footer" align="center">

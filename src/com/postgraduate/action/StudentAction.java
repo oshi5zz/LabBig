@@ -22,7 +22,7 @@ public class StudentAction extends ActionSupport {
     private List<Request> reqs = new ArrayList<>();
     private Msg msg = new Msg();
     private String warning = new String("出错了！");
-    private String stuid = new String();
+    private String teaid = new String();
     private int usedFinalNum = 0;
     private int usedPreNum = 0;
 
@@ -33,8 +33,6 @@ public class StudentAction extends ActionSupport {
     public void setTeaid(String teaid) {
         this.teaid = teaid;
     }
-
-    private java.lang.String teaid;
 
     public int getUsedPreNum() {
         return usedPreNum;
@@ -74,13 +72,6 @@ public class StudentAction extends ActionSupport {
         return msgs;
     }
 
-    public String getStuid() {
-        return stuid;
-    }
-
-    public void setStuid(String stuid) {
-        this.stuid = stuid;
-    }
 
     public void setMsgs(List<Msg> msgs) {
         this.msgs = msgs;
@@ -163,6 +154,7 @@ public class StudentAction extends ActionSupport {
     public String getIndex() {
         student = (Student) ActionContext.getContext().getSession().get("student");
         teachers = studentDAO.getRecommend(student.getStuId());
+        System.out.println(teachers.size());
         return SUCCESS;
     }
 
@@ -177,7 +169,7 @@ public class StudentAction extends ActionSupport {
         student = (Student) ActionContext.getContext().getSession().get("student");
         int tea_id;
         try {
-            tea_id = Integer.parseInt(stuid);
+            tea_id = Integer.parseInt(teaid);
         } catch (Exception e) {
             return ERROR;
         }
@@ -230,7 +222,7 @@ public class StudentAction extends ActionSupport {
         student = (Student) ActionContext.getContext().getSession().get("student");
         int tea_id;
         try {
-            tea_id = Integer.parseInt(stuid);
+            tea_id = Integer.parseInt(teaid);
         } catch (Exception e) {
             return ERROR;
         }
@@ -257,7 +249,7 @@ public class StudentAction extends ActionSupport {
         student = (Student) ActionContext.getContext().getSession().get("student");
         int tea_id;
         try {
-            tea_id = Integer.parseInt(stuid);
+            tea_id = Integer.parseInt(teaid);
         } catch (Exception e) {
             return ERROR;
         }

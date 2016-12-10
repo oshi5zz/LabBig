@@ -41,7 +41,7 @@
     <div id="main" class="bit_main_content">
         <div class="panel panel-default " style="width:80%; margin-left:10%;margin-top:20px;">
             <div class="panel panel-heading " align="center">
-                <h3 class="panel-title"><span ><s:property value="student.name" />个人信息</span></h3>
+                <h3 class="panel-title"><span ><s:property value="teacher.name" />个人信息</span></h3>
             </div>
             <div class="panel panel-body">
                 <form role="form" readonly="">
@@ -60,6 +60,11 @@
                     <div class="form-group col-lg-6">
                         <label for="teacher-age"><span>年龄：</span></label>
                         <input name="teacher.age" type="number" id="teacher-age" value="<s:property value="teacher.age" />" />
+                    </div>
+
+                    <div class="form-group col-lg-6">
+                        <label for="teacher-professionalTitle"><span>职称：</span></label>
+                        <input name="teacher.professionalTitle" type="text" id="teacher-professionalTitle" value="<s:property value="teacher.professionalTitle" />" />
                     </div>
 
                     <div class="form-group col-lg-6">
@@ -82,10 +87,10 @@
                         <input name="teacher.researchArea" type="text" id="teacher-researchArea" value="<s:property value="teacher.researchArea" />" />
                     </div>
 
-                    <div class="form-group col-lg-6">
+                    <%--<div class="form-group col-lg-6">
                         <label for="teacher-preNum"><span>预录取剩余名额：</span></label>
                         <input name="teacher.preNum" type="number" id="teacher-preNum" value="<s:property value="teacher.preNum" />" />
-                    </div>
+                    </div>--%>
 
                     <div class="form-group col-lg-6">
                         <label for="teacher-mail"><span>邮箱：</span></label>
@@ -95,6 +100,11 @@
                     <div class="form-group col-lg-6">
                         <label for="teacher-inf"><span>个人介绍：</span></label>
                         <textarea name="teacher.inf"  id="teacher-inf" ><s:property value="teacher.inf" /></textarea>
+                    </div>
+
+                    <div class="form-group col-lg-6">
+                        <label for="teacher-requirement"><span>招生需求：</span></label>
+                        <textarea name="teacher.requirement"  id="teacher-requirement" ><s:property value="teacher.requirement" /></textarea>
                     </div>
 
                 </form>
