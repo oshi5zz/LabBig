@@ -271,18 +271,26 @@
             $.post("/msg/teacher/updateReadMsg",{"student.stuId":stu_id});
         }
 
-        /*var new_list_num = 0;
         var get_new_msg_num = function (stu_id) {
-            $.post("/msg/getNewMsgNum",{"student.stuId":stu_id},function (data) {
-                new_list_num = data;
+            var new_list_num = 0;
+            $.ajax({
+                url:"/msg/teacher/getNewMsgNum",
+                type:"post",
+                async:false,
+                data:{"student.stuId":stu_id},
+                success:function (data) {
+                    new_list_num = data;
+                }
             });
+            return new_list_num;
         }
+
         var list = $("li.student-list");
-        $.timer(3000,function () {
+        /*$.timer(3000,function () {
             for(var i=0; i<list.length; i++) {
-                get_new_msg_num(list[i].getAttribute("id"));
-                if (new_list_num!="0") {
-                    $(list[i]).find("span").html("(" + new_list_num + ")");
+                var list_num = get_new_msg_num(list[i].getAttribute("id"));
+                if (list_num!="0") {
+                    $(list[i]).find("span").html("(" + list_num + ")");
                 }
             }
         })*/

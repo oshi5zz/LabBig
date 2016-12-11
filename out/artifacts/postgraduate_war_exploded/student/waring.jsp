@@ -38,8 +38,15 @@
 
     <%@include file="student_header.jsp" %>
 
-    <div id="main" class="bit_main_content">
-        <s:property value="warning" />
+    <div id="main"  style="margin-left: 5%;margin-right: 5%">
+        <div class="panel panel-default " style="width:80%; margin-left:10%;margin-top:20px;">
+            <div class="panel panel-heading " align="center" style="margin-bottom: 0px;">
+                <h3 class="panel-title"><span >消息</span></h3>
+            </div>
+            <div class="panel panel-body" >
+                <h3 ><s:property value="warning" /></h3>
+            </div>
+        </div>
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>

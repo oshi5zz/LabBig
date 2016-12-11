@@ -2,11 +2,10 @@ package com.postgraduate.action;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
+import com.postgraduate.dao.ReqDAO;
 import com.postgraduate.dao.StudentDAO;
-import com.postgraduate.entity.Msg;
-import com.postgraduate.entity.Request;
-import com.postgraduate.entity.Student;
-import com.postgraduate.entity.Teacher;
+import com.postgraduate.entity.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +14,7 @@ import java.util.List;
  */
 public class StudentAction extends ActionSupport {
     private StudentDAO studentDAO = new StudentDAO();
+    private ReqDAO reqDAO = new ReqDAO();
     private Student student = student = (Student) ActionContext.getContext().getSession().get("student");
     private Teacher teacher = new Teacher();
     private List<Teacher> teachers = new ArrayList<>();
@@ -154,7 +154,6 @@ public class StudentAction extends ActionSupport {
     public String getIndex() {
         student = (Student) ActionContext.getContext().getSession().get("student");
         teachers = studentDAO.getRecommend(student.getStuId());
-        System.out.println(teachers.size());
         return SUCCESS;
     }
 
@@ -175,8 +174,19 @@ public class StudentAction extends ActionSupport {
         }
         teacher.setTeaId(tea_id);
 
-        int status = studentDAO.getReqStatus(true, student, teacher);
-        switch (status) {
+        int status = reqDAO.getReqStatus(true, teacher ,student);
+        if (status==-1) {
+            if (studentDAO.updateReq(0, student.getStuId(), tea_id)) {
+                warning = "预录取请求已发送！";
+                return WARNING;
+            } else
+                return ERROR;
+        } else {
+            warning = ReqStatus.status[ReqStatus.BASE+status];
+            return WARNING;
+        }
+
+        /*switch (status) {
             //未曾建立过联系
             case -3:
                 warning = "失败！正式录取名额已满！";
@@ -215,7 +225,7 @@ public class StudentAction extends ActionSupport {
             default:
                 warning = "未知状态！";
                 return WARNING;
-        }
+        }*/
     }
 
     public String sendFinalReq() {
@@ -367,9 +377,12 @@ public class StudentAction extends ActionSupport {
 
     public String agreeFinalReq() {
         student = (Student) ActionContext.getContext().getSession().get("student");
-        int status = studentDAO.getReqStatus(false, student, teacher);
+        int status = reqDAO.getReqStatus(false, teacher, student);
         if (status==-3) {
-            warning = "不能同意！正式录取名额已满！";
+            warning = "不能同意！导师正式录取名额已满！";
+            return WARNING;
+        } else if(status==-5) {
+            warning = "不能同意！你已被录取！";
             return WARNING;
         }
         try {

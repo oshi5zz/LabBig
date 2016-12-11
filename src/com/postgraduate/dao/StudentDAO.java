@@ -14,10 +14,10 @@ import java.util.List;
  * Created by zhao on 2016/11/8.
  */
 public class StudentDAO {
-    private static DBConnection dbConnection = new DBConnection();;
-    private Connection con = null;
+    private static DBConnection dbConnection = new DBConnection();
+    private static Connection con = null;
 
-    public Student getStudentInf(int id) {
+    public static Student getStudentInf(int id) {
         Student student = null;
         String sql = "SELECT * FROM student WHERE stu_id = ?";
         con = dbConnection.getConnection();
@@ -238,6 +238,11 @@ public class StudentDAO {
             ps.setInt(2,teaId);
             if (status==0) {
                 ps.setInt(3, 0);
+            }
+            if (status==6) {
+                Student stu = getStudentInf(stuId);
+                stu.setFinalTeacherId(teaId);
+                updateStudentInf(stu);
             }
             return ps.executeUpdate() == 1;
         } catch (SQLException e) {

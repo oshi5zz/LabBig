@@ -34,8 +34,23 @@
         <!--<interceptor-ref name="teacherInterceptor" />-->
     </action>
 
+     <action name="validatePreNum" class="com.postgraduate.action.TeacherAction" method="validatePreNum">
+        <result type="json" name="success">
+            <param name="root">usedPreNum</param>
+        </result>
+    </action>
+
+    <action name="validateFinalNum" class="com.postgraduate.action.TeacherAction" method="validateFinalNum">
+        <result type="json" name="success">
+            <param name="root">usedFinalNum</param>
+        </result>
+    </action>
+
     <action name="updateTeacherInf" class="com.postgraduate.action.TeacherAction" method="updateInf">
-        <result name="success">/teacher/teacher_inf.jsp</result>
+        <!--<result name="success">/teacher/teacher_inf.jsp</result>-->
+        <result type="chain" name="success">
+            <param name="actionName">editTeacherInf</param>
+        </result>
         <result name="error">/teacher/error.jsp</result>
         <result name="input">/teacher/teacher_inf.jsp</result>
         <!--<interceptor-ref name="teacherInterceptor" />-->

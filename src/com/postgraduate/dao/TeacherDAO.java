@@ -7,6 +7,7 @@ import com.postgraduate.entity.Msg;
 import com.postgraduate.entity.Request;
 import com.postgraduate.entity.Student;
 import com.postgraduate.entity.Teacher;
+import com.postgraduate.service.Recommend;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import java.sql.*;
@@ -18,9 +19,9 @@ import java.util.List;
  */
 public class TeacherDAO {
     private static DBConnection dbConnection = new DBConnection();;
-    private Connection con = null;
+    private static Connection con = null;
 
-    public Teacher getTeacherInf(int id) {
+    public static Teacher getTeacherInf(int id) {
         Teacher teacher = null;
         String sql = "SELECT * FROM teacher WHERE tea_id = ?";
         con = dbConnection.getConnection();
@@ -295,6 +296,7 @@ public class TeacherDAO {
         return -1;
     }
 
+
     public boolean updateReq(int status, int teaId, int stuId) {
         String sql = "";
         if (status==0) {
@@ -411,5 +413,20 @@ public class TeacherDAO {
             e.printStackTrace();
             return null;
         }
+    }
+
+    public int getUsedNum(int teaId,int status) {
+        con = dbConnection.getConnection();
+        String sql = "SELECT count(*) FROM request WHERE tea_id="+teaId+" AND status="+status;
+        Statement statement = null;
+        try {
+            statement = con.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+            if (rs.next())
+                return rs.getInt(1);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 }

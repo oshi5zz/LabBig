@@ -44,7 +44,7 @@
 				<h3 class="panel-title"><span >更改个人信息&nbsp;&nbsp;<span id="edit-btn" class="glyphicon glyphicon-edit"></span></span></h3>
 			</div>
 			<div class="panel panel-body">
-				<form role="form" method="post" action="/teacher/updateTeacherInf.action">
+				<form id="form_inf" role="form" method="post" action="/teacher/updateTeacherInf.action">
 					<div class="form-group col-lg-6">
 						<label for="teacher-name"><span>姓名：</span></label>
 						<input name="teacher.name" type="text" id="teacher-name" value="<s:property value="teacher.name" />" readonly/>
@@ -69,8 +69,17 @@
 
 					<div class="form-group col-lg-6">
 						<label for="teacher-professionalTitle"><span>职称：</span></label>
-						<input name="teacher.professionalTitle" type="text" id="teacher-professionalTitle" value="<s:property value="teacher.professionalTitle" />" />
+						<select name="teacher.professionalTitle" id="teacher-professionalTitle">
+							<option value="助教">助教</option>
+							<option value="讲师">讲师</option>
+							<option value="副教授">副教授</option>
+							<option value="教授">教授</option>
+						</select>
+						<%--<input name="teacher.professionalTitle" type="text"  value="<s:property value="teacher.professionalTitle" />" />--%>
 					</div>
+					<script type="text/javascript">
+						document.getElementById("teacher-professionalTitle").value="<s:property value="teacher.professionalTitle" />"
+					</script>
 
 					<div class="form-group col-lg-6">
 						<label for="teacher-province"><span>省份：</span></label>
@@ -93,13 +102,13 @@
 					</div>
 
 					<div class="form-group col-lg-6">
-						<label for="teacher-preNum"><span>招生人数：</span></label>
+						<label for="teacher-preNum"><span>预招生人数：</span></label>
 						<input name="teacher.preNum" type="number" id="teacher-preNum" value="<s:property value="teacher.preNum" />" />
 					</div>
 
-					<div class="form-group col-lg-6 hidden">
+					<div class="form-group col-lg-6">
 						<label for="teacher-finalNum"><span>最终招生人数：</span></label>
-						<input name="teacher.finalNum" type="text" id="teacher-finalNum" value="<s:property value="teacher.finalNum" />" />
+						<input name="teacher.finalNum" type="number" id="teacher-finalNum" value="<s:property value="teacher.finalNum" />" />
 					</div>
 
 
@@ -119,7 +128,7 @@
 					</div>
 
 					<div class="panel panel-footer" align="center">
-						<button id="sub-btn" type="submit" class="btn btn-primary btn-lg" >保存</button>
+						<button id="sub-btn" type="button" class="btn btn-primary btn-lg" >保存</button>
 						<%--<button id="edit-btn" type="button" class="btn wpb_btn-success btn-lg">修改</button>--%>
 					</div>
 				</form>
@@ -133,6 +142,45 @@
 							$("#sub-btn").show();
 							$("form input").prop("readonly", false);
 							$("form textarea").prop("readonly", false);
+						});
+						var validate_pre = function (pre_num) {
+							var flag = false;
+							$.ajax({
+								url:"/teacher/validatePreNum",
+								type:"post",
+								async:false,
+								success:function (data) {
+									flag = data>pre_num;
+								}
+							});
+							return flag;
+						}
+						var validate_final = function (final_num) {
+							var flag = false;
+							$.ajax({
+								url:"/teacher/validateFinalNum",
+								type:"post",
+								async:false,
+								success:function (data) {
+									flag = data>final_num;
+								}
+							});
+							return flag;
+						}
+						$("#sub-btn").click(function () {
+							var pre_num = $("#teacher-preNum").val();
+							var final_num = $("#teacher-finalNum").val();
+							if (pre_num<final_num){
+								alert("无法修改！预录取名额不能小于正式录取名额！");
+							}
+							else if(validate_pre(pre_num)) {
+								alert("无法修改！修改后预录取名额小于已通过的预录取名额！");
+							}
+							else if (validate_final(final_num)) {
+								alert("无法修改！修改后的最终录取名额小于已录取人数！");
+							} else {
+								$("#form_inf").submit();
+							}
 						});
 					})
 				</script>
