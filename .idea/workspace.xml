@@ -2,32 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f7ee190-599d-4e65-b5d2-07b4b9529bd6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/postgraduate.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/postgraduate/dao/ReqDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/postgraduate/entity/ReqEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/META-INF/MANIFEST.MF" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/action/StudentAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/dao/StudentDAO.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/action/StudentAction.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/action/StudentAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/action/TeacherAction.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/action/TeacherAction.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/reset_pass.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/action/UserAction.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/action/UserAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/dao/StudentDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/dao/StudentDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/dao/TeacherDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/dao/TeacherDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/entity/ReqStatus.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/entity/ReqStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/action/TeacherAction.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/action/TeacherAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/dao/UserDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/dao/UserDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/entity/User.class" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/com/postgraduate/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/action/UserAction.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/action/UserAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/dao/StudentDAO.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/dao/StudentDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/dao/TeacherDAO.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/dao/TeacherDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/entity/ReqStatus.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/entity/ReqStatus.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/dao/UserDAO.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/dao/UserDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/entity/User.class" afterPath="$PROJECT_DIR$/out/production/postgraduate/com/postgraduate/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/521b12ca-b2b6-4a64-9600-bc1ef841b516.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/521b12ca-b2b6-4a64-9600-bc1ef841b516.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/teacher_inf.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/teacher/teacher_inf.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/action/StudentAction.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/action/StudentAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/WEB-INF/classes/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/logup.jsp" afterPath="$PROJECT_DIR$/out/artifacts/postgraduate_war_exploded/logup.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/postgraduate/struts.xml" afterPath="$PROJECT_DIR$/out/production/postgraduate/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/action/UserAction.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/action/UserAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/dao/StudentDAO.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/dao/StudentDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/entity/ReqStatus.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/entity/ReqStatus.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/dao/UserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/postgraduate/entity/User.java" afterPath="$PROJECT_DIR$/src/com/postgraduate/entity/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/student/waring.jsp" afterPath="$PROJECT_DIR$/web/student/waring.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/chat/index.jsp" afterPath="$PROJECT_DIR$/web/teacher/chat/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/teacher_inf.jsp" afterPath="$PROJECT_DIR$/web/teacher/teacher_inf.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/waring.jsp" afterPath="$PROJECT_DIR$/web/teacher/waring.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/logup.jsp" afterPath="$PROJECT_DIR$/web/logup.jsp" />
     </list>
     <ignored path="postgraduate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,80 +59,27 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - postgraduate@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="user" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="postgraduate" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TeacherAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="147" column="36" selection-start-line="147" selection-start-column="36" selection-end-line="147" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Recommend.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/postgraduate/service/Recommend.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeacherDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="389" column="28" selection-start-line="389" selection-start-column="28" selection-end-line="389" selection-end-column="28" />
-              <folding>
-                <marker date="1481434615638" expanded="true" signature="740:778" ph="SELECT * FRO... teacher" />
-                <marker date="1481434615638" expanded="true" signature="1346:1377" ph="SELECT * FRO... student" />
-                <marker date="1481434615638" expanded="true" signature="2659:2715" ph="SELECT * FRO... msg" />
-                <marker date="1481434615638" expanded="true" signature="3356:3391" ph="SELECT * FRO... student" />
-                <marker date="1481434615638" expanded="true" signature="3861:4069" ph="UPDATE teach... " />
-                <marker date="1481434615638" expanded="true" signature="4662:4699" ph="SELECT * FRO... student" />
-                <marker date="1481434615638" expanded="true" signature="5121:5226" ph="INSERT INTO msg... " />
-                <marker date="1481434615638" expanded="true" signature="6129:6165" ph="SELECT * FRO... student" />
-                <marker date="1481434615638" expanded="true" signature="9496:9561" ph="SELECT * FRO... request" />
-                <marker date="1481434615638" expanded="true" signature="9993:10048" ph="SELECT statu... request" />
-                <marker date="1481434615638" expanded="true" signature="10596:10705" ph="INSERT INTO request... " />
-                <marker date="1481434615638" expanded="true" signature="10744:10808" ph="UPDATE reque... " />
-                <marker date="1481434615638" expanded="true" signature="11609:11669" ph="SELECT * FRO... request" />
-                <marker date="1481434615638" expanded="true" signature="12208:12243" ph="SELECT * FRO... student" />
-                <marker date="1481434615638" expanded="true" signature="12785:12820" ph="SELECT * FRO... teacher" />
-                <marker date="1481434615638" expanded="true" signature="13476:13541" ph="SELECT * FRO... student" />
-                <marker date="1481434615638" expanded="true" signature="14127:14158" ph="SELECT * FRO... msg" />
-                <marker date="1481434615638" expanded="true" signature="14933:14975" ph="SELECT count... request" />
-                <marker date="1481434615638" expanded="true" signature="14933:14996" ph="SELECT count... request" />
-                <marker date="1481434615638" expanded="true" signature="14933:15004" ph="SELECT count... request" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postgraduate.teacher" pinned="false" current-in-tab="true">
-        <entry file="dbDummy://dbtable:/155b480f/521b12ca-b2b6-4a64-9600-bc1ef841b516/postgraduate.teacher">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -143,9 +89,9 @@
         <option value="hibernate-main-5.0" />
         <option value="hibernate-main-3.0" />
         <option value="hibernate-configuration-4.0" />
-        <option value="Jsp File" />
         <option value="Class" />
         <option value="Enum" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -160,11 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/postgraduate/entity/Msg.java" />
-        <option value="$PROJECT_DIR$/web/teacher/chat/dist/main.js" />
-        <option value="$PROJECT_DIR$/src/com/postgraduate/entity/Student.java" />
-        <option value="$PROJECT_DIR$/web/student/final_suc_list.jsp" />
-        <option value="$PROJECT_DIR$/web/student/msg_detail.jsp" />
         <option value="$PROJECT_DIR$/web/student/pre_req_list.jsp" />
         <option value="$PROJECT_DIR$/web/student/student_search.jsp" />
         <option value="$PROJECT_DIR$/web/student/view_req.jsp" />
@@ -183,7 +124,6 @@
         <option value="$PROJECT_DIR$/web/res/liutaotao/main.js" />
         <option value="$PROJECT_DIR$/web/bootstrap/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/web/student/pre_success_list.jsp" />
-        <option value="$PROJECT_DIR$/src/com/postgraduate/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/entity/Teacher.java" />
         <option value="$PROJECT_DIR$/web/teacher/teacher_header.jsp" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/dao/MsgDAO.java" />
@@ -202,15 +142,21 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/521b12ca-b2b6-4a64-9600-bc1ef841b516/console.sql" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java" />
         <option value="$PROJECT_DIR$/web/teacher/teacher_inf.jsp" />
-        <option value="$PROJECT_DIR$/src/struts.xml" />
-        <option value="$PROJECT_DIR$/src/com/postgraduate/dao/StudentDAO.java" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/dao/ReqDAO.java" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/action/StudentAction.java" />
         <option value="dbtable:/155b480f/521b12ca-b2b6-4a64-9600-bc1ef841b516/postgraduate.user" />
         <option value="$PROJECT_DIR$/web/teacher/chat/index.jsp" />
         <option value="$PROJECT_DIR$/web/teacher/waring.jsp" />
         <option value="$PROJECT_DIR$/web/student/waring.jsp" />
+        <option value="$PROJECT_DIR$/src/com/postgraduate/dao/StudentDAO.java" />
         <option value="$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/postgraduate/entity/User.java" />
+        <option value="$PROJECT_DIR$/web/logup.jsp" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/src/com/postgraduate/action/UserAction.java" />
+        <option value="$PROJECT_DIR$/src/com/postgraduate/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/web/reset_pass.jsp" />
       </list>
     </option>
   </component>
@@ -297,7 +243,7 @@
     <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.AboutConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF" />
-    <property name="SearchEverywhereHistoryKey" value="Reco&#9;PSI&#9;JAVA://com.postgraduate.service.Recommend&#10;teaac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;wajsp&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/waring.jsp&#10;waring&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/waring.jsp&#10;teach/in&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/chat/index.jsp&#10;agreefi&#9;null&#9;null&#10;stuac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/StudentAction.java&#10;teainf&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_inf.jsp&#10;Tead&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/TeacherDAO.java&#10;stru&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;studenta&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/StudentAction.java&#10;viewreq&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/view_req.jsp&#10;msgdao&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/MsgDAO.java&#10;Msgac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/MsgAction.java&#10;teacher/inde&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/chat/index.jsp&#10;stuhead&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_header.jsp&#10;view&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/view_msg.jsp&#10;viewms&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/view_msg.jsp&#10;student&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_header.jsp&#10;write&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/write_msg.jsp&#10;stud&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_header.jsp&#10;tea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;studenthea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_header.jsp&#10;teahea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;student/inde&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/chat/index.jsp&#10;teams&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherMsgAction.java&#10;msgac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/MsgAction.java&#10;teacherhea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;index&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/chat/index.jsp&#10;Tea&#9;PSI&#9;JAVA://com.postgraduate.entity.Teacher&#10;Student&#9;PSI&#9;JAVA://com.postgraduate.entity.Student&#10;pre&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/pre_success_list.jsp&#10;teachinf&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_inf.jsp&#10;str&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;student/sear&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/search_result.jsp&#10;studentinf&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_inf.jsp&#10;student/ind&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_index.jsp&#10;stu&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_header.jsp&#10;teacher/reqol&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/req_include_old.jsp&#10;reqold&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/req_include_old.jsp&#10;teainde&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_index.jsp&#10;/teacher/s&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/search_result.jsp&#10;teacher/pre&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/pre_success_list.jsp&#10;teacher&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;student_hea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_header.jsp&#10;wri&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/write_msg.jsp&#10;teaind&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_index.jsp&#10;teacher/index&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/chat/index.jsp&#10;teada&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/TeacherDAO.java&#10;Studen&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/converter/StudentConverter.java" />
+    <property name="SearchEverywhereHistoryKey" value="teadao&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/TeacherDAO.java&#10;U&#9;PSI&#9;JAVA://com.postgraduate.entity.User&#10;inde&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/chat/index.jsp&#10;logup&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/logup.jsp&#10;log&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/login.jsp&#10;str&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;logu&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/logup.jsp&#10;login&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/login.jsp&#10;Use&#9;PSI&#9;JAVA://com.postgraduate.entity.User&#10;User&#9;PSI&#9;JAVA://com.postgraduate.action.UserAction&#10;userac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/UserAction.java&#10;updateTea&#9;PSI&#9;JAVA://com.postgraduate.dao.TeacherDAO#updateTeachInf&#10;studao&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/StudentDAO.java&#10;Reco&#9;PSI&#9;JAVA://com.postgraduate.service.Recommend&#10;teaac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherAction.java&#10;wajsp&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/waring.jsp&#10;waring&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/waring.jsp&#10;teach/in&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/chat/index.jsp&#10;agreefi&#9;null&#9;null&#10;stuac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/StudentAction.java&#10;teainf&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_inf.jsp&#10;Tead&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/TeacherDAO.java&#10;stru&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/struts.xml&#10;studenta&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/StudentAction.java&#10;viewreq&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/view_req.jsp&#10;msgdao&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/dao/MsgDAO.java&#10;Msgac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/MsgAction.java&#10;teacher/inde&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/chat/index.jsp&#10;stuhead&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_header.jsp&#10;view&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/view_msg.jsp&#10;viewms&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/view_msg.jsp&#10;student&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_header.jsp&#10;write&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/write_msg.jsp&#10;stud&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_header.jsp&#10;tea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;studenthea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_header.jsp&#10;teahea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;student/inde&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/chat/index.jsp&#10;teams&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/TeacherMsgAction.java&#10;msgac&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/src/com/postgraduate/action/MsgAction.java&#10;teacherhea&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_header.jsp&#10;index&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/chat/index.jsp&#10;Tea&#9;PSI&#9;JAVA://com.postgraduate.entity.Teacher&#10;Student&#9;PSI&#9;JAVA://com.postgraduate.entity.Student&#10;pre&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/pre_success_list.jsp&#10;teachinf&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/teacher/teacher_inf.jsp&#10;student/sear&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/search_result.jsp&#10;studentinf&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_inf.jsp&#10;student/ind&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_index.jsp&#10;stu&#9;FILE&#9;file://C:/Users/zhao/IdeaProjects/postgraduate/web/student/student_header.jsp" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="JPA.DatabaseSchemaImportDialog" value="521b12ca-b2b6-4a64-9600-bc1ef841b516" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -977,7 +923,7 @@
       <workItem from="1481282302881" duration="10782000" />
       <workItem from="1481302690948" duration="1619000" />
       <workItem from="1481347477982" duration="20534000" />
-      <workItem from="1481416591154" duration="9819000" />
+      <workItem from="1481416591154" duration="21361000" />
     </task>
     <task id="LOCAL-00001" summary="导师的后台架构和调用关系基本完成">
       <created>1478526089869</created>
@@ -990,7 +936,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="381900000" />
+    <option name="totallyTimeSpent" value="393442000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1003,17 +949,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2700491" sideWeight="0.50907713" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2749591" sideWeight="0.50907713" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49092284" order="12" side_tool="false" content_ui="tabs" x="18" y="508" width="1322" height="175" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.49092284" order="12" side_tool="false" content_ui="tabs" x="18" y="508" width="1322" height="175" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19440243" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1913767" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.204236" sideWeight="0.4893617" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1069,52 +1015,6 @@
     <option name="FILTER_TARGETS" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/res/liutaotao/edit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/res/liutaotao/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/res/liutaotao/sidebar_style.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1314">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/res/frame_b.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23867">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bootstrap/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="4" column="137" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="113846" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/res/liutaotao/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/student/student_inf.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
@@ -1127,37 +1027,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-          <folding>
-            <marker date="1481360120886" expanded="true" signature="532:597" ph="SELECT * FRO... user" />
-            <marker date="1481360120886" expanded="true" signature="902:937" ph="SELECT * FRO... teacher" />
-            <marker date="1481360120886" expanded="true" signature="1516:1581" ph="SELECT * FRO... user" />
-            <marker date="1481360120886" expanded="true" signature="1886:1921" ph="SELECT * FRO... student" />
-            <marker date="1481360120886" expanded="true" signature="2482:2551" ph="INSERT INTO user... " />
-            <marker date="1481360120886" expanded="true" signature="2988:3033" ph="INSERT INTO teacher... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/UserAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1250,6 +1119,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1362,42 +1232,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="269" column="94" selection-start-line="269" selection-start-column="94" selection-end-line="269" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/StudentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
-          <folding>
-            <marker date="1481421386896" expanded="true" signature="563:601" ph="SELECT * FRO... student" />
-            <marker date="1481421386896" expanded="true" signature="1169:1200" ph="SELECT * FRO... student" />
-            <marker date="1481421386896" expanded="true" signature="2482:2538" ph="SELECT * FRO... msg" />
-            <marker date="1481421386896" expanded="true" signature="3179:3214" ph="SELECT * FRO... student" />
-            <marker date="1481421386896" expanded="true" signature="3686:3877" ph="UPDATE stude... " />
-            <marker date="1481421386896" expanded="true" signature="4470:4507" ph="SELECT * FRO... teacher" />
-            <marker date="1481421386896" expanded="true" signature="5005:5114" ph="INSERT INTO msg... " />
-            <marker date="1481421386896" expanded="true" signature="5948:5984" ph="SELECT * FRO... student" />
-            <marker date="1481421386896" expanded="true" signature="7053:7118" ph="SELECT * FRO... request" />
-            <marker date="1481421386896" expanded="true" signature="7567:7622" ph="SELECT statu... request" />
-            <marker date="1481421386896" expanded="true" signature="8169:8278" ph="INSERT INTO request... " />
-            <marker date="1481421386896" expanded="true" signature="8317:8381" ph="UPDATE reque... " />
-            <marker date="1481421386896" expanded="true" signature="9366:9426" ph="SELECT * FRO... request" />
-            <marker date="1481421386896" expanded="true" signature="9965:10000" ph="SELECT * FRO... student" />
-            <marker date="1481421386896" expanded="true" signature="10542:10577" ph="SELECT * FRO... student" />
-            <marker date="1481421386896" expanded="true" signature="11233:11298" ph="SELECT * FRO... student" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/postgraduate/converter/StudentConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -1450,7 +1284,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/155b480f/521b12ca-b2b6-4a64-9600-bc1ef841b516/postgraduate.user">
+    <entry file="file://$PROJECT_DIR$/web/student/waring.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/waring.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="49" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/final_suc_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="73" column="24" selection-start-line="41" selection-start-column="4" selection-end-line="73" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/155b480f/521b12ca-b2b6-4a64-9600-bc1ef841b516/postgraduate.recoder">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/service/Recommend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="179" column="8" selection-start-line="179" selection-start-column="8" selection-end-line="179" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/converter/TeacherConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/155b480f/521b12ca-b2b6-4a64-9600-bc1ef841b516/postgraduate.teacher">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1476,84 +1371,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/student/waring.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/StudentDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/waring.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="49" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/chat/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher/final_suc_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="73" column="24" selection-start-line="41" selection-start-column="4" selection-end-line="73" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/service/Recommend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/TeacherAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="147" column="36" selection-start-line="147" selection-start-column="36" selection-end-line="147" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="389" column="28" selection-start-line="389" selection-start-column="28" selection-end-line="389" selection-end-column="28" />
+        <state relative-caret-position="127">
+          <caret line="107" column="43" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="43" />
           <folding>
-            <marker date="1481434615638" expanded="true" signature="740:778" ph="SELECT * FRO... teacher" />
-            <marker date="1481434615638" expanded="true" signature="1346:1377" ph="SELECT * FRO... student" />
-            <marker date="1481434615638" expanded="true" signature="2659:2715" ph="SELECT * FRO... msg" />
-            <marker date="1481434615638" expanded="true" signature="3356:3391" ph="SELECT * FRO... student" />
-            <marker date="1481434615638" expanded="true" signature="3861:4069" ph="UPDATE teach... " />
-            <marker date="1481434615638" expanded="true" signature="4662:4699" ph="SELECT * FRO... student" />
-            <marker date="1481434615638" expanded="true" signature="5121:5226" ph="INSERT INTO msg... " />
-            <marker date="1481434615638" expanded="true" signature="6129:6165" ph="SELECT * FRO... student" />
-            <marker date="1481434615638" expanded="true" signature="9496:9561" ph="SELECT * FRO... request" />
-            <marker date="1481434615638" expanded="true" signature="9993:10048" ph="SELECT statu... request" />
-            <marker date="1481434615638" expanded="true" signature="10596:10705" ph="INSERT INTO request... " />
-            <marker date="1481434615638" expanded="true" signature="10744:10808" ph="UPDATE reque... " />
-            <marker date="1481434615638" expanded="true" signature="11609:11669" ph="SELECT * FRO... request" />
-            <marker date="1481434615638" expanded="true" signature="12208:12243" ph="SELECT * FRO... student" />
-            <marker date="1481434615638" expanded="true" signature="12785:12820" ph="SELECT * FRO... teacher" />
-            <marker date="1481434615638" expanded="true" signature="13476:13541" ph="SELECT * FRO... student" />
-            <marker date="1481434615638" expanded="true" signature="14127:14158" ph="SELECT * FRO... msg" />
-            <marker date="1481434615638" expanded="true" signature="14933:14975" ph="SELECT count... request" />
-            <marker date="1481434615638" expanded="true" signature="14933:14996" ph="SELECT count... request" />
-            <marker date="1481434615638" expanded="true" signature="14933:15004" ph="SELECT count... request" />
+            <marker date="1481436140038" expanded="true" signature="563:601" ph="SELECT * FRO... student" />
+            <marker date="1481436140038" expanded="true" signature="1169:1200" ph="SELECT * FRO... student" />
+            <marker date="1481436140038" expanded="true" signature="2482:2538" ph="SELECT * FRO... msg" />
+            <marker date="1481436140038" expanded="true" signature="3179:3214" ph="SELECT * FRO... student" />
+            <marker date="1481436140038" expanded="true" signature="3686:3894" ph="UPDATE stude... " />
+            <marker date="1481436140038" expanded="true" signature="4487:4524" ph="SELECT * FRO... teacher" />
+            <marker date="1481436140038" expanded="true" signature="5022:5131" ph="INSERT INTO msg... " />
+            <marker date="1481436140038" expanded="true" signature="5965:6001" ph="SELECT * FRO... student" />
+            <marker date="1481436140038" expanded="true" signature="7070:7135" ph="SELECT * FRO... request" />
+            <marker date="1481436140038" expanded="true" signature="7584:7639" ph="SELECT statu... request" />
+            <marker date="1481436140038" expanded="true" signature="8186:8295" ph="INSERT INTO request... " />
+            <marker date="1481436140038" expanded="true" signature="8334:8398" ph="UPDATE reque... " />
+            <marker date="1481436140038" expanded="true" signature="9383:9443" ph="SELECT * FRO... request" />
+            <marker date="1481436140038" expanded="true" signature="9982:10017" ph="SELECT * FRO... student" />
+            <marker date="1481436140038" expanded="true" signature="10559:10594" ph="SELECT * FRO... student" />
+            <marker date="1481436140038" expanded="true" signature="11250:11315" ph="SELECT * FRO... student" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/155b480f/521b12ca-b2b6-4a64-9600-bc1ef841b516/postgraduate.teacher">
+    <entry file="file://$PROJECT_DIR$/web/teacher/teacher_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="93" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/155b480f/521b12ca-b2b6-4a64-9600-bc1ef841b516/postgraduate.user">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1563,6 +1425,118 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/reset_pass.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="144" column="31" selection-start-line="144" selection-start-column="31" selection-end-line="144" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="170" column="31" selection-start-line="170" selection-start-column="31" selection-end-line="170" selection-end-column="31" />
+          <folding>
+            <marker date="1481446078172" expanded="true" signature="516:581" ph="SELECT * FRO... user" />
+            <marker date="1481446078172" expanded="true" signature="886:921" ph="SELECT * FRO... teacher" />
+            <marker date="1481446078172" expanded="true" signature="1484:1549" ph="SELECT * FRO... user" />
+            <marker date="1481446078172" expanded="true" signature="1854:1889" ph="SELECT * FRO... student" />
+            <marker date="1481446078172" expanded="true" signature="2450:2519" ph="INSERT INTO user... " />
+            <marker date="1481446078172" expanded="true" signature="2956:3001" ph="INSERT INTO teacher... " />
+            <marker date="1481446078172" expanded="true" signature="3501:3534" ph="SELECT * FRO... user" />
+            <marker date="1481446078172" expanded="true" signature="3991:4060" ph="INSERT INTO user... " />
+            <marker date="1481446078172" expanded="true" signature="4497:4542" ph="INSERT INTO student... " />
+            <marker date="1481446078172" expanded="true" signature="4987:5020" ph="SELECT * FRO... user" />
+            <marker date="1481446078172" expanded="true" signature="5497:5530" ph="SELECT * FRO... user" />
+            <marker date="1481446078172" expanded="true" signature="5497:5555" ph="SELECT * FRO... user" />
+            <marker date="1481446078172" expanded="true" signature="5497:5568" ph="SELECT * FRO... user" />
+            <marker date="1481446078172" expanded="true" signature="5497:5569" ph="SELECT * FRO... user" />
+            <marker date="1481446078172" expanded="true" signature="5497:5590" ph="SELECT * FRO... user" />
+            <marker date="1481446078172" expanded="true" signature="6040:6065" ph="UPDATE user " />
+            <marker date="1481446078172" expanded="true" signature="6040:6102" ph="UPDATE user " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/action/UserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding>
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="377" column="92" selection-start-line="377" selection-start-column="92" selection-end-line="377" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher/chat/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="285" column="9" selection-start-line="285" selection-start-column="9" selection-end-line="285" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/postgraduate/dao/TeacherDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="305" column="25" selection-start-line="305" selection-start-column="19" selection-end-line="305" selection-end-column="25" />
+          <folding>
+            <marker date="1481436710080" expanded="true" signature="740:778" ph="SELECT * FRO... teacher" />
+            <marker date="1481436710080" expanded="true" signature="1346:1377" ph="SELECT * FRO... student" />
+            <marker date="1481436710080" expanded="true" signature="2659:2715" ph="SELECT * FRO... msg" />
+            <marker date="1481436710080" expanded="true" signature="3356:3391" ph="SELECT * FRO... student" />
+            <marker date="1481436710080" expanded="true" signature="3861:4085" ph="UPDATE teach... " />
+            <marker date="1481436710080" expanded="true" signature="4678:4715" ph="SELECT * FRO... student" />
+            <marker date="1481436710080" expanded="true" signature="5137:5242" ph="INSERT INTO msg... " />
+            <marker date="1481436710080" expanded="true" signature="6145:6181" ph="SELECT * FRO... student" />
+            <marker date="1481436710080" expanded="true" signature="9512:9577" ph="SELECT * FRO... request" />
+            <marker date="1481436710080" expanded="true" signature="10009:10064" ph="SELECT statu... request" />
+            <marker date="1481436710080" expanded="true" signature="10612:10721" ph="INSERT INTO request... " />
+            <marker date="1481436710080" expanded="true" signature="10760:10824" ph="UPDATE reque... " />
+            <marker date="1481436710080" expanded="true" signature="11625:11685" ph="SELECT * FRO... request" />
+            <marker date="1481436710080" expanded="true" signature="12224:12259" ph="SELECT * FRO... student" />
+            <marker date="1481436710080" expanded="true" signature="12801:12836" ph="SELECT * FRO... teacher" />
+            <marker date="1481436710080" expanded="true" signature="13492:13520" ph="SELECT * FRO... student" />
+            <marker date="1481436710080" expanded="true" signature="13492:13617" ph="SELECT * FRO... student" />
+            <marker date="1481436710080" expanded="true" signature="14204:14235" ph="SELECT * FRO... msg" />
+            <marker date="1481436710080" expanded="true" signature="15010:15052" ph="SELECT count... request" />
+            <marker date="1481436710080" expanded="true" signature="15010:15073" ph="SELECT count... request" />
+            <marker date="1481436710080" expanded="true" signature="15010:15081" ph="SELECT count... request" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/logup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="64" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

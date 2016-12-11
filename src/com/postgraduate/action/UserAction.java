@@ -14,6 +14,15 @@ import org.apache.struts2.components.Radio;
 public class UserAction extends ActionSupport {
     private User user = new User();
     private String type = new String();
+    private String data = new String();
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
 
     private String passtmp = new String();
 
@@ -43,29 +52,60 @@ public class UserAction extends ActionSupport {
         this.user = user;
     }
 
+    /*public String login() {
+        int userId;
+        try {
+            userId = Integer.parseInt(user.getUserId());
+            if (type.equals("teacher")) {
+                Teacher teacher = userDAO.loginTeacher(userId, user.getPassword());
+                if(teacher==null){
+                    data = "login";
+                    return SUCCESS;
+                }
+                ActionContext.getContext().getSession().put("teacher", teacher);
+                data = "teacher";
+            } else if (type.equals("student")) {
+                Student student = userDAO.loginStudent(userId,user.getPassword());
+                if(student==null){
+                    data = "login";
+                    return SUCCESS;
+                }
+                ActionContext.getContext().getSession().put("student", student);
+                data = "student";
+            } else
+                data = "login";
+        } catch (Exception e) {
+            data =  "login";
+        }
+        return SUCCESS;
+    }*/
+
     public String login() {
         int userId;
         try {
             userId = Integer.parseInt(user.getUserId());
+            if (type.equals("teacher")) {
+                Teacher teacher = userDAO.loginTeacher(userId, user.getPassword());
+                if(teacher==null){
+                    return "login";
+                }
+                ActionContext.getContext().getSession().put("teacher", teacher);
+                return  "teacher";
+            } else if (type.equals("student")) {
+                Student student = userDAO.loginStudent(userId,user.getPassword());
+                if(student==null){
+                    return "login";
+                }
+                ActionContext.getContext().getSession().put("student", student);
+                return  "student";
+            } else
+               return  "login";
         } catch (Exception e) {
             return "login";
         }
-        if (type.equals("teacher")) {
-            Teacher teacher = userDAO.loginTeacher(userId, user.getPassword());
-            ActionContext.getContext().getSession().put("teacher", teacher);
-            return "teacher";
-        } else if (type.equals("student")) {
-            Student student = userDAO.loginStudent(userId,user.getPassword());
-            ActionContext.getContext().getSession().put("student", student);
-            return "student";
-        } else
-            return "login";
     }
 
     public String logup() {
-        if (!passtmp.equals(user.getPassword())) {
-            return "input";
-        }
         int userId;
         try {
             userId = Integer.parseInt(user.getUserId());
@@ -82,8 +122,34 @@ public class UserAction extends ActionSupport {
                 return "input";
         } else {
             user.setType(0);
-            return INPUT;
+            if(userDAO.logupStudent(user))
+                return SUCCESS;
+            else return INPUT;
         }
 
+    }
+
+    public String validateId() throws Exception {
+        if(userDAO.validateId(user.getUserId())) {
+            data = "0";
+        } else {
+            data = "1";
+        }
+        return "success";
+    }
+
+    public String getQuestion() throws Exception {
+        data = userDAO.getQuestion(user.getUserId());
+        return SUCCESS;
+    }
+
+    public String validateAnswer() throws Exception {
+        data = userDAO.validateAnswer(user);
+        return "success";
+    }
+
+    public String resetPass() throws Exception {
+        data = userDAO.resetPass(user);
+        return "success";
     }
 }

@@ -369,6 +369,36 @@
         <result name="login" >/login.jsp</result>
     </action>
 
+    <action name="getQuestion" class="com.postgraduate.action.UserAction" method="getQuestion">
+        <result name="success" type="json">
+            <param name="root">data</param>
+        </result>
+    </action>
+
+    <action name="validateAnswer" class="com.postgraduate.action.UserAction" method="validateAnswer">
+        <result name="success" type="json">
+            <param name="root">data</param>
+        </result>
+    </action>
+
+    <action name="resetPass" class="com.postgraduate.action.UserAction" method="resetPass">
+        <result name="success" type="json">
+            <param name="root">data</param>
+        </result>
+    </action>
+
+    <!--<action name="login" class="com.postgraduate.action.UserAction" method="login">
+        <result type="json" name="success">
+            <param name="root">data</param>
+        </result>
+    </action>-->
+
+    <action name="validateId" class="com.postgraduate.action.UserAction" method="validateId" >
+        <result type="json" name="success">
+            <param name="root">data</param>
+        </result>
+    </action>
+
     <action name="logup" class="com.postgraduate.action.UserAction" method="logup">
         <result name="success">/login.jsp</result>
         <result name="input">/logup.jsp</result>

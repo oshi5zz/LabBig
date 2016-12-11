@@ -104,7 +104,7 @@ public class StudentDAO {
     public Student updateStudentInf(Student student) {
         String sql = "UPDATE student SET name=?, age=?," +
                 "province=?,school=?,major=?,research_area=?,inf=?,mail=?,sex=?," +
-                "pre_num=?,interest=?,final_teacher_id=? WHERE stu_id="+student.getStuId();
+                "pre_num=?,interest=?,final_teacher_id=?, last_date=NOW() WHERE stu_id="+student.getStuId();
         con = dbConnection.getConnection();
         try {
             PreparedStatement ps = con.prepareStatement(sql);

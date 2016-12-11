@@ -108,7 +108,7 @@ public class TeacherDAO {
     public Teacher updateTeachInf(Teacher teacher) {
         String sql = "UPDATE teacher SET name=?, age=?,professional_title=?," +
                 "province=?,school=?,major=?,research_area=?,inf=?,mail=?,sex=?," +
-                "pre_num=?,final_num=?,requirement=? WHERE tea_id="+teacher.getTeaId();
+                "pre_num=?,final_num=?,requirement=?,last_date=NOW() WHERE tea_id="+teacher.getTeaId();
         con = dbConnection.getConnection();
         try {
             PreparedStatement ps = con.prepareStatement(sql);
@@ -377,7 +377,7 @@ public class TeacherDAO {
         con = dbConnection.getConnection();
         String area = teacher.getResearchArea();
         try {
-            String sql = "SELECT * FROM student WHERE research_area LIKE '"+area+"' LIMIT 5";
+            String sql = "SELECT * FROM student WHERE   research_area LIKE '"+area+"' OR major='"+teacher.getMajor()+"' ORDER BY last_date DESC LIMIT 5 ";
             Statement statement = con.createStatement();
             ResultSet rs = statement.executeQuery(sql);
             while (rs.next()) {

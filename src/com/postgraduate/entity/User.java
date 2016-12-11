@@ -9,6 +9,24 @@ public class User {
     private String password;
     private String userName;
     private int type;
+    private String qustion;
+    private String answer;
+
+    public String getQustion() {
+        return qustion;
+    }
+
+    public void setQustion(String qustion) {
+        this.qustion = qustion;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
+    }
 
     public int getId() {
         return id;

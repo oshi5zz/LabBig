@@ -53,7 +53,7 @@
                         <input type="password" id="input-pass"  name="user.password" placeholder="密码">
                     </div>
 
-                    <div class="form-group" align="center">
+                    <div class="form-group" align="center" id="type-radio">
                         <label class="radio-inline ">
                             <input type="radio" name="type" id="radio-student" value="student"> 学生
                         </label>
@@ -61,12 +61,40 @@
                             <input type="radio" name="type" id="radio-teacher" value="teacher"> 教师
                         </label>
                     </div>
-
+                    <a href="/reset_pass.jsp">忘记密码？</a>
                     <div class="panel-footer" align="center">
                         <input type="submit" id="input-login" class="btn btn-primary" value="登录">
                     </div>
                 </form>
             </div>
+
+            <%--<script type="text/javascript">
+                $(document).ready(function () {
+                    var times = 0;
+                    $("#input-login").click(function () {
+                        $.post("login.action",{
+                            "user.userId":$("#input-id").val(),
+                            "user.password":$("#input-pass").val(),
+                            "type":$('#type-radio input[name="type"]:checked ').val(),
+                        },function (data) {
+                            if(data=="teacher"){
+                                window.href = "/teacher/toTeacherIndex";
+                            } else if(data="student") {
+                                window.href = "/student/toStudentIndex";
+                            } else {
+                                if(times>=3){
+                                    if(confirm("输入错误三次，请点击确定找回密码！")) {
+                                        window.href = "/reset_pass.jsp";
+                                    }
+                                } else {
+                                    alert("账号或密码错误！");
+                                    times++;
+                                }
+                            }
+                        });
+                    });
+                });
+            </script>--%>
         </div>
 
     </div><!-- #main -->
@@ -79,22 +107,6 @@
 </body>
 
 </html>
-<%--
-<script type="text/javascript">
-    $(document).ready(function () {
 
-        $("#input-login").click(function () {
-            $.post("/login.action",
-                    {
-                        "user.userId":$("#input-id").val(),
-                        "user.password":$("#input-pass").val(),
-                        "type":$("input[name='type']:checked").val(),
-                    },function (data) {
-
-                    }
-            );
-        });
-    });
-</script>--%>
 
 

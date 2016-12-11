@@ -42,7 +42,7 @@
                 <h3 class="panel-title"><span >用户注册</span></h3>
             </div>
             <div class="panel-body">
-                <form action="logup.action" method="post">
+                <form  method="post">
 
                     <div class="form-group ">
                         <label for="input-name" class="control-label">姓名:</label>
@@ -64,6 +64,16 @@
                         <input type="password" id="input-pass2"  name="passtmp" placeholder="密码">
                     </div>
 
+                    <div class="form-group">
+                        <label for="input-question" class="control-label">密保问题:</label>
+                        <input type="text" id="input-question"  name="user.question" placeholder="密保问题不能为空">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-answer" class="control-label">答案:</label>
+                        <input type="text" id="input-answer"  name="user.answer" placeholder="答案不能为空">
+                    </div>
+
                     <div class="form-group" align="center">
                         <label class="radio-inline ">
                             <input type="radio" name="type" id="radio-student" value="student"> 学生
@@ -74,11 +84,76 @@
                     </div>
 
                     <div class="panel-footer" align="center">
-                        <input type="submit" id="input-login" class="btn btn-primary" value="注册">
+                        <input type="submit" id="input-logup" class="btn btn-primary" value="注册">
                     </div>
                 </form>
             </div>
         </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var validate = function () {
+                    if ($("#input-name").val() == "" ) {
+                        alert("名字不能为空");
+                        return false;
+                    }
+                    if($("#input-id").val()=="") {
+                        alert("学工号不能为空");
+                        return false;
+                    }
+                    if ($("#input-pass").val().length<6) {
+                        alert("密码不能小于6位");
+                        return false;
+                    }
+                    if($("#input-pass1").val() != $("#input-pass2").val()){
+                        alert("两次密码不一致");
+                        return false;
+                    }
+                    if ($("#input-question").val()=="") {
+                        alert("密保问题不能为空");
+                        return false;
+                    }
+                    if($("#input-answer").val()=="") {
+                        alert("密保答案不能为空");
+                        return false;
+                    }
+                    return true;
+                }
+
+                $("#input-id").blur(function () {
+                    if($("#input-id").val()=="") {
+                        alert("学工号不能为空");
+                    } else {
+                        $.post("validateId",{
+                            "user.userId":$("#input-id").val()
+                        },function (data) {
+                            if(data=="1") {
+                                alert("学工号已存在！");
+                                $("#input-logup").attr("disabled",true);
+                            } else {
+                                $("#input-logup").attr("disabled",false);
+                            }
+                        });
+                    }
+                });
+
+                $("#input-logup").click(function () {
+                    if (validate()) {
+                        $.post("logup.action",{
+                            "user.userName":$("#input-name").val(),
+                            "user.userId":$("#input-id").val(),
+                            "user.password":$("#input-pass").val(),
+                            "user.question":$("#input-question").val(),
+                            "user.answer":$("#input-answer").val(),
+                        },function (data) {
+                            if(confirm("注册成功")) {
+                                window.href = "/login.jsp";
+                            }
+                        });
+                    }
+                });
+
+            });
+        </script>
 
     </div><!-- #main -->
 
@@ -90,22 +165,6 @@
 </body>
 
 </html>
-<%--
-<script type="text/javascript">
-    $(document).ready(function () {
 
-        $("#input-login").click(function () {
-            $.post("/login.action",
-                    {
-                        "user.userId":$("#input-id").val(),
-                        "user.password":$("#input-pass").val(),
-                        "type":$("input[name='type']:checked").val(),
-                    },function (data) {
-
-                    }
-            );
-        });
-    });
-</script>--%>
 
 
