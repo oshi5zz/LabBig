@@ -1,0 +1,22 @@
+2016-11-16 23:34:29:
+2016-11-16 23:34:29:开始安装Ndis Filter驱动
+2016-11-16 23:34:29:C:\Program Files\锐捷网络\Ruijie Supplicant\SuNdisFilter.inf
+2016-11-16 23:34:29:进入HrGetINetCfg
+2016-11-16 23:34:29:调用CoInitialize成功
+2016-11-16 23:34:29:调用CoCreateInstance成功
+2016-11-16 23:34:29:调用QueryInterface成功
+2016-11-16 23:34:29:begin AcquireWriteLock
+2016-11-16 23:34:29:申请到锁
+2016-11-16 23:34:29:调用pnc->Initialize成功
+2016-11-16 23:34:29:HrGetINetCfg成功申请到锁
+2016-11-16 23:34:29:调用HrGetINetCfg成功
+2016-11-16 23:34:29:进入HrReleaseINetCfg
+2016-11-16 23:34:30:SetupCopyOEMInf成功
+2016-11-16 23:34:30:进入HrInstallComponent
+2016-11-16 23:34:30:pnc->QueryNetCfgClass成功
+2016-11-16 23:34:31:pncClassSetup->Install成功
+2016-11-16 23:34:31:安装成功
+2016-11-16 23:34:31:调用HrInstallNetComponent成功
+2016-11-16 23:34:31:进入HrReleaseINetCfg
+2016-11-16 23:34:31:pnc->Uninitialize成功
+2016-11-16 23:34:31:pnc->QueryInterface成功，释放锁
