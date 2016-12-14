@@ -5,12 +5,12 @@
   Time: 0:55
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" import="java.util.*" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String path = request.getContextPath();
-    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
-<%@ taglib prefix="s" uri="/struts-tags"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 
 <!DOCTYPE html>
 <html lang="zh-CN"><!--<![endif]-->
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
     <meta name="description" content="考研师生互选">
 
-    <%@include file="/bootstrap.jsp"%>
+    <%@include file="/bootstrap.jsp" %>
 
 </head>
 
@@ -38,45 +38,15 @@
 
     <%@include file="teacher_header.jsp" %>
 
-    <div id="main"  style="margin-left: 5%;margin-right: 5%">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <td>来自</td>
-                <td>学校</td>
-                <td>摘要</td>
-                <td>更新日期</td>
-                <td>回复</td>
-            </tr>
-            </thead>
-
-            <tbody>
-            <s:iterator value="msgs">
-                <tr>
-                    <td>
-                        <span><s:property value="student.name"/></span>
-                    </td>
-                    <td><span><s:property value="student.school" /></span></td>
-                    <td>
-                        <span><s:property value="abs" /> </span>
-                    </td>
-                    <td>
-                        <span><s:property value="lastDate" /> </span>
-                    </td>
-                    <td>
-                        <span><a >回复</a> </span>
-                    </td>
-                </tr>
-            </s:iterator>
-            </tbody>
-            </table>
-
-
+    <div id="main" style="margin-left: 5%;margin-right: 5%">
+        <jsp:include page="chat/index.jsp" />
     </div><!-- #main -->
 
-    <%@include file="../footer.jsp"%>
+
+    <%@include file="../footer.jsp" %>
 </div>
 
 </body>
+
 
 </html>

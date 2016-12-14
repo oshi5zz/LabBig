@@ -41,7 +41,7 @@
     <div id="main" class="bit_main_content">
 
     <div class="panel panel-default " style="width:80%; margin-left:10%;margin-top:20px;">
-        <div class="panel panel-heading " align="center">
+        <div class="panel panel-heading " align="center" style="margin-bottom: 0px;">
         	<h3 class="panel-title"><span >按条件查找学生</span></h3>
         </div>
         <div class="panel panel-body">
@@ -71,10 +71,16 @@
 	                <input name="student.name" type="text" id="student-name" value="" />
                 </div>
 
-				<div class="form-group col-lg-6">
-    	            <label for="student-sex"><span>性别：</span></label>
-					<input name="student.sex" type="text" id="student-sex" value="男" />
-                </div>
+
+            <div class="form-group col-lg-6">
+                <label for="student-sex"><span>性别：</span></label>
+                <select name="student.sex" id="student-sex"  />>
+                <option value=""></option>
+                <option value="男">男</option>
+                <option value="女">女</option>
+                </select>
+            </div>
+
 			<div class="panel panel-footer" align="center">
             	<button type="submit" class="btn btn-lg btn-success" >搜索</button>
             </div>

@@ -7,9 +7,8 @@
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
-      <secret-storage>master_key</secret-storage>
       <user-name>zzy</user-name>
-      <resolve-scope>postgraduate:</resolve-scope>
+      <user-password>df93df93df9edf9fdf93df93</user-password>
     </data-source>
   </component>
 </project>

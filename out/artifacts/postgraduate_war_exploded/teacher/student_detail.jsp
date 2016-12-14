@@ -87,7 +87,6 @@
                         <input name="student.preNum" type="number" id="student-preNum" value="<s:property value="student.preNum" />" />
                     </div>
 
-
                     <div class="form-group col-lg-6">
                         <label for="student-mail"><span>邮箱：</span></label>
                         <input name="student.mail" type="text" id="student-mail" value="<s:property value="student.mail" />" />
@@ -99,6 +98,7 @@
                     </div>
 
                 </form>
+
             </div>
 
         </div>
@@ -108,5 +108,9 @@
 </div>
 
 </body>
+<script type="text/javascript">
+    $("form input").prop("readonly", true);
+    $("form textarea").prop("readonly", true);
+</script>
 
 </html>

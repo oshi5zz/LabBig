@@ -7,6 +7,9 @@ import com.postgraduate.entity.Msg;
 import com.postgraduate.entity.Request;
 import com.postgraduate.entity.Student;
 import com.postgraduate.entity.Teacher;
+import com.postgraduate.service.Recommend;
+
+import javax.persistence.criteria.CriteriaBuilder;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,9 +19,9 @@ import java.util.List;
  */
 public class TeacherDAO {
     private static DBConnection dbConnection = new DBConnection();;
-    private Connection con = null;
+    private static Connection con = null;
 
-    public Teacher getTeacherInf(int id) {
+    public static Teacher getTeacherInf(int id) {
         Teacher teacher = null;
         String sql = "SELECT * FROM teacher WHERE tea_id = ?";
         con = dbConnection.getConnection();
@@ -81,6 +84,7 @@ public class TeacherDAO {
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Msg m = new Msg();
+                m.setMsgId(rs.getInt("msg_id"));
                 m.setLastDate(rs.getString("last_date"));
                 m.setMain(rs.getString("main"));
                 m.setRead(rs.getInt("read"));
@@ -101,22 +105,22 @@ public class TeacherDAO {
         return msgs;
     }
 
-    public boolean updateTeachInf(Teacher teacher) {
+    public Teacher updateTeachInf(Teacher teacher) {
         String sql = "UPDATE teacher SET name=?, age=?,professional_title=?," +
                 "province=?,school=?,major=?,research_area=?,inf=?,mail=?,sex=?," +
-                "pre_num=?,final_num=?,requirement=? WHERE tea_id="+teacher.getTeaId();
+                "pre_num=?,final_num=?,requirement=?,last_date=NOW() WHERE tea_id="+teacher.getTeaId();
         con = dbConnection.getConnection();
         try {
             PreparedStatement ps = con.prepareStatement(sql);
             if(!TeacherConverter.updateTeacher(ps,teacher))
-                return false;
+                return null;
             if(ps.executeUpdate() == -1)
-                return false;
+                return null;
         } catch (SQLException e) {
             e.printStackTrace();
-            return false;
+            return null;
         }
-        return true;
+        return teacher;
     }
 
     public Student getStudent(int id) {
@@ -194,7 +198,7 @@ public class TeacherDAO {
         return viewReqList(sql,teaId);
     }
 
-    public boolean solveReq(boolean agree, boolean pre, int teaId, int stuId) {
+   /* public boolean solveReq(boolean agree, boolean pre, int teaId, int stuId) {
         //已用完名额
         if (!hasNum(pre,teaId)) {
             return false;
@@ -235,9 +239,9 @@ public class TeacherDAO {
             e.printStackTrace();
             return false;
         }
-    }
+    }*/
 
-    private boolean hasNum(boolean pre, int teaId) {
+ /*   private boolean hasNum(boolean pre, int teaId) {
         String sql = "";
         if (pre)
             sql = "SELECT pre_num FROM teacher WHERE tea_id=?";
@@ -260,49 +264,27 @@ public class TeacherDAO {
             e.printStackTrace();
             return false;
         }
-    }
+    }*/
 
-    private void updateNum(boolean agree ,boolean pre, int teaId) {
-        String sql = "";
-        if (agree) {
-            if (pre)
-                sql = "UPDATE teacher SET pre_num=pre_num-1 WHERE tea_id=?";
-            else
-                sql = "UPDATE teacher SET final_num=teacher.final_num-1 WHERE tea_id=?";
-        } else {
-            return;
-        }
+    public int getReqStatus(boolean pre, Teacher tea, Student stu) {
         Connection con = dbConnection.getConnection();
         try {
-            PreparedStatement ps = con.prepareStatement(sql);
-            ps.setInt(1, teaId);
-            ps.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
+            String sql2 = "SELECT * FROM request WHERE tea_id="+tea.getTeaId()+" AND status="+ (pre?2:6);
+            Statement stat = con.createStatement();
+            ResultSet res = stat.executeQuery(sql2);
+            int num = 0;
+            while (res.next()) {
+                num++;
+            }
+            if (pre && num >= Integer.parseInt(tea.getPreNum()))
+                return -2;
+            else if(!pre && num >= Integer.parseInt(tea.getFinalNum()))
+                return -3;
 
-    public boolean cancelPreReq(int teaId, int stuId) {
-        String sql = "UPDATE request SET status=3 WHERE stu_id=? AND tea_id=?";
-        Connection con = dbConnection.getConnection();
-        try {
+            String sql = "SELECT status FROM request WHERE stu_id=? AND tea_id =? ";
             PreparedStatement ps = con.prepareStatement(sql);
-            ps.setInt(1, stuId);
-            ps.setInt(2, teaId);
-            return ps.executeUpdate() == 1;
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
-    }
-
-    public int getReqStatus(int teaId, int stuId) {
-        String sql = "SELECT status FROM request WHERE stu_id=? AND tea_id =? ";
-        Connection con = dbConnection.getConnection();
-        try {
-            PreparedStatement ps = con.prepareStatement(sql);
-            ps.setInt(1,stuId);
-            ps.setInt(2,teaId);
+            ps.setInt(1,stu.getStuId());
+            ps.setInt(2,tea.getTeaId());
             ResultSet rs = ps.executeQuery();
             if (rs.next())
                 return rs.getInt("status");
@@ -314,18 +296,23 @@ public class TeacherDAO {
         return -1;
     }
 
-    public boolean sendReq(boolean pre,int teaId, int stuId) {
-        String sql = "INSERT INTO request(stu_id, tea_id,  status, flag, last_date)" +
-                " VALUES (?,?,?,1,NOW())";
+
+    public boolean updateReq(int status, int teaId, int stuId) {
+        String sql = "";
+        if (status==0) {
+            sql = "INSERT INTO request(stu_id, tea_id,  status, flag, last_date)" +
+                    " VALUES (?,?,?,1,NOW())";
+        } else {
+            sql = "UPDATE request SET status="+status+" WHERE stu_id=? AND tea_id=?";
+        }
         Connection con = dbConnection.getConnection();
         try {
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setInt(1,stuId);
             ps.setInt(2,teaId);
-            if (pre) {
+            if (status==0) {
                 ps.setInt(3, 0);
-            } else
-                ps.setInt(3, 4);
+            }
             return ps.executeUpdate() == 1;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -351,6 +338,7 @@ public class TeacherDAO {
                 request.setLastDate(rs.getString("last_date"));
                 request.setFlag(rs.getInt("flag"));
                 request.setStatus(rs.getInt("status"));
+                request.setReqId(rs.getInt("req_id"));
                 int stu_id = rs.getInt("stu_id");
                 sql = "SELECT * FROM student WHERE stu_id="+stu_id;
                 ResultSet resultSet = con.createStatement().executeQuery(sql);
@@ -364,5 +352,81 @@ public class TeacherDAO {
             reqs = null;
         }
         return reqs;
+    }
+
+    public List<Student> getRecommend(int teaId) {
+        con = dbConnection.getConnection();
+        try {
+            String sql = "SELECT * FROM teacher WHERE tea_id="+teaId;
+            Statement stat = con.createStatement();
+            ResultSet rs = stat.executeQuery(sql);
+            if (rs.next()) {
+                Teacher teacher = TeacherConverter.getTeacher(rs);
+                return getRecommend(teacher);
+            } else
+                return null;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+
+    }
+
+    private List<Student> getRecommend(Teacher teacher) {
+        List<Student> students = new ArrayList<>();
+        con = dbConnection.getConnection();
+        String area = teacher.getResearchArea();
+        try {
+            String sql = "SELECT * FROM student WHERE   research_area LIKE '"+area+"' OR major='"+teacher.getMajor()+"' ORDER BY last_date DESC LIMIT 5 ";
+            Statement statement = con.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+            while (rs.next()) {
+                Student stu = StudentConverter.getStudent(rs);
+                students.add(stu);
+            }
+            return students;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return students;
+        }
+    }
+
+    public Msg getMsgDetail(int msgId) {
+        Msg msg = new Msg();
+        msg.setMsgId(msgId);
+        con = dbConnection.getConnection();
+        try {
+            String sql = "SELECT * FROM msg WHERE msg_id="+msgId;
+            Statement statement = con.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+            if (rs.next()) {
+                msg.setMsgId(rs.getInt("msg_id"));
+                msg.setLastDate(rs.getString("last_date"));
+                msg.setMain(rs.getString("main"));
+                msg.setRead(rs.getInt("read"));
+                msg.setFlag(rs.getInt("flag"));
+                msg.setStuId(rs.getInt("stu_id"));
+                msg.setTeaId(rs.getInt("tea_id"));
+            }
+            return msg;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public int getUsedNum(int teaId,int status) {
+        con = dbConnection.getConnection();
+        String sql = "SELECT count(*) FROM request WHERE tea_id="+teaId+" AND status="+status;
+        Statement statement = null;
+        try {
+            statement = con.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+            if (rs.next())
+                return rs.getInt(1);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 }

@@ -2,11 +2,10 @@ package com.postgraduate.action;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
+import com.postgraduate.dao.ReqDAO;
 import com.postgraduate.dao.TeacherDAO;
-import com.postgraduate.entity.Msg;
-import com.postgraduate.entity.Request;
-import com.postgraduate.entity.Student;
-import com.postgraduate.entity.Teacher;
+import com.postgraduate.entity.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,9 +14,9 @@ import java.util.List;
  */
 public class TeacherAction extends ActionSupport {
     private TeacherDAO teacherDAO = new TeacherDAO();
-    private String status = new String();
+    private ReqDAO reqDAO = new ReqDAO();
     //
-    private Teacher teacher = new Teacher();
+    private Teacher teacher = teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
     private Student student = new Student();
     private List<Student> students = new ArrayList<>();
     private List<Msg> msgs = new ArrayList<>();
@@ -25,6 +24,24 @@ public class TeacherAction extends ActionSupport {
     private Msg msg = new Msg();
     private String warning = new String("出错了！");
     private String stuid = new String();
+    private int usedFinalNum = 0;
+    private int usedPreNum = 0;
+
+    public int getUsedPreNum() {
+        return usedPreNum;
+    }
+
+    public void setUsedPreNum(int usedPreNUm) {
+        this.usedPreNum = usedPreNUm;
+    }
+
+    public int getUsedFinalNum() {
+        return usedFinalNum;
+    }
+
+    public void setUsedFinalNum(int usedFinalNum) {
+        this.usedFinalNum = usedFinalNum;
+    }
 
     private static final String WARNING = "warning";
 
@@ -88,8 +105,9 @@ public class TeacherAction extends ActionSupport {
         Teacher tmp = (Teacher) ActionContext.getContext().getSession().get("teacher");
         teacher.setTeaId(tmp.getTeaId());
         ActionContext.getContext().getSession().put("teacher", teacher);
-        if(teacherDAO.updateTeachInf(teacher))
+        if((teacher = teacherDAO.updateTeachInf(teacher))!=null) {
             return SUCCESS;
+        }
         else
             return ERROR;
     }
@@ -105,6 +123,7 @@ public class TeacherAction extends ActionSupport {
     }
 
     public String toSearch() {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         return SUCCESS;
     }
 
@@ -126,12 +145,14 @@ public class TeacherAction extends ActionSupport {
 
     public String getIndex() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        students = teacherDAO.getRecommend(teacher.getTeaId());
         return SUCCESS;
     }
 
     public String viewPreSucList() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         students = teacherDAO.viewPreSucList(teacher.getTeaId());
+        usedPreNum = students.size();
         return SUCCESS;
     }
 
@@ -143,12 +164,38 @@ public class TeacherAction extends ActionSupport {
         } catch (Exception e) {
             return ERROR;
         }
+        student.setStuId(stu_id);
 
-        int status = teacherDAO.getReqStatus(teacher.getTeaId(), stu_id);
-        switch (status) {
+        int status = reqDAO.getReqStatus(true, teacher, student);
+        if (status==-1) {
+            if (teacherDAO.updateReq(0, teacher.getTeaId(), stu_id)) {
+                warning = "预录取请求已发送！";
+                return WARNING;
+            } else
+                return ERROR;
+        } else {
+            warning = ReqStatus.status[ReqStatus.BASE+status];
+            return WARNING;
+        }
+        /*switch (status) {
             //未曾建立过联系
+            case -6:
+                warning = "未知错误！";
+                return WARNING;
+            case -5:
+                warning = "失败！学生已经被正式录取！";
+                return WARNING;
+            case -4:
+                warning = "失败！学生预录取名额已满！";
+                return WARNING;
+            case -3:
+                warning = "失败！导师正式录取名额已满！";
+                return WARNING;
+            case -2:
+                warning = "失败！导师预录取名额已满！";
+                return WARNING;
             case -1:
-                if (teacherDAO.sendReq(true, teacher.getTeaId(), stu_id)) {
+                if (teacherDAO.updateReq(0, teacher.getTeaId(), stu_id)) {
                     warning = "预录取请求已发送！";
                     return WARNING;
                 } else
@@ -170,7 +217,7 @@ public class TeacherAction extends ActionSupport {
                 warning = "你们已经建立了预请求关系，并有了最终关系请求！";
                 return WARNING;
             case 6:
-                warning = "恭喜！你们一斤建立了最终的录取关系！";
+                warning = "无法发送！你们已经建立了最终的录取关系！";
                 return WARNING;
             case 7:
                 warning = "你们最终录取请求未通过，无法再发送请求！";
@@ -178,20 +225,24 @@ public class TeacherAction extends ActionSupport {
             default:
                 warning = "未知状态！";
                 return WARNING;
-        }
+        }*/
     }
 
     public String sendFinalReq() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
-        int stu_id = 1;
-        teacher.setTeaId(1);
+        System.out.println(teacher.getFinalNum());
+        int stu_id;
         try {
             stu_id = Integer.parseInt(stuid);
         } catch (Exception e) {
             return ERROR;
         }
-
-        if (teacherDAO.sendReq(false,teacher.getTeaId(), stu_id)) {
+        int status = teacherDAO.getReqStatus(false, teacher, student);
+        if (status==-3) {
+            warning = "发送失败！正式录取名额已满！";
+            return WARNING;
+        }
+        if (teacherDAO.updateReq(4,teacher.getTeaId(), stu_id)) {
             warning = "最终请求已发送！";
             return SUCCESS;
         }
@@ -202,9 +253,7 @@ public class TeacherAction extends ActionSupport {
     public String viewMsg() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         msgs = teacherDAO.getMsgs(teacher.getTeaId());
-        for (Msg msg : msgs) {
-
-        }
+//        students = msgDao.getStudentList(teacher.getTeaId());
         return SUCCESS;
     }
 
@@ -254,6 +303,7 @@ public class TeacherAction extends ActionSupport {
     public String viewPreReqList() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         students = teacherDAO.viewPreReqList(teacher.getTeaId());
+        usedPreNum = students.size();
         return SUCCESS;
     }
 
@@ -261,7 +311,7 @@ public class TeacherAction extends ActionSupport {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         try {
             int id = Integer.parseInt(stuid);
-            if (teacherDAO.solveReq(true,true,teacher.getTeaId(), id)) {
+            if (teacherDAO.updateReq(2,teacher.getTeaId(), id)) {
                 warning = "已同意预请求";
                 return SUCCESS;
             }
@@ -279,7 +329,7 @@ public class TeacherAction extends ActionSupport {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         try {
             int id = Integer.parseInt(stuid);
-            if (teacherDAO.solveReq(false,true,teacher.getTeaId(), id)) {
+            if (teacherDAO.updateReq(3,teacher.getTeaId(), id)) {
                 warning = "已拒绝预请求";
                 return SUCCESS;
             }
@@ -297,7 +347,7 @@ public class TeacherAction extends ActionSupport {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         try {
             int id = Integer.parseInt(stuid);
-            if (teacherDAO.cancelPreReq(teacher.getTeaId(), id)) {
+            if (teacherDAO.updateReq(3,teacher.getTeaId(), id)) {
                 warning = "已取消预请求通过关系";
                 return SUCCESS;
             }
@@ -323,6 +373,74 @@ public class TeacherAction extends ActionSupport {
     public String viewFinalSucList() {
         teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
         students = teacherDAO.viewFinalSucList(teacher.getTeaId());
+        usedFinalNum = students.size();
         return SUCCESS;
+    }
+
+    public String logout() {
+        ActionContext.getContext().getSession().clear();
+        return "login";
+    }
+
+    public String viewMsgDetail() {
+        msg = teacherDAO.getMsgDetail(msg.getMsgId());
+        stuid = ""+msg.getStuId();
+        if (msg != null) {
+            return SUCCESS;
+        } else
+            return ERROR;
+    }
+
+    public String agreeFinalReq() {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        int status = teacherDAO.getReqStatus(false, teacher, student);
+        if (status==-3) {
+            warning = "不能同意！正式录取名额已满！";
+            return WARNING;
+        }
+        try {
+            int id = Integer.parseInt(stuid);
+            if (teacherDAO.updateReq(6,teacher.getTeaId(), id)) {
+                warning = "已同意最终请求";
+                return SUCCESS;
+            }
+            else {
+                warning = "未知错误！";
+                return ERROR;
+            }
+        } catch (Exception e) {
+            warning = "链接错误，学生id不是数字！";
+            return ERROR;
+        }
+    }
+
+    public String refuseFinalReq() {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        try {
+            int id = Integer.parseInt(stuid);
+            if (teacherDAO.updateReq(7,teacher.getTeaId(), id)) {
+                warning = "已拒绝最终请求";
+                return SUCCESS;
+            }
+            else {
+                warning = "未知错误！";
+                return ERROR;
+            }
+        } catch (Exception e) {
+            warning = "链接错误，学生id不是数字！";
+            return ERROR;
+        }
+    }
+
+    public String validatePreNum() throws Exception {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        usedPreNum = teacherDAO.getUsedNum(teacher.getTeaId(),2);
+        return "success";
+    }
+
+    public String validateFinalNum() throws Exception {
+        teacher = (Teacher) ActionContext.getContext().getSession().get("teacher");
+        usedFinalNum = teacherDAO.getUsedNum(teacher.getTeaId(),6);
+        return "success";
     }
 }

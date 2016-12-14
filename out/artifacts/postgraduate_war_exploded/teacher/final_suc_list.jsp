@@ -40,12 +40,17 @@
     <%@include file="teacher_header.jsp" %>
 
     <div id="main"  style="margin-left: 5%;margin-right: 5%">
+        <div class="panel panel-default " style="width:80%; margin-left:10%;margin-top:20px;">
+            <div class="panel panel-heading " align="center" style="margin-bottom: 0px;">
+                <h3 class="panel-title"><span >已录取学生名单（<s:property value="usedFinalNum" />/<s:property value="teacher.finalNum" />）</span></h3>
+            </div>
+            <div class="panel panel-body">
         <table class="table table-striped">
             <thead>
             <tr>
-                <td>姓名</td>
-                <td>学校</td>
-                <td>详情</td>
+                <th>姓名</th>
+                <th>学校</th>
+                <th>详情</th>
             </tr>
             </thead>
 
@@ -64,6 +69,8 @@
             </tbody>
 
         </table>
+                </div>
+            </div>
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>

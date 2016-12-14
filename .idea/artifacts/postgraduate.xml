@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="postgraduate">
+    <output-path>$PROJECT_DIR$/out/artifacts/postgraduate</output-path>
+    <root id="archive" name="postgraduate.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="postgraduate" />
+          <element id="jpa-descriptors" facet="postgraduate/jpa/JPA" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate 4.2.2-4.2.2" />
+          <element id="library" level="project" name="javax.json.processing-1.0" />
+          <element id="library" level="project" name="Struts 2-2.3.20.1" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="postgraduate/web/Web" />
+      <element id="artifact" artifact-name="postgraduate:war exploded" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -20,7 +20,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>查找学生</title>
+    <title>警告</title>
     <link rel="stylesheet" href="../res/frame_a.css" type="text/css" media="all">
     <link rel="stylesheet" id="dt-main-css" href="../res/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="../res/frame_b.css" type="text/css" media="all">
@@ -38,8 +38,15 @@
 
     <%@include file="teacher_header.jsp" %>
 
-    <div id="main" class="bit_main_content">
-        <s:property value="warning" />
+    <div id="main"  style="margin-left: 5%;margin-right: 5%">
+        <div class="panel panel-default " style="width:80%; margin-left:10%;margin-top:20px;">
+            <div class="panel panel-heading " align="center" style="margin-bottom: 0px;">
+                <h3 class="panel-title"><span >消息</span></h3>
+            </div>
+            <div class="panel panel-body" >
+               <h3 ><s:property value="warning" /></h3>
+            </div>
+        </div>
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>

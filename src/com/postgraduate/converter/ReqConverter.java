@@ -25,7 +25,6 @@ public class ReqConverter {
                 req.setReqId(rs.getInt("req_id"));
                 requests.add(req);
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         }

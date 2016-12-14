@@ -38,16 +38,20 @@
 <div id="page" class="contentFixWidth fix-width">
 
     <%@include file="teacher_header.jsp" %>
-
     <div id="main"  style="margin-left: 5%;margin-right: 5%">
-        <table class="table table-striped">
+        <div class="panel panel-default " style="width:80%; margin-left:10%;margin-top:20px;">
+            <div class="panel panel-heading " align="center" style="margin-bottom: 0px;">
+                <h3 class="panel-title"><span >预录取名单（<s:property value="usedPreNum" />/<s:property value="teacher.preNum" />）</span></h3>
+            </div>
+            <div class="panel panel-body">
+        <table class="table table-striped table-hover">
             <thead>
             <tr>
-                <td>姓名</td>
-                <td>学校</td>
-                <td>详情</td>
-                <td>取消预录取</td>
-                <td>正式录取</td>
+                <th>姓名</th>
+                <th>学校</th>
+                <th>详情</th>
+                <th>解除关系</th>
+                <th>正式录取</th>
             </tr>
             </thead>
 
@@ -68,13 +72,15 @@
                 </td>
                 <td>
                     <span>
-                        <a href="/teacher/sendFinalReq.action?stuid=<s:property value="stuId" />">正式录取</a>
+                        <a href="/teacher/sendFinalReq.action?stuid=<s:property value="stuId" />">发送正式录取请求</a>
                     </span>
                 </td>
             </tr>
         </s:iterator>
             </tbody>
             </table>
+                </div>
+            </div>
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>

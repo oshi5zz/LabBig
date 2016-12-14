@@ -39,48 +39,8 @@
 
     <%@include file="teacher_header.jsp" %>
 
-    <div id="main"  style="margin-left: 5%;margin-right: 5%">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <td>姓名</td>
-                <td>学校</td>
-                <td>状态</td>
-                <td>更新日期</td>
-                <td>详情</td>
-            </tr>
-            </thead>
-
-            <tbody>
-        <s:iterator value="reqs">
-            <tr>
-                <td>
-                    <span><s:property value="student.name"/></span>
-                </td>
-                <td>
-                    <span>
-                        <s:property value="student.school" />
-                    </span>
-                </td>
-                <td>
-                    <span>
-                        <s:property value="status" />
-                    </span>
-                </td>
-                <td>
-                    <span>
-                        <s:property value="last_date" />
-                    </span>
-                </td>
-                <td>
-                    <span>
-                        <a>详情</a>
-                    </span>
-                </td>
-            </tr>
-        </s:iterator>
-            </tbody>
-            </table>
+    <div id="main"  >
+        <jsp:include page="req_include.jsp" />
     </div><!-- #main -->
 
     <%@include file="../footer.jsp"%>

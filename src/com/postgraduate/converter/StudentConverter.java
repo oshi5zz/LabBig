@@ -3,6 +3,7 @@ package com.postgraduate.converter;
 import com.postgraduate.entity.Student;
 import sun.font.ScriptRun;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -49,5 +50,26 @@ public class StudentConverter {
             e.printStackTrace();
         }
         return students;
+    }
+
+    public static boolean updateStudent(PreparedStatement ps, Student student) {
+        try {
+            ps.setString(1,student.getName());
+            ps.setInt(2,student.getAge());
+            ps.setString(3,student.getProvince());
+            ps.setString(4,student.getSchool());
+            ps.setString(5,student.getMajor());
+            ps.setString(6,student.getResearchArea());
+            ps.setString(7,student.getInf());
+            ps.setString(8,student.getMail());
+            ps.setString(9,student.getSex());
+            ps.setInt(10, student.getPreNum());
+            ps.setString(11,student.getInterest());
+            ps.setInt(12,student.getFinalTeacherId());
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 }
